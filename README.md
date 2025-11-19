@@ -1,4 +1,4 @@
-# Indiana Entrepreneur Events
+# Mutiny19 - Indiana Swashbuckling Entrepreneurs
 
 A free, interactive map and list of entrepreneurship events across Indiana. The website automatically aggregates events from various sources, displays them on an interactive map, and allows filtering by date and event features.
 
@@ -20,15 +20,15 @@ A free, interactive map and list of entrepreneurship events across Indiana. The 
 ## Live Demo
 
 Once deployed, your site will be available at:
-`https://[your-username].github.io/[repository-name]/`
+`https://shanebivens.github.io/mutiny19/`
 
 ## Quick Start
 
 ### 1. Fork or Clone This Repository
 
 ```bash
-git clone https://github.com/[your-username]/[repository-name].git
-cd [repository-name]
+git clone https://github.com/shanebivens/mutiny19.git
+cd mutiny19
 ```
 
 ### 2. Enable GitHub Pages
@@ -39,7 +39,7 @@ cd [repository-name]
 4. Select the `main` branch and `/ (root)` folder
 5. Click "Save"
 
-Your site will be live in a few minutes at `https://[your-username].github.io/[repository-name]/`
+Your site will be live in a few minutes at `https://shanebivens.github.io/mutiny19/`
 
 ### 3. Enable GitHub Actions
 
@@ -229,7 +229,7 @@ Built with:
 ## Support
 
 For issues or questions:
-1. Check existing [Issues](https://github.com/[your-username]/[repository-name]/issues)
+1. Check existing [Issues](https://github.com/shanebivens/mutiny19/issues)
 2. Create a new issue with details
 3. Include error messages and screenshots if applicable
 
