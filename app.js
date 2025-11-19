@@ -467,8 +467,8 @@ function setupEventListeners() {
             formError.style.display = 'none';
 
             try {
-                // TODO: Replace with actual Discord webhook URL
-                const webhookUrl = 'YOUR_DISCORD_WEBHOOK_URL_HERE';
+                // Discord webhook URL for verified founders channel
+                const webhookUrl = 'https://discord.com/api/webhooks/1440836011079761990/C9F3u_15uHf93FSxnh1yyJQs_eGVvJLLCXnz7C1bZ4m7m6vAWlNrZjhwmCarR3WAsqEZ';
 
                 // Format message for Discord based on type
                 let discordMessage;
@@ -494,21 +494,18 @@ function setupEventListeners() {
                     };
                 }
 
-                // Uncomment when webhook is ready:
-                // const response = await fetch(webhookUrl, {
-                //     method: 'POST',
-                //     headers: {
-                //         'Content-Type': 'application/json',
-                //     },
-                //     body: JSON.stringify(discordMessage)
-                // });
+                // Submit to Discord webhook
+                const response = await fetch(webhookUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(discordMessage)
+                });
 
-                // if (!response.ok) {
-                //     throw new Error('Failed to submit report');
-                // }
-
-                // For now, just show success (remove this when webhook is connected)
-                console.log('Report data:', formData);
+                if (!response.ok) {
+                    throw new Error('Failed to submit report');
+                }
 
                 // Store submission time for rate limiting
                 localStorage.setItem('mutiny19_last_submit', currentTime.toString());
