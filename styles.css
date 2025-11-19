@@ -60,6 +60,109 @@ header p {
     color: #dfe6e9;
 }
 
+/* Manifesto Section */
+.manifesto {
+    background: linear-gradient(135deg, #78290f 0%, #a0401f 50%, #78290f 100%);
+    padding: 3rem 2rem;
+    margin: 0;
+    border-top: 3px solid #ffeaa7;
+    border-bottom: 3px solid #ffeaa7;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+}
+
+.manifesto-content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.manifesto h2 {
+    text-align: center;
+    color: #ffeaa7;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.manifesto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.manifesto-box {
+    background: rgba(10, 17, 40, 0.6);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 2px solid #ffeaa7;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.manifesto-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(255, 234, 167, 0.3);
+}
+
+.manifesto-box h3 {
+    color: #ffeaa7;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.manifesto-box p {
+    color: #e8e6e3;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.manifesto-box strong {
+    color: #ffeaa7;
+    font-weight: 700;
+}
+
+.manifesto-footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid #ffeaa7;
+}
+
+.manifesto-footer p {
+    color: #e8e6e3;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.manifesto-footer strong {
+    color: #ffeaa7;
+}
+
+.manifesto-link {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: #ffeaa7;
+    color: #78290f;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 12px rgba(255, 234, 167, 0.3);
+}
+
+.manifesto-link:hover {
+    background: #15616d;
+    color: #ffeaa7;
+    box-shadow: 0 6px 20px rgba(21, 97, 109, 0.5);
+    transform: translateY(-2px);
+}
+
 .container {
     display: flex;
     max-width: 1400px;
@@ -376,6 +479,23 @@ footer {
 
     .map-container, .list-container {
         height: 500px;
+    }
+
+    .manifesto h2 {
+        font-size: 1.8rem;
+    }
+
+    .manifesto-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
     }
 }
 
