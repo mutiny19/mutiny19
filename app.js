@@ -112,7 +112,7 @@ function createPopupContent(event) {
             <p><strong>📅 ${date.toLocaleDateString()}</strong> at ${date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</p>
             <p>📍 ${event.location.name}</p>
             <div class="event-meta">${tags}</div>
-            <button class="popup-button" onclick="showEventDetails('${event.id}')">⚓ Drop Anchor</button>
+            <button class="popup-button" onclick="showEventDetails('${event.id}')">🏴‍☠️ I'm In</button>
         </div>
     `;
 }
@@ -133,7 +133,7 @@ function displayEventsList(events) {
     const listContainer = document.getElementById('eventsList');
 
     if (events.length === 0) {
-        listContainer.innerHTML = '<p style="padding: 2rem; text-align: center; color: #999;">No events found matching your filters.</p>';
+        listContainer.innerHTML = '<p style="padding: 2rem; text-align: center; color: #ffeaa7; font-size: 1.1rem;">🏴‍☠️ No treasure here, matey!<br><span style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem; display: block;">Try adjusting your filters or check back later.</span></p>';
         return;
     }
 
@@ -179,10 +179,10 @@ function showEventDetails(eventId) {
             <p><strong>👥 Organizer:</strong> ${event.organizer}</p>
             <p><strong>ℹ️ Description:</strong><br>${event.description}</p>
             <div class="event-meta">${tags}</div>
-            ${event.url ? `<p><a href="${event.url}" target="_blank" class="btn-calendar" style="margin-top: 1rem;">🏴‍☠️ Set Sail to Event</a></p>` : ''}
+            ${event.url ? `<p><a href="${event.url}" target="_blank" class="btn-calendar" style="margin-top: 1rem;">🏴‍☠️ Take Me There</a></p>` : ''}
             <div class="calendar-buttons">
-                <button class="btn-calendar" onclick="addToGoogleCalendar('${event.id}')">📅 Mark Your Chart</button>
-                <button class="btn-calendar" onclick="downloadICS('${event.id}')">💾 Stow in Log</button>
+                <button class="btn-calendar" onclick="addToGoogleCalendar('${event.id}')">📅 Save to Calendar</button>
+                <button class="btn-calendar" onclick="downloadICS('${event.id}')">💾 Download .ics</button>
             </div>
         </div>
     `;

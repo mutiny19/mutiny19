@@ -3,48 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indiana Entrepreneur Events</title>
+    <title>Mutiny19 Event Navigator - Indiana Swashbuckling Entrepreneurs</title>
+    <meta name="description" content="No VCs. No sharks. No walking the plank. Find entrepreneur events in Indiana that won't rob ye blind.">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="styles.css">
 </head>
+<!--
+    ⚓ AHOY, CURIOUS DEVELOPER! ⚓
+
+    Welcome aboard the Mutiny19 ship!
+
+    We're 19 Indiana founders who've had enough of:
+    - Predatory valuations
+    - Early exit pressure
+    - VCs treating founders like disposable crew
+
+    This site? Built by founders, for founders.
+    No corporate BS. No paywalls. No gatekeeping.
+
+    Want to contribute? Fork us on GitHub: github.com/shanebivens/mutiny19
+    Want to join the crew? Visit: mutiny19.com
+
+    Fair winds and following seas,
+    The Mutiny19 Crew 🏴‍☠️
+-->
 <body>
     <header>
-        <h1>⚓ Mutiny19 Event Navigator ⚓</h1>
-        <p>Chart your course through Indiana's entrepreneurial waters</p>
-        <p style="font-size: 0.95rem; margin-top: 0.5rem; opacity: 0.8;">Hoist the colors. Fight predatory valuations. Build with purpose.</p>
+        <h1>⚓ MUTINY19 EVENT NAVIGATOR ⚓</h1>
+        <p style="font-size: 1.3rem; font-weight: 600;">Where Indiana's Swashbuckling Entrepreneurs Plot Their Next Moves</p>
+        <p style="font-size: 1rem; margin-top: 0.5rem; opacity: 0.9;">No VCs. No sharks. No walking the plank on bad terms.</p>
+        <p style="font-size: 0.9rem; margin-top: 0.3rem; opacity: 0.8; font-style: italic;">Just honest founders, good grog, and events that won't rob ye blind.</p>
     </header>
 
     <div class="container">
         <aside class="filters">
-            <h2>🗺️ Navigator's Tools</h2>
+            <h2>🗺️ Plot Your Course</h2>
 
             <div class="filter-group">
-                <label>⏰ Voyage Dates</label>
-                <input type="date" id="startDate" placeholder="Embark">
-                <input type="date" id="endDate" placeholder="Return">
+                <label>⏰ When's the Party?</label>
+                <input type="date" id="startDate" placeholder="Set Sail">
+                <input type="date" id="endDate" placeholder="Return to Port">
             </div>
 
             <div class="filter-group">
-                <label>🏴‍☠️ Provisions & Bounty</label>
+                <label>🏴‍☠️ What's the Loot?</label>
                 <div class="checkbox-group">
-                    <label><input type="checkbox" id="filterFree" checked> 💰 Free Passage</label>
-                    <label><input type="checkbox" id="filterFood" checked> 🍽️ Full Provisions</label>
-                    <label><input type="checkbox" id="filterAppetizers" checked> 🍕 Light Fare</label>
-                    <label><input type="checkbox" id="filterNonAlcohol" checked> 🥤 Fresh Water</label>
-                    <label><input type="checkbox" id="filterAlcohol" checked> 🍺 Grog & Rum</label>
+                    <label><input type="checkbox" id="filterFree" checked> 💰 Free (broke founder friendly)</label>
+                    <label><input type="checkbox" id="filterFood" checked> 🍽️ Actual Food</label>
+                    <label><input type="checkbox" id="filterAppetizers" checked> 🍕 Snacks (better than nothing)</label>
+                    <label><input type="checkbox" id="filterNonAlcohol" checked> 🥤 Coffee/Water</label>
+                    <label><input type="checkbox" id="filterAlcohol" checked> 🍺 The Good Stuff</label>
                 </div>
             </div>
 
             <div class="filter-group">
-                <label>🧭 Navigation Mode</label>
+                <label>🧭 How Ya Wanna See It?</label>
                 <div class="view-toggle">
-                    <button id="mapViewBtn" class="active">Chart</button>
-                    <button id="listViewBtn">Manifest</button>
+                    <button id="mapViewBtn" class="active">Map</button>
+                    <button id="listViewBtn">List</button>
                     <button id="bothViewBtn">Both</button>
                 </div>
             </div>
 
-            <button id="clearFilters" class="btn-secondary">⚡ Reset Course</button>
+            <button id="clearFilters" class="btn-secondary">🔄 Show Me Everything</button>
         </aside>
 
         <main class="content">
@@ -67,8 +88,10 @@
     </div>
 
     <footer>
-        <p>⚓ Chart updated by the crew. Last port: <span id="lastUpdate">Loading...</span> ⚓</p>
-        <p style="margin-top: 0.5rem; font-size: 0.85rem;">Fair winds and following seas to all Indiana swashbuckling entrepreneurs.</p>
+        <p>⚓ Auto-pillaged from the web daily. Last raid: <span id="lastUpdate">Loading...</span> ⚓</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Built by founders who've had enough of the BS.</p>
+        <p style="margin-top: 0.3rem; font-size: 0.85rem; opacity: 0.8;">No corporate sponsors. No gatekeepers. No predatory terms.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem; font-style: italic;">Fair winds and following seas, ye Indiana rebels. 🏴‍☠️</p>
     </footer>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
