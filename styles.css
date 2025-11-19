@@ -539,35 +539,48 @@ footer {
     box-shadow: 0 2px 8px rgba(21, 97, 109, 0.4);
 }
 
-/* Discord Section */
+/* Discord Section - Discord Themed */
 .discord-section {
-    background: linear-gradient(135deg, #15616d 0%, #0a1128 50%, #15616d 100%);
+    background: linear-gradient(135deg, #5865F2 0%, #404eed 50%, #5865F2 100%);
     padding: 4rem 2rem;
-    border-top: 4px solid #ffeaa7;
-    border-bottom: 4px solid #ffeaa7;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+    border-top: 4px solid #5865F2;
+    border-bottom: 4px solid #5865F2;
+    box-shadow: 0 8px 32px rgba(88, 101, 242, 0.4);
     position: relative;
     overflow: hidden;
 }
 
 .discord-section::before {
-    content: "🏴‍☠️";
+    content: "";
     position: absolute;
-    top: 2rem;
-    left: 2rem;
-    font-size: 4rem;
-    opacity: 0.1;
-    transform: rotate(-15deg);
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
 }
 
 .discord-section::after {
-    content: "🏴‍☠️";
+    content: "";
     position: absolute;
-    bottom: 2rem;
-    right: 2rem;
-    font-size: 4rem;
-    opacity: 0.1;
-    transform: rotate(15deg);
+    bottom: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    animation: float 8s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 .discord-content {
@@ -577,47 +590,46 @@ footer {
 
 .discord-section h2 {
     text-align: center;
-    color: #ffeaa7;
+    color: #FFFFFF;
     font-size: 2.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 3px;
-    text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
-    animation: pulse 2s ease-in-out infinite;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    font-weight: 900;
 }
 
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.02);
-    }
+.discord-section > .discord-content > p {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 .discord-grid {
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 3rem;
-    align-items: center;
+    align-items: start;
     margin-top: 2rem;
 }
 
 .discord-benefits {
-    background: rgba(10, 17, 40, 0.7);
+    background: #2C2F33;
     padding: 2rem;
-    border-radius: 12px;
-    border: 3px solid #78290f;
-    box-shadow: 0 6px 24px rgba(0,0,0,0.5);
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
 }
 
 .discord-benefits h3 {
-    color: #ffeaa7;
+    color: #FFFFFF;
     font-size: 2rem;
     margin-bottom: 1.5rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-weight: 700;
 }
 
 .benefits-list {
@@ -627,15 +639,24 @@ footer {
 
 .benefits-list li {
     margin-bottom: 1.5rem;
-    padding-left: 1rem;
-    border-left: 4px solid #78290f;
+    padding: 1rem;
+    background: #23272A;
+    border-radius: 8px;
+    border-left: 4px solid #5865F2;
     font-size: 1rem;
     line-height: 1.7;
-    color: #e8e6e3;
+    color: #B9BBBE;
+    transition: all 0.3s ease;
+}
+
+.benefits-list li:hover {
+    background: #2C2F33;
+    transform: translateX(5px);
+    border-left-color: #7289DA;
 }
 
 .benefits-list li strong {
-    color: #ffeaa7;
+    color: #FFFFFF;
     font-size: 1.1rem;
     display: block;
     margin-bottom: 0.3rem;
@@ -644,10 +665,15 @@ footer {
 .discord-widget-container {
     text-align: center;
     padding: 1.5rem;
-    background: rgba(10, 17, 40, 0.5);
-    border-radius: 12px;
-    border: 3px solid #ffeaa7;
-    box-shadow: 0 6px 24px rgba(255, 234, 167, 0.2);
+    background: #2C2F33;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+}
+
+.discord-widget-container p {
+    color: #B9BBBE;
+    font-weight: 600;
 }
 
 .discord-widget-container iframe {
