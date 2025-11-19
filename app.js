@@ -112,7 +112,7 @@ function createPopupContent(event) {
             <p><strong>📅 ${date.toLocaleDateString()}</strong> at ${date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</p>
             <p>📍 ${event.location.name}</p>
             <div class="event-meta">${tags}</div>
-            <button class="popup-button" onclick="showEventDetails('${event.id}')">View Details</button>
+            <button class="popup-button" onclick="showEventDetails('${event.id}')">⚓ Drop Anchor</button>
         </div>
     `;
 }
@@ -179,10 +179,10 @@ function showEventDetails(eventId) {
             <p><strong>👥 Organizer:</strong> ${event.organizer}</p>
             <p><strong>ℹ️ Description:</strong><br>${event.description}</p>
             <div class="event-meta">${tags}</div>
-            ${event.url ? `<p><a href="${event.url}" target="_blank" class="btn-calendar" style="margin-top: 1rem;">Visit Event Page</a></p>` : ''}
+            ${event.url ? `<p><a href="${event.url}" target="_blank" class="btn-calendar" style="margin-top: 1rem;">🏴‍☠️ Set Sail to Event</a></p>` : ''}
             <div class="calendar-buttons">
-                <button class="btn-calendar" onclick="addToGoogleCalendar('${event.id}')">Add to Google Calendar</button>
-                <button class="btn-calendar" onclick="downloadICS('${event.id}')">Download iCal</button>
+                <button class="btn-calendar" onclick="addToGoogleCalendar('${event.id}')">📅 Mark Your Chart</button>
+                <button class="btn-calendar" onclick="downloadICS('${event.id}')">💾 Stow in Log</button>
             </div>
         </div>
     `;
