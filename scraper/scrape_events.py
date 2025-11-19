@@ -145,11 +145,158 @@ class EventScraper:
             print(f"Error fetching Meetup: {e}")
 
     def scrape_custom(self, source: Dict[str, Any]):
-        """Scrape custom sources (placeholder for specific implementations)"""
-        print(f"Custom scraper for {source['name']} - implement specific logic")
-        # Each custom source would need its own implementation
-        # based on the website structure
-        pass
+        """Scrape custom sources (specific implementations)"""
+        name = source.get('name', '')
+
+        if 'TechPoint' in name:
+            self.scrape_techpoint(source)
+        elif '1 Million Cups' in name or '1MC' in name:
+            self.scrape_1mc(source)
+        else:
+            print(f"No custom scraper implemented for {name}")
+
+    def scrape_techpoint(self, source: Dict[str, Any]):
+        """Scrape TechPoint events"""
+        try:
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            }
+            response = requests.get(source['url'], headers=headers, timeout=10)
+            soup = BeautifulSoup(response.content, 'html.parser')
+
+            # TechPoint uses Elementor/Jet Listing Grid
+            event_items = soup.find_all('div', class_='jet-listing-grid__item')
+
+            print(f"Found {len(event_items)} potential events on TechPoint")
+
+            for item in event_items[:15]:  # Limit to 15 events
+                try:
+                    # Extract title
+                    title_elem = item.find(class_='event-title') or item.find('h3') or item.find('h2')
+                    if not title_elem:
+                        continue
+
+                    title = title_elem.get_text(strip=True)
+
+                    # Extract link
+                    link = item.find('a', href=True)
+                    url = link['href'] if link else source['url']
+                    if url.startswith('/'):
+                        url = 'https://techpoint.org' + url
+
+                    # Extract date
+                    date_str = ''
+                    month_elem = item.find(class_='month')
+                    day_elem = item.find(class_='day')
+
+                    if month_elem and day_elem:
+                        month = month_elem.get_text(strip=True)
+                        day = day_elem.get_text(strip=True)
+                        date_str = f"{month} {day}, 2025"  # Assume current/next year
+
+                    event_date = self._parse_date(date_str) if date_str else None
+
+                    # Skip past events
+                    if event_date and event_date < datetime.now():
+                        continue
+
+                    # Extract description
+                    desc_elem = item.find(class_='jet-listing-dynamic-field__content')
+                    description = desc_elem.get_text(strip=True) if desc_elem else title
+
+                    event_data = {
+                        'title': title,
+                        'description': description,
+                        'url': url,
+                        'date': event_date.isoformat() if event_date else datetime.now().isoformat(),
+                        'source': source['name']
+                    }
+
+                    self._add_event(event_data)
+                    print(f"  Added: {title}")
+
+                except Exception as e:
+                    print(f"Error parsing TechPoint event: {e}")
+                    continue
+
+        except Exception as e:
+            print(f"Error fetching TechPoint: {e}")
+
+    def scrape_1mc(self, source: Dict[str, Any]):
+        """Scrape 1 Million Cups events"""
+        try:
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            }
+            response = requests.get(source['url'], headers=headers, timeout=10)
+            soup = BeautifulSoup(response.content, 'html.parser')
+
+            # 1MC typically has recurring events
+            # Try to find event schedule or calendar
+            event_items = soup.find_all(['div', 'article'], class_=re.compile('event|meeting|schedule'))
+
+            if not event_items:
+                # Generate recurring event for 1MC (they meet regularly)
+                # Indianapolis meets Wednesdays, South Bend meets 2nd Wednesday
+                city = 'Indianapolis' if 'indy' in source['url'].lower() else 'South Bend'
+
+                event_data = {
+                    'title': f'1 Million Cups {city}',
+                    'description': 'Join entrepreneurs every month for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.',
+                    'url': source['url'],
+                    'date': self._get_next_1mc_date(city).isoformat(),
+                    'source': source['name']
+                }
+
+                self._add_event(event_data)
+                print(f"  Added recurring: 1 Million Cups {city}")
+
+        except Exception as e:
+            print(f"Error fetching 1MC: {e}")
+
+    def _get_next_1mc_date(self, city: str) -> datetime:
+        """Get next 1 Million Cups meeting date"""
+        from datetime import timedelta
+
+        today = datetime.now()
+
+        if 'South Bend' in city:
+            # 2nd Wednesday of month at 8 AM
+            day = 1
+            while day <= 31:
+                try:
+                    candidate = datetime(today.year, today.month, day, 8, 0)
+                    if candidate.weekday() == 2:  # Wednesday
+                        week_num = (day - 1) // 7 + 1
+                        if week_num == 2 and candidate > today:
+                            return candidate
+                except ValueError:
+                    break
+                day += 1
+
+            # Try next month
+            next_month = today.month + 1 if today.month < 12 else 1
+            next_year = today.year if today.month < 12 else today.year + 1
+            day = 1
+            while day <= 31:
+                try:
+                    candidate = datetime(next_year, next_month, day, 8, 0)
+                    if candidate.weekday() == 2:
+                        week_num = (day - 1) // 7 + 1
+                        if week_num == 2:
+                            return candidate
+                except ValueError:
+                    break
+                day += 1
+
+        else:  # Indianapolis - typically weekly Wednesdays
+            days_ahead = 2 - today.weekday()  # Wednesday = 2
+            if days_ahead <= 0:
+                days_ahead += 7
+            next_wed = today + timedelta(days=days_ahead)
+            return next_wed.replace(hour=9, minute=0, second=0, microsecond=0)
+
+        return today + timedelta(days=7)
 
     def _matches_keywords(self, text: str) -> bool:
         """Check if text matches any keywords and doesn't match excluded keywords"""

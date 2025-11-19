@@ -1,34 +1,81 @@
 {
   "sources": [
     {
-      "name": "Eventbrite Indiana Entrepreneur Events",
-      "type": "eventbrite_search",
-      "url": "https://www.eventbrite.com/d/in--indiana/entrepreneurship/",
-      "enabled": true
-    },
-    {
-      "name": "Meetup.com Indianapolis Entrepreneurs",
-      "type": "meetup_group",
-      "url": "https://www.meetup.com/find/?location=us--in--indianapolis&source=EVENTS&keywords=entrepreneur",
-      "enabled": true
-    },
-    {
-      "name": "TechPoint Events",
+      "name": "TechPoint Indiana Events",
       "type": "custom",
-      "url": "https://techpoint.org/events/",
-      "enabled": true
-    },
-    {
-      "name": "Startup Grind Indianapolis",
-      "type": "custom",
-      "url": "https://www.startupgrind.com/indianapolis/",
-      "enabled": true
+      "url": "https://techpoint.org/tech-events/",
+      "enabled": true,
+      "description": "Official Indiana tech and entrepreneur events hub"
     },
     {
       "name": "1 Million Cups Indianapolis",
       "type": "custom",
-      "url": "https://www.1millioncups.com/indianapolis",
-      "enabled": true
+      "url": "https://www.1millioncups.com/indy",
+      "enabled": true,
+      "description": "Weekly Wednesday entrepreneur meetups in Indianapolis"
+    },
+    {
+      "name": "1 Million Cups South Bend",
+      "type": "custom",
+      "url": "https://www.1millioncups.com/southbend",
+      "enabled": true,
+      "description": "2nd Wednesday monthly entrepreneur meetups in South Bend"
+    },
+    {
+      "name": "Eventbrite Indianapolis Entrepreneurs",
+      "type": "eventbrite_search",
+      "url": "https://www.eventbrite.com/d/in--indianapolis/entrepreneurs/",
+      "enabled": true,
+      "description": "Entrepreneur events on Eventbrite"
+    },
+    {
+      "name": "Eventbrite Indianapolis Startups",
+      "type": "eventbrite_search",
+      "url": "https://www.eventbrite.com/d/in--indianapolis/startup-events/",
+      "enabled": true,
+      "description": "Startup events on Eventbrite"
+    },
+    {
+      "name": "Eventbrite Indianapolis Business Networking",
+      "type": "eventbrite_search",
+      "url": "https://www.eventbrite.com/d/in--indianapolis/business-networking/",
+      "enabled": true,
+      "description": "Business networking events on Eventbrite"
+    },
+    {
+      "name": "Indiana SBDC Training & Education",
+      "type": "custom",
+      "url": "https://isbdc.org/training-education/",
+      "enabled": true,
+      "description": "Small business workshops and training"
+    },
+    {
+      "name": "Indy Chamber Events",
+      "type": "custom",
+      "url": "https://indychamber.com/attend-an-event/",
+      "enabled": true,
+      "description": "Greater Indianapolis Chamber of Commerce events"
+    },
+    {
+      "name": "Downtown Indy Events",
+      "type": "custom",
+      "url": "https://downtownindy.org/events/calendar",
+      "enabled": true,
+      "description": "Downtown Indianapolis food, art, and business events"
+    },
+    {
+      "name": "Visit Indy Food & Drink",
+      "type": "custom",
+      "url": "https://www.visitindy.com/events/food-drink/",
+      "enabled": true,
+      "description": "Culinary and drink events"
+    },
+    {
+      "name": "Eventbrite Indianapolis Food Festivals",
+      "type": "eventbrite_search",
+      "url": "https://www.eventbrite.com/d/in--indianapolis/food-festival/",
+      "enabled": true,
+      "description": "Food festivals and events"
     }
   ],
   "keywords": [
@@ -39,11 +86,31 @@
     "founder",
     "small business",
     "innovation",
-    "tech"
+    "tech",
+    "venture",
+    "investor",
+    "pitch",
+    "accelerator",
+    "incubator",
+    "food",
+    "festival",
+    "taste",
+    "culinary",
+    "chef",
+    "art",
+    "exhibit",
+    "gallery",
+    "trade show",
+    "expo",
+    "conference",
+    "workshop",
+    "summit"
   ],
   "excluded_keywords": [
     "webinar only",
     "online only",
-    "virtual only"
+    "virtual only",
+    "cancelled",
+    "postponed"
   ]
 }
