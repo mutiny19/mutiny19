@@ -522,9 +522,9 @@ function setupEventListeners() {
                 formSuccess.style.display = 'block';
                 badActorForm.reset();
 
-                // Reset to warning mode
-                if (warningBtn && reportTypeInput) {
-                    warningBtn.click();
+                // Reset to champion mode (default)
+                if (championBtn && reportTypeInput) {
+                    championBtn.click();
                 }
 
                 // Scroll to success message

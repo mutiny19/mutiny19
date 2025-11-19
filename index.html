@@ -249,35 +249,7 @@
                 <div class="guidelines-box">
                     <h3 id="guidelinesTitle">📜 Community Guidelines</h3>
 
-                    <div id="warningGuidelines">
-                        <div class="guideline-section">
-                            <h4 style="color: #ff8c00;">⚠️ WARNING REPORTS:</h4>
-                            <p style="font-size: 0.95rem; margin-bottom: 1rem; color: #a0d8e8;">Protect fellow founders by sharing experiences with bad actors:</p>
-                            <ul>
-                                <li>Unethical investors</li>
-                                <li>Vendors who didn't deliver</li>
-                                <li>Predatory advisors</li>
-                                <li>Partners who screwed you over</li>
-                                <li><strong>Actual experiences only</strong></li>
-                            </ul>
-                        </div>
-
-                        <div class="guideline-section">
-                            <h4 style="color: #dc143c;">❌ DON'T SHARE:</h4>
-                            <ul>
-                                <li>Rumors or hearsay</li>
-                                <li>Personal vendettas</li>
-                                <li>Competitor bashing</li>
-                                <li>"They were just annoying"</li>
-                            </ul>
-                        </div>
-
-                        <div class="legal-notice">
-                            <strong>⚖️ LEGAL:</strong> Stick to facts. Say "They did X" not "They're a scammer"
-                        </div>
-                    </div>
-
-                    <div id="championGuidelines" style="display: none;">
+                    <div id="championGuidelines">
                         <div class="guideline-section">
                             <h4 style="color: #00d9ff;">⭐ CELEBRATE CHAMPIONS:</h4>
                             <p style="font-size: 0.95rem; margin-bottom: 1rem; color: #a0d8e8;">Recognize those who truly support founders:</p>
@@ -304,6 +276,34 @@
                             <strong>💙 GRATITUDE:</strong> Celebrate those who make our ecosystem stronger
                         </div>
                     </div>
+
+                    <div id="warningGuidelines" style="display: none;">
+                        <div class="guideline-section">
+                            <h4 style="color: #ff8c00;">⚠️ WARNING REPORTS:</h4>
+                            <p style="font-size: 0.95rem; margin-bottom: 1rem; color: #a0d8e8;">Protect fellow founders by sharing experiences with bad actors:</p>
+                            <ul>
+                                <li>Unethical investors</li>
+                                <li>Vendors who didn't deliver</li>
+                                <li>Predatory advisors</li>
+                                <li>Partners who screwed you over</li>
+                                <li><strong>Actual experiences only</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="guideline-section">
+                            <h4 style="color: #dc143c;">❌ DON'T SHARE:</h4>
+                            <ul>
+                                <li>Rumors or hearsay</li>
+                                <li>Personal vendettas</li>
+                                <li>Competitor bashing</li>
+                                <li>"They were just annoying"</li>
+                            </ul>
+                        </div>
+
+                        <div class="legal-notice">
+                            <strong>⚖️ LEGAL:</strong> Stick to facts. Say "They did X" not "They're a scammer"
+                        </div>
+                    </div>
                 </div>
 
                 <div class="report-form-container">
@@ -312,10 +312,10 @@
                         <div class="form-group report-type-toggle">
                             <label style="margin-bottom: 1rem;">Report Type *</label>
                             <div class="toggle-buttons">
-                                <button type="button" id="warningBtn" class="toggle-btn active">⚠️ Warning</button>
-                                <button type="button" id="championBtn" class="toggle-btn">⭐ Champion</button>
+                                <button type="button" id="championBtn" class="toggle-btn active champion">⭐ Champion</button>
+                                <button type="button" id="warningBtn" class="toggle-btn">⚠️ Warning</button>
                             </div>
-                            <input type="hidden" id="reportType" name="reportType" value="warning">
+                            <input type="hidden" id="reportType" name="reportType" value="champion">
                         </div>
 
                         <div class="form-group">
@@ -343,8 +343,8 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="whatHappened" id="descriptionLabel">What Happened (Facts Only) *</label>
-                            <textarea id="whatHappened" name="whatHappened" rows="6" required placeholder="Describe what happened. Stick to verifiable facts."></textarea>
+                            <label for="whatHappened" id="descriptionLabel">Why They're a Champion *</label>
+                            <textarea id="whatHappened" name="whatHappened" rows="6" required placeholder="Describe how they went above and beyond to support you as a founder."></textarea>
                         </div>
 
                         <div class="form-group">
@@ -353,7 +353,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="evidence" id="evidenceLabel">Evidence (Optional)</label>
+                            <label for="evidence" id="evidenceLabel">Specific Examples (Optional)</label>
                             <textarea id="evidence" name="evidence" rows="3" placeholder="Links to documents, emails, or other evidence (if available)"></textarea>
                         </div>
 
@@ -367,7 +367,7 @@
                             <p style="font-size: 0.85rem; margin-top: 0.5rem; opacity: 0.8;">⏰ Rate limit: 1 submission per hour per browser</p>
                         </div>
 
-                        <button type="submit" class="submit-report-btn" id="submitBtn">⚓ Submit Anonymous Report ⚓</button>
+                        <button type="submit" class="submit-report-btn" id="submitBtn">⭐ Celebrate Champion</button>
                     </form>
 
                     <div id="formSuccess" class="form-message success" style="display: none;">
