@@ -13,6 +13,7 @@ import requests
 from bs4 import BeautifulSoup
 from dateutil import parser as date_parser
 import re
+from icalendar import Calendar
 
 # Playwright imports (optional - only used for JavaScript-heavy sites)
 try:
@@ -98,6 +99,8 @@ class EventScraper:
                     self.scrape_eventbrite(source)
                 elif source['type'] == 'meetup_group':
                     self.scrape_meetup(source)
+                elif source['type'] == 'ical':
+                    self.scrape_ical(source)
                 elif source['type'] == 'custom':
                     self.scrape_custom(source)
             except Exception as e:
@@ -201,6 +204,72 @@ class EventScraper:
 
         except Exception as e:
             print(f"Error fetching Meetup: {e}")
+
+    def scrape_ical(self, source: Dict[str, Any]):
+        """Scrape events from iCal/ICS feed"""
+        try:
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            }
+            response = requests.get(source['url'], headers=headers, timeout=10)
+
+            # Parse the iCal data
+            cal = Calendar.from_ical(response.content)
+
+            event_count = 0
+            for component in cal.walk():
+                if component.name == "VEVENT":
+                    try:
+                        title = str(component.get('summary', ''))
+
+                        # Get event start date
+                        dtstart = component.get('dtstart')
+                        if dtstart:
+                            event_date = dtstart.dt
+                            # Convert to datetime if it's just a date
+                            if not isinstance(event_date, datetime):
+                                # It's a date object, convert to datetime
+                                event_date = datetime.combine(event_date, datetime.min.time())
+
+                            # Remove timezone info for comparison with datetime.now()
+                            if event_date.tzinfo is not None:
+                                event_date = event_date.replace(tzinfo=None)
+                        else:
+                            continue
+
+                        # Skip past events
+                        if event_date < datetime.now():
+                            continue
+
+                        # Get description
+                        description = str(component.get('description', title))
+                        # Clean up description (remove HTML if present)
+                        description = re.sub(r'<[^>]+>', '', description)
+                        description = description.strip()[:500]
+
+                        # Get URL
+                        url = str(component.get('url', source['url']))
+
+                        event_data = {
+                            'title': title,
+                            'description': description,
+                            'url': url,
+                            'date': event_date.isoformat(),
+                            'source': source['name']
+                        }
+
+                        self._add_event(event_data)
+                        event_count += 1
+                        print(f"  Added: {title}")
+
+                    except Exception as e:
+                        print(f"  Error parsing iCal event: {e}")
+                        continue
+
+            print(f"Found {event_count} events in iCal feed")
+
+        except Exception as e:
+            print(f"Error fetching iCal feed: {e}")
 
     def scrape_custom(self, source: Dict[str, Any]):
         """Scrape custom sources (specific implementations)"""
@@ -1317,13 +1386,51 @@ class EventScraper:
                     'lng': -86.1581
                 }
 
-            # Set default features (would need actual detection from event description)
+            # Detect features from title and description
+            title_lower = event.get('title', '').lower()
+            desc_lower = event.get('description', '').lower()
+            combined_text = title_lower + ' ' + desc_lower
+
+            # Free event detection
+            free_keywords = ['free', 'no cost', 'complimentary', 'no charge', '$0']
+            is_free = any(keyword in combined_text for keyword in free_keywords)
+
+            # Food detection (keywords + contextual)
+            food_keywords = ['dinner', 'lunch', 'breakfast', 'meal', 'catering', 'buffet', 'food provided', 'pizza', 'sandwiches']
+            has_food = any(keyword in combined_text for keyword in food_keywords)
+
+            # Contextual food detection (event types that typically have food)
+            food_event_types = ['breakfast', 'brunch', 'lunch', 'dinner', 'banquet', 'feast', 'potluck', 'pitch-in', 'restaurant', 'steakhouse', 'bistro', 'cafe']
+            if not has_food:
+                has_food = any(event_type in combined_text for event_type in food_event_types)
+
+            # Appetizers detection
+            appetizer_keywords = ['appetizer', 'snacks', 'light refreshments', 'hors', 'finger food', 'apps']
+            has_appetizers = any(keyword in combined_text for keyword in appetizer_keywords)
+
+            # Networking events often have appetizers
+            networking_keywords = ['networking', 'mixer', 'meetup', 'social', 'reception']
+            if not has_appetizers and any(net in combined_text for net in networking_keywords):
+                has_appetizers = True  # Assume networking events have snacks
+
+            # Drinks detection
+            nonalc_keywords = ['coffee', 'refreshments', 'beverages', 'soft drink', 'water', 'soda', 'juice']
+            has_nonalc = any(keyword in combined_text for keyword in nonalc_keywords)
+
+            # Coffee-related events
+            coffee_events = ['coffee', '1 million cups', 'morning', 'cowork']
+            if not has_nonalc and any(coffee in combined_text for coffee in coffee_events):
+                has_nonalc = True
+
+            alc_keywords = ['happy hour', 'beer', 'wine', 'cocktails', 'bar', 'drinks', 'alcohol', 'brewery', 'spirits', 'party']
+            has_alcohol = any(keyword in combined_text for keyword in alc_keywords)
+
             event['features'] = {
-                'free': 'free' in event.get('title', '').lower(),
-                'food': 'food' in event.get('title', '').lower() or 'lunch' in event.get('title', '').lower(),
-                'appetizers': 'appetizer' in event.get('title', '').lower(),
-                'nonAlcoholDrinks': True,  # Assume most have non-alcoholic options
-                'alcoholDrinks': 'happy hour' in event.get('title', '').lower() or 'beer' in event.get('title', '').lower()
+                'free': is_free,
+                'food': has_food,
+                'appetizers': has_appetizers,
+                'nonAlcoholDrinks': has_nonalc,  # Only if explicitly mentioned
+                'alcoholDrinks': has_alcohol
             }
 
             # Add missing fields

@@ -328,15 +328,25 @@ function setupEventListeners() {
     const modal = document.getElementById('eventModal');
     const closeBtn = document.querySelector('.close');
 
-    closeBtn.onclick = () => {
-        modal.style.display = 'none';
-    };
+    if (closeBtn) {
+        closeBtn.onclick = () => {
+            modal.style.display = 'none';
+        };
+    }
 
+    // Close modal when clicking outside
     window.onclick = (event) => {
         if (event.target === modal) {
             modal.style.display = 'none';
         }
     };
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && modal.style.display === 'block') {
+            modal.style.display = 'none';
+        }
+    });
 
     // Story accordion
     const readMoreBtn = document.getElementById('readMoreBtn');

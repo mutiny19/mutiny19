@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-19T14:52:48.687058",
+  "lastUpdated": "2025-11-19T18:41:21.478475",
   "events": [
     {
       "title": "(Live Webinar) Careers in Tech: Exploring Indiana's Top Tech Opportunities",
@@ -17,11 +17,11 @@
         "free": false,
         "food": false,
         "appetizers": false,
-        "nonAlcoholDrinks": true,
+        "nonAlcoholDrinks": false,
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "4831341735832846431"
+      "id": "755308478313619590"
     },
     {
       "title": "2025 Healthy Care Healthy Costs Final Showcase Event",
@@ -39,11 +39,11 @@
         "free": false,
         "food": false,
         "appetizers": false,
-        "nonAlcoholDrinks": true,
+        "nonAlcoholDrinks": false,
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "8774560130871412454"
+      "id": "4910984009138394708"
     },
     {
       "title": "IndyHackers Fall Workshop",
@@ -61,11 +61,11 @@
         "free": false,
         "food": false,
         "appetizers": false,
-        "nonAlcoholDrinks": true,
+        "nonAlcoholDrinks": false,
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "2261572391871911121"
+      "id": "7399101198916609087"
     },
     {
       "title": "Rose-Hulman\u2019s Virtual STEM Career Fair",
@@ -83,11 +83,11 @@
         "free": false,
         "food": false,
         "appetizers": false,
-        "nonAlcoholDrinks": true,
+        "nonAlcoholDrinks": false,
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "4870652500267469668"
+      "id": "8405270937100575252"
     },
     {
       "title": "(Live Webinar) Careers in Tech: Exploring Indiana's Top Tech Opportunities",
@@ -105,11 +105,11 @@
         "free": false,
         "food": false,
         "appetizers": false,
-        "nonAlcoholDrinks": true,
+        "nonAlcoholDrinks": false,
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "4059805602747076921"
+      "id": "4360792080954460188"
     },
     {
       "title": "Trivia with Purpose: Leadership, Learning & Laughter",
@@ -127,11 +127,11 @@
         "free": false,
         "food": false,
         "appetizers": false,
-        "nonAlcoholDrinks": true,
+        "nonAlcoholDrinks": false,
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "1938776077042693737"
+      "id": "6110647934929122545"
     },
     {
       "title": "TECHPOINT: Joint Network Breakfast",
@@ -147,13 +147,13 @@
       },
       "features": {
         "free": false,
-        "food": false,
+        "food": true,
         "appetizers": false,
-        "nonAlcoholDrinks": true,
+        "nonAlcoholDrinks": false,
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "2823209982996671525"
+      "id": "5431073313582564318"
     },
     {
       "title": "Innovate Central Indiana - Indianapolis",
@@ -171,11 +171,11 @@
         "free": false,
         "food": false,
         "appetizers": false,
-        "nonAlcoholDrinks": true,
+        "nonAlcoholDrinks": false,
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "1657950505685562586"
+      "id": "7023234718694205651"
     },
     {
       "title": "Innovate Indiana Series: Central Indiana",
@@ -193,11 +193,11 @@
         "free": false,
         "food": false,
         "appetizers": false,
-        "nonAlcoholDrinks": true,
+        "nonAlcoholDrinks": false,
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "3373415596053942044"
+      "id": "8417379305870402131"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -214,12 +214,12 @@
       "features": {
         "free": false,
         "food": false,
-        "appetizers": false,
+        "appetizers": true,
         "nonAlcoholDrinks": true,
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "4189802532460467479"
+      "id": "8804927124397037304"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -236,12 +236,12 @@
       "features": {
         "free": false,
         "food": false,
-        "appetizers": false,
+        "appetizers": true,
         "nonAlcoholDrinks": true,
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "8582567152344029196"
+      "id": "2000664230077678704"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -258,12 +258,12 @@
       "features": {
         "free": false,
         "food": false,
-        "appetizers": false,
+        "appetizers": true,
         "nonAlcoholDrinks": true,
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "2025456092667043761"
+      "id": "1494510494956486083"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -280,12 +280,12 @@
       "features": {
         "free": false,
         "food": false,
-        "appetizers": false,
+        "appetizers": true,
         "nonAlcoholDrinks": true,
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "8855853416759006808"
+      "id": "8609291627728033799"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -302,18 +302,18 @@
       "features": {
         "free": false,
         "food": false,
-        "appetizers": false,
+        "appetizers": true,
         "nonAlcoholDrinks": true,
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "1895024918318405239"
+      "id": "548864292620848598"
     },
     {
-      "title": "CCA Cornhole",
-      "description": "CCA Cornhole. $55.00",
-      "url": "https://16tech.com/event/cca-cornhole-46/",
-      "date": "2025-11-19T18:30:00",
+      "title": "Speed Dating For Singles Ages 25-45",
+      "description": "Find love with in-person singles and matchmaking events curated by locals. Go on at least eight 5-minute dates in one night, matched with the most compatible people in the room!",
+      "url": "https://16tech.com/event/speed-dating-for-singles-ages-25-45/",
+      "date": "2025-12-02T18:00:00",
       "source": "16 Tech Innovation District",
       "location": {
         "name": "Indianapolis",
@@ -325,17 +325,17 @@
         "free": false,
         "food": false,
         "appetizers": false,
-        "nonAlcoholDrinks": true,
+        "nonAlcoholDrinks": false,
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "2189382752357782404"
+      "id": "5219166611459350058"
     },
     {
-      "title": "The 4th Annual Halloween Boo Bash",
-      "description": "The 4th Annual Halloween Boo Bash",
-      "url": "https://16tech.com/event/the-4th-annual-halloween-boo-bash/",
-      "date": "2025-11-19T16:30:00",
+      "title": "Holiday Night Market: Carols, Community & Celebration",
+      "description": "The Holiday Night Market is a festive evening event designed to bring the community together through shopping, music, and holiday cheer. Featuring live carolers, a roaming Black Santa, local vendors, the market offers families and individuals a joyful alternative to traditional holiday shopping. Its purpose is to support women- and minority-owned small businesses while creating a memorable seasonal tradition for the Indianapolis community.",
+      "url": "https://16tech.com/event/holiday-night-market-carols-community-celebration/",
+      "date": "2025-12-04T17:30:00",
       "source": "16 Tech Innovation District",
       "location": {
         "name": "Indianapolis",
@@ -347,11 +347,99 @@
         "free": false,
         "food": false,
         "appetizers": false,
-        "nonAlcoholDrinks": true,
+        "nonAlcoholDrinks": false,
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "676202861253290213"
+      "id": "936631570251503623"
+    },
+    {
+      "title": "Laser Engraving Class: Certification & Leather Keychain",
+      "description": "This session is designed to blend hands-on learning with creativity, catering to both beginners and advanced enthusiasts. \n\nWhat You\u2019ll Learn and Do:\n\nComprehensive Training:\u00a0Get certified in operating two state-of-the-art laser engravers \u2013 the Boss HP3655 and the Epilog Mini 24. The Boss HP3655 features a large 33.5\u2033 x 55\u2033 cut size with a 150-watt laser, perfect for bigger projects. Meanwhile, the compact Epilog Mini 24, with its 12\u2033 x 24\u2033 cut size and 60-watt laser, is ideal for smaller, intri",
+      "url": "https://16tech.com/event/laser-engraving-class-certification-leather-keychain-12/",
+      "date": "2025-12-06T13:00:00",
+      "source": "16 Tech Innovation District",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, IN",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": true,
+        "appetizers": false,
+        "nonAlcoholDrinks": false,
+        "alcoholDrinks": false
+      },
+      "organizer": "16 Tech Innovation District",
+      "id": "2285910776164714385"
+    },
+    {
+      "title": "Free Design Seminar - Laser Cut Holiday Ornaments",
+      "description": "Celebrate the season with creativity at Machyne Makerspace! \nIn this free design seminar, you\u2019ll learn how to create your own custom holiday ornaments using the precision of laser cutting. \nWhat You\u2019ll Learn: \n\nDesign basics using Adobe Illustrator\nHow to prepare files for laser cutting\nHands-on use of Machyne\u2019s CNC Laser Cutter\n\nCreate and take home your personalized holiday ornament! Perfect for gifts, decorating your home, or just getting into the festive spirit\u2014this class is open to all and ",
+      "url": "https://16tech.com/event/free-design-seminar-laser-cut-holiday-ornaments/",
+      "date": "2025-12-16T18:00:00",
+      "source": "16 Tech Innovation District",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, IN",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": true,
+        "food": false,
+        "appetizers": false,
+        "nonAlcoholDrinks": false,
+        "alcoholDrinks": false
+      },
+      "organizer": "16 Tech Innovation District",
+      "id": "1955108356158103707"
+    },
+    {
+      "title": "Big Gay Valentines",
+      "description": "The Big Gay Valentine Market returns February 7-8, 2026, at The Amp at 16 Tech, celebrating love in all its forms with the bold theme \u201cQueer Love is Revolutionary.\u201d Hosted by Indy Gay Market, this two-day event brings together over 100 LGBTQIA2S+ artists, makers, and community partners for a weekend full of creativity, connection, and joy. \nAttendees can expect a vibrant celebration of queer artistry and affection \u2014 from handmade gifts and romantic keepsakes to art that uplifts and inspires. Whe",
+      "url": "https://16tech.com/event/big-gay-valentines/",
+      "date": "2026-02-07T16:00:00",
+      "source": "16 Tech Innovation District",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, IN",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": false,
+        "nonAlcoholDrinks": false,
+        "alcoholDrinks": false
+      },
+      "organizer": "16 Tech Innovation District",
+      "id": "167317836494877533"
+    },
+    {
+      "title": "Big Gay Valentines",
+      "description": "The Big Gay Valentine Market returns February 7-8, 2026, at The Amp at 16 Tech, celebrating love in all its forms with the bold theme \u201cQueer Love is Revolutionary.\u201d Hosted by Indy Gay Market, this two-day event brings together over 100 LGBTQIA2S+ artists, makers, and community partners for a weekend full of creativity, connection, and joy. \nAttendees can expect a vibrant celebration of queer artistry and affection \u2014 from handmade gifts and romantic keepsakes to art that uplifts and inspires. Whe",
+      "url": "https://16tech.com/event/big-gay-valentines-2/",
+      "date": "2026-02-08T13:00:00",
+      "source": "16 Tech Innovation District",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, IN",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": false,
+        "nonAlcoholDrinks": false,
+        "alcoholDrinks": false
+      },
+      "organizer": "16 Tech Innovation District",
+      "id": "3839700298870673096"
     },
     {
       "title": "Launch Fishers Thanksgiving Community Pitch-In",
@@ -367,13 +455,13 @@
       },
       "features": {
         "free": false,
-        "food": false,
+        "food": true,
         "appetizers": false,
-        "nonAlcoholDrinks": true,
+        "nonAlcoholDrinks": false,
         "alcoholDrinks": false
       },
       "organizer": "Launch Fishers",
-      "id": "1285756485709424192"
+      "id": "3284968645001332147"
     },
     {
       "title": "Free Cowork Friday: November 2025",
@@ -395,7 +483,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Launch Fishers",
-      "id": "3900005181779839712"
+      "id": "2420537850218629963"
     },
     {
       "title": "Holiday Sweet Swap",
@@ -417,7 +505,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Launch Fishers",
-      "id": "4816593012234629602"
+      "id": "134500982810866350"
     },
     {
       "title": "Coffee & Conversation: December 2025",
@@ -439,7 +527,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Launch Fishers",
-      "id": "4913381630275694913"
+      "id": "7678874693368026291"
     },
     {
       "title": "Free Cowork Friday: December 2025",
@@ -461,7 +549,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Launch Fishers",
-      "id": "1937645064853870424"
+      "id": "7804183365567543737"
     },
     {
       "title": "Upcoming events.",
@@ -479,11 +567,11 @@
         "free": false,
         "food": false,
         "appetizers": false,
-        "nonAlcoholDrinks": true,
+        "nonAlcoholDrinks": false,
         "alcoholDrinks": false
       },
       "organizer": "Venture Club of Indiana",
-      "id": "4450977842142799965"
+      "id": "8062855756053585249"
     },
     {
       "title": "VCI Holiday Party at Ruth\u2019s Chris",
@@ -501,11 +589,11 @@
         "free": false,
         "food": false,
         "appetizers": false,
-        "nonAlcoholDrinks": true,
-        "alcoholDrinks": false
+        "nonAlcoholDrinks": false,
+        "alcoholDrinks": true
       },
       "organizer": "Venture Club of Indiana",
-      "id": "5256595689304184121"
+      "id": "6557516582013194913"
     }
   ]
 }

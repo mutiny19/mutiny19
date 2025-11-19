@@ -79,10 +79,10 @@
     },
     {
       "name": "16 Tech Innovation District",
-      "type": "custom",
-      "url": "https://16tech.com/calendar/",
+      "type": "ical",
+      "url": "https://16tech.com/?post_type=tribe_events&ical=1&eventDisplay=list",
       "enabled": true,
-      "description": "Events at Indianapolis innovation district"
+      "description": "Events at Indianapolis innovation district (using iCal feed for accurate dates)"
     },
     {
       "name": "The Mill at Dimension Mill",
