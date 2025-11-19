@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indiana Entrepreneur Events</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Indiana Entrepreneur Events</h1>
+        <p>Discover networking events, workshops, and meetups across Indiana</p>
+    </header>
+
+    <div class="container">
+        <aside class="filters">
+            <h2>Filters</h2>
+
+            <div class="filter-group">
+                <label>Date Range</label>
+                <input type="date" id="startDate" placeholder="Start Date">
+                <input type="date" id="endDate" placeholder="End Date">
+            </div>
+
+            <div class="filter-group">
+                <label>Event Type</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" id="filterFree" checked> Free Events</label>
+                    <label><input type="checkbox" id="filterFood" checked> Food</label>
+                    <label><input type="checkbox" id="filterAppetizers" checked> Appetizers</label>
+                    <label><input type="checkbox" id="filterNonAlcohol" checked> Non-Alcoholic Drinks</label>
+                    <label><input type="checkbox" id="filterAlcohol" checked> Alcoholic Drinks</label>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <label>View Mode</label>
+                <div class="view-toggle">
+                    <button id="mapViewBtn" class="active">Map View</button>
+                    <button id="listViewBtn">List View</button>
+                    <button id="bothViewBtn">Both</button>
+                </div>
+            </div>
+
+            <button id="clearFilters" class="btn-secondary">Clear Filters</button>
+        </aside>
+
+        <main class="content">
+            <div id="mapContainer" class="map-container">
+                <div id="map"></div>
+            </div>
+
+            <div id="listContainer" class="list-container" style="display: none;">
+                <div id="eventsList" class="events-list"></div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Event Details Modal -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Data updated automatically. Last update: <span id="lastUpdate">Loading...</span></p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

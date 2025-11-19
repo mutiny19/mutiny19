@@ -1,0 +1,361 @@
+// Global variables
+let map;
+let eventsData = [];
+let markers = [];
+let currentView = 'map'; // 'map', 'list', or 'both'
+
+// Initialize the application
+document.addEventListener('DOMContentLoaded', async () => {
+    await loadEvents();
+    initializeMap();
+    setupEventListeners();
+    applyFilters();
+});
+
+// Load events from JSON file
+async function loadEvents() {
+    try {
+        const response = await fetch('events.json');
+        const data = await response.json();
+        eventsData = data.events;
+
+        // Update last updated timestamp
+        const lastUpdate = new Date(data.lastUpdated);
+        document.getElementById('lastUpdate').textContent = lastUpdate.toLocaleDateString();
+    } catch (error) {
+        console.error('Error loading events:', error);
+        document.getElementById('lastUpdate').textContent = 'Error loading data';
+    }
+}
+
+// Initialize Leaflet map centered on Indiana
+function initializeMap() {
+    map = L.map('map').setView([39.7684, -86.1581], 7); // Centered on Indiana
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 19
+    }).addTo(map);
+}
+
+// Create custom icon based on event features
+function createCustomIcon(event) {
+    let iconHtml = '<div class="custom-marker">';
+    const features = event.features;
+
+    // Build icon symbols
+    const symbols = [];
+    if (features.free) symbols.push('💰');
+    if (features.food) symbols.push('🍽️');
+    if (features.appetizers) symbols.push('🍕');
+    if (features.nonAlcoholDrinks) symbols.push('🥤');
+    if (features.alcoholDrinks) symbols.push('🍺');
+
+    iconHtml = `<div style="font-size: 24px; text-align: center;">${symbols[0] || '📍'}</div>`;
+
+    return L.divIcon({
+        html: iconHtml,
+        className: 'custom-icon',
+        iconSize: [40, 40],
+        iconAnchor: [20, 40],
+        popupAnchor: [0, -40]
+    });
+}
+
+// Add markers to map
+function addMarkersToMap(events) {
+    // Clear existing markers
+    markers.forEach(marker => map.removeLayer(marker));
+    markers = [];
+
+    events.forEach(event => {
+        const marker = L.marker([event.location.lat, event.location.lng], {
+            icon: createCustomIcon(event)
+        }).addTo(map);
+
+        // Create popup content
+        const popupContent = createPopupContent(event);
+        marker.bindPopup(popupContent);
+
+        // Store event data with marker
+        marker.eventData = event;
+        markers.push(marker);
+    });
+
+    // Adjust map to fit all markers if there are any
+    if (markers.length > 0) {
+        const group = L.featureGroup(markers);
+        map.fitBounds(group.getBounds().pad(0.1));
+    }
+}
+
+// Create popup content for map markers
+function createPopupContent(event) {
+    const date = new Date(event.date);
+    const tags = getEventTags(event);
+
+    return `
+        <div class="popup-content">
+            <h3>${event.title}</h3>
+            <p><strong>📅 ${date.toLocaleDateString()}</strong> at ${date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</p>
+            <p>📍 ${event.location.name}</p>
+            <div class="event-meta">${tags}</div>
+            <button class="popup-button" onclick="showEventDetails('${event.id}')">View Details</button>
+        </div>
+    `;
+}
+
+// Get event tags HTML
+function getEventTags(event) {
+    const tags = [];
+    if (event.features.free) tags.push('<span class="event-tag free">💰 Free</span>');
+    if (event.features.food) tags.push('<span class="event-tag food">🍽️ Food</span>');
+    if (event.features.appetizers) tags.push('<span class="event-tag appetizers">🍕 Appetizers</span>');
+    if (event.features.nonAlcoholDrinks) tags.push('<span class="event-tag non-alcohol">🥤 Non-Alcoholic</span>');
+    if (event.features.alcoholDrinks) tags.push('<span class="event-tag alcohol">🍺 Alcohol</span>');
+    return tags.join('');
+}
+
+// Display events in list view
+function displayEventsList(events) {
+    const listContainer = document.getElementById('eventsList');
+
+    if (events.length === 0) {
+        listContainer.innerHTML = '<p style="padding: 2rem; text-align: center; color: #999;">No events found matching your filters.</p>';
+        return;
+    }
+
+    // Sort events by date
+    const sortedEvents = [...events].sort((a, b) => new Date(a.date) - new Date(b.date));
+
+    const eventsHtml = sortedEvents.map(event => {
+        const date = new Date(event.date);
+        const endDate = event.endDate ? new Date(event.endDate) : null;
+        const tags = getEventTags(event);
+
+        return `
+            <div class="event-card" onclick="showEventDetails('${event.id}')">
+                <h3>${event.title}</h3>
+                <p>${event.description}</p>
+                <p><strong>📅 ${date.toLocaleDateString()}</strong> ${date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}${endDate ? ' - ' + endDate.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}) : ''}</p>
+                <p>📍 ${event.location.name}, ${event.location.address}</p>
+                <div class="event-meta">${tags}</div>
+            </div>
+        `;
+    }).join('');
+
+    listContainer.innerHTML = eventsHtml;
+}
+
+// Show event details in modal
+function showEventDetails(eventId) {
+    const event = eventsData.find(e => e.id === eventId);
+    if (!event) return;
+
+    const modal = document.getElementById('eventModal');
+    const modalBody = document.getElementById('modalBody');
+
+    const date = new Date(event.date);
+    const endDate = event.endDate ? new Date(event.endDate) : null;
+    const tags = getEventTags(event);
+
+    modalBody.innerHTML = `
+        <h2>${event.title}</h2>
+        <div class="event-details">
+            <p><strong>📅 Date:</strong> ${date.toLocaleDateString()} ${date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}${endDate ? ' - ' + endDate.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}) : ''}</p>
+            <p><strong>📍 Location:</strong> ${event.location.name}<br>${event.location.address}</p>
+            <p><strong>👥 Organizer:</strong> ${event.organizer}</p>
+            <p><strong>ℹ️ Description:</strong><br>${event.description}</p>
+            <div class="event-meta">${tags}</div>
+            ${event.url ? `<p><a href="${event.url}" target="_blank" class="btn-calendar" style="margin-top: 1rem;">Visit Event Page</a></p>` : ''}
+            <div class="calendar-buttons">
+                <button class="btn-calendar" onclick="addToGoogleCalendar('${event.id}')">Add to Google Calendar</button>
+                <button class="btn-calendar" onclick="downloadICS('${event.id}')">Download iCal</button>
+            </div>
+        </div>
+    `;
+
+    modal.style.display = 'block';
+}
+
+// Add to Google Calendar
+function addToGoogleCalendar(eventId) {
+    const event = eventsData.find(e => e.id === eventId);
+    if (!event) return;
+
+    const startDate = new Date(event.date);
+    const endDate = event.endDate ? new Date(event.endDate) : new Date(startDate.getTime() + 2 * 60 * 60 * 1000);
+
+    const formatDate = (date) => {
+        return date.toISOString().replace(/-|:|\.\d\d\d/g, '');
+    };
+
+    const url = new URL('https://calendar.google.com/calendar/render');
+    url.searchParams.append('action', 'TEMPLATE');
+    url.searchParams.append('text', event.title);
+    url.searchParams.append('dates', `${formatDate(startDate)}/${formatDate(endDate)}`);
+    url.searchParams.append('details', event.description);
+    url.searchParams.append('location', `${event.location.name}, ${event.location.address}`);
+
+    window.open(url.toString(), '_blank');
+}
+
+// Download ICS file
+function downloadICS(eventId) {
+    const event = eventsData.find(e => e.id === eventId);
+    if (!event) return;
+
+    const startDate = new Date(event.date);
+    const endDate = event.endDate ? new Date(event.endDate) : new Date(startDate.getTime() + 2 * 60 * 60 * 1000);
+
+    const formatDate = (date) => {
+        return date.toISOString().replace(/-|:|\.\d{3}/g, '');
+    };
+
+    const icsContent = `BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Indiana Entrepreneur Events//EN
+BEGIN:VEVENT
+UID:${event.id}@indiana-events.com
+DTSTAMP:${formatDate(new Date())}
+DTSTART:${formatDate(startDate)}
+DTEND:${formatDate(endDate)}
+SUMMARY:${event.title}
+DESCRIPTION:${event.description.replace(/\n/g, '\\n')}
+LOCATION:${event.location.name}, ${event.location.address}
+URL:${event.url || ''}
+END:VEVENT
+END:VCALENDAR`;
+
+    const blob = new Blob([icsContent], { type: 'text/calendar' });
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `${event.title.replace(/[^a-z0-9]/gi, '_').toLowerCase()}.ics`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
+}
+
+// Apply filters
+function applyFilters() {
+    const startDate = document.getElementById('startDate').value;
+    const endDate = document.getElementById('endDate').value;
+    const filterFree = document.getElementById('filterFree').checked;
+    const filterFood = document.getElementById('filterFood').checked;
+    const filterAppetizers = document.getElementById('filterAppetizers').checked;
+    const filterNonAlcohol = document.getElementById('filterNonAlcohol').checked;
+    const filterAlcohol = document.getElementById('filterAlcohol').checked;
+
+    let filteredEvents = eventsData.filter(event => {
+        const eventDate = new Date(event.date);
+
+        // Date filtering
+        if (startDate && eventDate < new Date(startDate)) return false;
+        if (endDate && eventDate > new Date(endDate + 'T23:59:59')) return false;
+
+        // Feature filtering (show if ANY checked feature matches)
+        const hasCheckedFeature =
+            (filterFree && event.features.free) ||
+            (filterFood && event.features.food) ||
+            (filterAppetizers && event.features.appetizers) ||
+            (filterNonAlcohol && event.features.nonAlcoholDrinks) ||
+            (filterAlcohol && event.features.alcoholDrinks);
+
+        // If no filters are checked, show all events
+        const anyFilterChecked = filterFree || filterFood || filterAppetizers || filterNonAlcohol || filterAlcohol;
+
+        return !anyFilterChecked || hasCheckedFeature;
+    });
+
+    // Update map
+    addMarkersToMap(filteredEvents);
+
+    // Update list view
+    displayEventsList(filteredEvents);
+}
+
+// Setup event listeners
+function setupEventListeners() {
+    // Filter listeners
+    document.getElementById('startDate').addEventListener('change', applyFilters);
+    document.getElementById('endDate').addEventListener('change', applyFilters);
+    document.getElementById('filterFree').addEventListener('change', applyFilters);
+    document.getElementById('filterFood').addEventListener('change', applyFilters);
+    document.getElementById('filterAppetizers').addEventListener('change', applyFilters);
+    document.getElementById('filterNonAlcohol').addEventListener('change', applyFilters);
+    document.getElementById('filterAlcohol').addEventListener('change', applyFilters);
+
+    // Clear filters
+    document.getElementById('clearFilters').addEventListener('click', () => {
+        document.getElementById('startDate').value = '';
+        document.getElementById('endDate').value = '';
+        document.getElementById('filterFree').checked = true;
+        document.getElementById('filterFood').checked = true;
+        document.getElementById('filterAppetizers').checked = true;
+        document.getElementById('filterNonAlcohol').checked = true;
+        document.getElementById('filterAlcohol').checked = true;
+        applyFilters();
+    });
+
+    // View toggle listeners
+    document.getElementById('mapViewBtn').addEventListener('click', () => {
+        setView('map');
+    });
+
+    document.getElementById('listViewBtn').addEventListener('click', () => {
+        setView('list');
+    });
+
+    document.getElementById('bothViewBtn').addEventListener('click', () => {
+        setView('both');
+    });
+
+    // Modal close
+    const modal = document.getElementById('eventModal');
+    const closeBtn = document.querySelector('.close');
+
+    closeBtn.onclick = () => {
+        modal.style.display = 'none';
+    };
+
+    window.onclick = (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    };
+}
+
+// Set view mode
+function setView(mode) {
+    currentView = mode;
+    const mapContainer = document.getElementById('mapContainer');
+    const listContainer = document.getElementById('listContainer');
+
+    // Update button states
+    document.querySelectorAll('.view-toggle button').forEach(btn => btn.classList.remove('active'));
+
+    if (mode === 'map') {
+        mapContainer.style.display = 'block';
+        listContainer.style.display = 'none';
+        document.getElementById('mapViewBtn').classList.add('active');
+        setTimeout(() => map.invalidateSize(), 100);
+    } else if (mode === 'list') {
+        mapContainer.style.display = 'none';
+        listContainer.style.display = 'block';
+        document.getElementById('listViewBtn').classList.add('active');
+    } else {
+        mapContainer.style.display = 'block';
+        listContainer.style.display = 'block';
+        mapContainer.style.height = '400px';
+        listContainer.style.height = '400px';
+        document.getElementById('bothViewBtn').classList.add('active');
+        setTimeout(() => map.invalidateSize(), 100);
+    }
+}
+
+// Make functions globally accessible for onclick handlers
+window.showEventDetails = showEventDetails;
+window.addToGoogleCalendar = addToGoogleCalendar;
+window.downloadICS = downloadICS;

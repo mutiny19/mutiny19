@@ -1,0 +1,49 @@
+{
+  "sources": [
+    {
+      "name": "Eventbrite Indiana Entrepreneur Events",
+      "type": "eventbrite_search",
+      "url": "https://www.eventbrite.com/d/in--indiana/entrepreneurship/",
+      "enabled": true
+    },
+    {
+      "name": "Meetup.com Indianapolis Entrepreneurs",
+      "type": "meetup_group",
+      "url": "https://www.meetup.com/find/?location=us--in--indianapolis&source=EVENTS&keywords=entrepreneur",
+      "enabled": true
+    },
+    {
+      "name": "TechPoint Events",
+      "type": "custom",
+      "url": "https://techpoint.org/events/",
+      "enabled": true
+    },
+    {
+      "name": "Startup Grind Indianapolis",
+      "type": "custom",
+      "url": "https://www.startupgrind.com/indianapolis/",
+      "enabled": true
+    },
+    {
+      "name": "1 Million Cups Indianapolis",
+      "type": "custom",
+      "url": "https://www.1millioncups.com/indianapolis",
+      "enabled": true
+    }
+  ],
+  "keywords": [
+    "entrepreneur",
+    "startup",
+    "networking",
+    "business",
+    "founder",
+    "small business",
+    "innovation",
+    "tech"
+  ],
+  "excluded_keywords": [
+    "webinar only",
+    "online only",
+    "virtual only"
+  ]
+}
