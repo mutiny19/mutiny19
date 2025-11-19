@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-19T12:55:30.744550",
+  "lastUpdated": "2025-11-19T14:52:48.687058",
   "events": [
     {
       "title": "(Live Webinar) Careers in Tech: Exploring Indiana's Top Tech Opportunities",
@@ -21,7 +21,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "8285625378933166852"
+      "id": "4831341735832846431"
     },
     {
       "title": "2025 Healthy Care Healthy Costs Final Showcase Event",
@@ -43,7 +43,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "9190918282587307184"
+      "id": "8774560130871412454"
     },
     {
       "title": "IndyHackers Fall Workshop",
@@ -65,7 +65,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "6991681380582521596"
+      "id": "2261572391871911121"
     },
     {
       "title": "Rose-Hulman\u2019s Virtual STEM Career Fair",
@@ -87,7 +87,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "7353782350820128748"
+      "id": "4870652500267469668"
     },
     {
       "title": "(Live Webinar) Careers in Tech: Exploring Indiana's Top Tech Opportunities",
@@ -109,7 +109,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "692259668504367356"
+      "id": "4059805602747076921"
     },
     {
       "title": "Trivia with Purpose: Leadership, Learning & Laughter",
@@ -131,7 +131,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "7111374724662731835"
+      "id": "1938776077042693737"
     },
     {
       "title": "TECHPOINT: Joint Network Breakfast",
@@ -153,7 +153,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "7328551911506491042"
+      "id": "2823209982996671525"
     },
     {
       "title": "Innovate Central Indiana - Indianapolis",
@@ -175,7 +175,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "3759613662883975674"
+      "id": "1657950505685562586"
     },
     {
       "title": "Innovate Indiana Series: Central Indiana",
@@ -197,7 +197,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "7034556176731368474"
+      "id": "3373415596053942044"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -219,7 +219,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "1657959478345341869"
+      "id": "4189802532460467479"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -241,7 +241,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "6724328301219765453"
+      "id": "8582567152344029196"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -263,7 +263,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "82404521209104117"
+      "id": "2025456092667043761"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -285,7 +285,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "1137865095453800816"
+      "id": "8855853416759006808"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -307,7 +307,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "492539344672060614"
+      "id": "1895024918318405239"
     },
     {
       "title": "CCA Cornhole",
@@ -329,7 +329,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "916511078337849303"
+      "id": "2189382752357782404"
     },
     {
       "title": "The 4th Annual Halloween Boo Bash",
@@ -351,29 +351,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "2025654128673664524"
-    },
-    {
-      "title": "Welding & CNC Plasma Cutter Workshop",
-      "description": "Welding & CNC Plasma Cutter Workshop. $65",
-      "url": "https://16tech.com/event/welding-cnc-plasma-cutter-workshop-2/",
-      "date": "2025-11-19T13:00:00",
-      "source": "16 Tech Innovation District",
-      "location": {
-        "name": "Indianapolis",
-        "address": "Indianapolis, IN",
-        "lat": 39.7684,
-        "lng": -86.1581
-      },
-      "features": {
-        "free": false,
-        "food": false,
-        "appetizers": false,
-        "nonAlcoholDrinks": true,
-        "alcoholDrinks": false
-      },
-      "organizer": "16 Tech Innovation District",
-      "id": "6229756441162593229"
+      "id": "676202861253290213"
     },
     {
       "title": "Launch Fishers Thanksgiving Community Pitch-In",
@@ -395,7 +373,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Launch Fishers",
-      "id": "8066388002655241410"
+      "id": "1285756485709424192"
     },
     {
       "title": "Free Cowork Friday: November 2025",
@@ -417,7 +395,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Launch Fishers",
-      "id": "2301087900718745080"
+      "id": "3900005181779839712"
     },
     {
       "title": "Holiday Sweet Swap",
@@ -439,7 +417,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Launch Fishers",
-      "id": "3461788066655670513"
+      "id": "4816593012234629602"
     },
     {
       "title": "Coffee & Conversation: December 2025",
@@ -461,7 +439,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Launch Fishers",
-      "id": "5730848127667203361"
+      "id": "4913381630275694913"
     },
     {
       "title": "Free Cowork Friday: December 2025",
@@ -483,7 +461,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Launch Fishers",
-      "id": "6371333273407698166"
+      "id": "1937645064853870424"
     },
     {
       "title": "Upcoming events.",
@@ -505,7 +483,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Venture Club of Indiana",
-      "id": "1123052048786450144"
+      "id": "4450977842142799965"
     },
     {
       "title": "VCI Holiday Party at Ruth\u2019s Chris",
@@ -527,7 +505,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Venture Club of Indiana",
-      "id": "7270391112157659943"
+      "id": "5256595689304184121"
     }
   ]
 }
