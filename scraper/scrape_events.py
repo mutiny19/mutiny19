@@ -477,17 +477,40 @@ class EventScraper:
                         date_str = time_elem.get('datetime', '') or time_elem.get_text(strip=True)
                         event_date = self._parse_date(date_str)
 
+                    # If we have a URL, fetch the individual event page for better date info
+                    description = title
+                    if url and url != source['url']:
+                        try:
+                            # Fetch individual event page
+                            event_html = self.fetch_with_playwright(url, wait_time=2000)
+                            if event_html:
+                                event_soup = BeautifulSoup(event_html, 'html.parser')
+
+                                # Look for more specific date/time info on event page
+                                event_time = event_soup.find('time', class_=re.compile('tribe-events-start-date'))
+                                if event_time:
+                                    better_date_str = event_time.get('datetime', '') or event_time.get_text(strip=True)
+                                    better_date = self._parse_date(better_date_str)
+                                    if better_date:
+                                        event_date = better_date
+
+                                # Get description from event page
+                                desc_elem = event_soup.find('div', class_=re.compile('tribe-events-content|entry-content'))
+                                if desc_elem:
+                                    desc_text = desc_elem.get_text(separator=' ', strip=True)
+                                    description = desc_text[:500] + '...' if len(desc_text) > 500 else desc_text
+                        except Exception as e:
+                            print(f"  Could not fetch event page for {title}: {e}")
+                            pass
+
                     if not event_date or event_date < datetime.now():
                         continue
-
-                    # Description - use title for now (could fetch individual page for more details)
-                    description = title
 
                     # Check for cost/free
                     cost_elem = item.find(class_=re.compile('cost|price'))
                     if cost_elem:
                         cost_text = cost_elem.get_text(strip=True)
-                        description = f"{title}. {cost_text}"
+                        description = f"{description}. {cost_text}"
 
                     event_data = {
                         'title': title,
