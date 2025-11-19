@@ -152,6 +152,14 @@ class EventScraper:
             self.scrape_techpoint(source)
         elif '1 Million Cups' in name or '1MC' in name:
             self.scrape_1mc(source)
+        elif '16 Tech' in name:
+            self.scrape_16tech(source)
+        elif 'Dimension Mill' in name or 'The Mill' in name:
+            self.scrape_dimension_mill(source)
+        elif 'Launch Fishers' in name:
+            self.scrape_launch_fishers(source)
+        elif 'Venture Club' in name:
+            self.scrape_venture_club(source)
         else:
             print(f"No custom scraper implemented for {name}")
 
@@ -339,6 +347,350 @@ class EventScraper:
             next_wed = start_month + timedelta(days=days_ahead)
             return next_wed.replace(hour=9, minute=0, second=0, microsecond=0)
 
+    def scrape_16tech(self, source: Dict[str, Any]):
+        """Scrape 16 Tech Innovation District events (Tribe Events Calendar)"""
+        try:
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            }
+            response = requests.get(source['url'], headers=headers, timeout=10)
+            soup = BeautifulSoup(response.content, 'html.parser')
+
+            # 16 Tech uses Tribe Events - look for event containers
+            event_items = soup.find_all('div', class_='event')
+
+            print(f"Found {len(event_items)} potential events at 16 Tech")
+
+            for item in event_items[:15]:
+                try:
+                    # Find title link
+                    link = item.find('a', href=True)
+                    if not link:
+                        continue
+
+                    title = link.get_text(strip=True)
+                    url = link['href']
+                    if url.startswith('/'):
+                        url = 'https://16tech.com' + url
+
+                    # Find date - look for paragraph with date/time
+                    date_elem = item.find('p')
+                    event_date = None
+                    if date_elem:
+                        date_str = date_elem.get_text(strip=True)
+                        # Parse format like "November 20 @ 12:00 pm - 1:30 pm"
+                        event_date = self._parse_date(date_str)
+
+                    if not event_date or event_date < datetime.now():
+                        continue
+
+                    # Description is either in a p tag or title itself
+                    desc_paras = item.find_all('p')
+                    description = title
+                    if len(desc_paras) > 1:
+                        description = desc_paras[1].get_text(strip=True)[:500]
+
+                    event_data = {
+                        'title': title,
+                        'description': description,
+                        'url': url,
+                        'date': event_date.isoformat(),
+                        'source': source['name']
+                    }
+
+                    self._add_event(event_data)
+                    print(f"  Added: {title}")
+
+                except Exception as e:
+                    print(f"  Error parsing 16 Tech event: {e}")
+                    continue
+
+        except Exception as e:
+            print(f"Error fetching 16 Tech: {e}")
+
+    def scrape_dimension_mill(self, source: Dict[str, Any]):
+        """Scrape The Mill at Dimension Mill events"""
+        try:
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            }
+            response = requests.get(source['url'], headers=headers, timeout=10)
+            soup = BeautifulSoup(response.content, 'html.parser')
+
+            # Look for event links or calendar
+            event_links = soup.find_all('a', href=re.compile('event|calendar'))
+
+            print(f"Found {len(event_links)} potential event links at The Mill")
+
+            for link in event_links[:10]:
+                try:
+                    url = link.get('href', '')
+                    if url.startswith('/'):
+                        url = 'https://www.dimensionmill.org' + url
+
+                    title = link.get_text(strip=True)
+                    if not title or len(title) < 5:
+                        continue
+
+                    # Try to fetch individual event page
+                    try:
+                        event_response = requests.get(url, headers=headers, timeout=8)
+                        event_soup = BeautifulSoup(event_response.content, 'html.parser')
+
+                        # Look for date
+                        date_elem = event_soup.find('time') or event_soup.find(class_=re.compile('date'))
+                        event_date = None
+                        if date_elem:
+                            date_str = date_elem.get('datetime', '') or date_elem.get_text(strip=True)
+                            event_date = self._parse_date(date_str)
+
+                        if not event_date or event_date < datetime.now():
+                            continue
+
+                        # Look for description
+                        desc_elem = event_soup.find(class_=re.compile('description|content|entry'))
+                        description = desc_elem.get_text(strip=True)[:500] if desc_elem else title
+
+                        event_data = {
+                            'title': title,
+                            'description': description,
+                            'url': url,
+                            'date': event_date.isoformat(),
+                            'source': source['name']
+                        }
+
+                        self._add_event(event_data)
+                        print(f"  Added: {title}")
+
+                    except Exception as e:
+                        print(f"  Could not fetch event details: {e}")
+                        continue
+
+                except Exception as e:
+                    print(f"  Error parsing Mill event: {e}")
+                    continue
+
+        except Exception as e:
+            print(f"Error fetching The Mill: {e}")
+
+    def scrape_launch_fishers(self, source: Dict[str, Any]):
+        """Scrape Launch Fishers events calendar"""
+        try:
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            }
+            response = requests.get(source['url'], headers=headers, timeout=10)
+            soup = BeautifulSoup(response.content, 'html.parser')
+
+            # Look for event links and headings
+            event_links = soup.find_all('a', href=re.compile('/event/'))
+
+            print(f"Found {len(event_links)} potential events at Launch Fishers")
+
+            seen_urls = set()
+            for link in event_links[:15]:
+                try:
+                    url = link['href']
+                    if not url.startswith('http'):
+                        url = 'https://www.launchfishers.com' + url
+
+                    # Avoid duplicates
+                    if url in seen_urls:
+                        continue
+                    seen_urls.add(url)
+
+                    # Find title - might be in h3 or the link text
+                    title = link.get_text(strip=True)
+                    if not title or len(title) < 5:
+                        # Look for h3 near this link
+                        h3 = link.find_parent().find('h3')
+                        if h3:
+                            title = h3.get_text(strip=True)
+
+                    if not title or len(title) < 5:
+                        continue
+
+                    # Look for date near the link - format "Month Day @ Time"
+                    parent = link.find_parent()
+                    date_text = parent.get_text(strip=True) if parent else ''
+
+                    # Try to extract date using regex
+                    date_match = re.search(r'([A-Z][a-z]+\s+\d+)\s*@\s*(\d+:\d+\s*[ap]m)', date_text, re.IGNORECASE)
+                    event_date = None
+                    if date_match:
+                        date_str = date_match.group(0)
+                        event_date = self._parse_date(date_str)
+
+                    if not event_date or event_date < datetime.now():
+                        continue
+
+                    # Description - use title for now
+                    description = title
+
+                    event_data = {
+                        'title': title,
+                        'description': description,
+                        'url': url,
+                        'date': event_date.isoformat(),
+                        'source': source['name']
+                    }
+
+                    self._add_event(event_data)
+                    print(f"  Added: {title}")
+
+                except Exception as e:
+                    print(f"  Error parsing Launch Fishers event: {e}")
+                    continue
+
+        except Exception as e:
+            print(f"Error fetching Launch Fishers: {e}")
+
+    def scrape_indiana_iot(self, source: Dict[str, Any]):
+        """Scrape Indiana IoT Lab events"""
+        try:
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            }
+            response = requests.get(source['url'], headers=headers, timeout=10)
+            soup = BeautifulSoup(response.content, 'html.parser')
+
+            # Look for event listings
+            event_items = soup.find_all(['article', 'div'], class_=re.compile('event|post|item'))
+
+            print(f"Found {len(event_items)} potential events at Indiana IoT Lab")
+
+            for item in event_items[:10]:
+                try:
+                    # Find title
+                    title_elem = item.find(['h1', 'h2', 'h3', 'h4'])
+                    if not title_elem:
+                        continue
+
+                    title = title_elem.get_text(strip=True)
+
+                    # Find link
+                    link = item.find('a', href=True)
+                    url = link['href'] if link else source['url']
+                    if url.startswith('/'):
+                        url = 'https://indianaiotlab.com' + url
+
+                    # Find date
+                    date_elem = item.find('time') or item.find(class_=re.compile('date'))
+                    event_date = None
+                    if date_elem:
+                        date_str = date_elem.get('datetime', '') or date_elem.get_text(strip=True)
+                        event_date = self._parse_date(date_str)
+
+                    if not event_date or event_date < datetime.now():
+                        continue
+
+                    # Find description
+                    desc_elem = item.find('p') or item.find(class_=re.compile('excerpt|description'))
+                    description = desc_elem.get_text(strip=True)[:500] if desc_elem else title
+
+                    event_data = {
+                        'title': title,
+                        'description': description,
+                        'url': url,
+                        'date': event_date.isoformat(),
+                        'source': source['name']
+                    }
+
+                    self._add_event(event_data)
+                    print(f"  Added: {title}")
+
+                except Exception as e:
+                    print(f"  Error parsing IoT Lab event: {e}")
+                    continue
+
+        except Exception as e:
+            print(f"Error fetching Indiana IoT Lab: {e}")
+
+    def scrape_venture_club(self, source: Dict[str, Any]):
+        """Scrape Venture Club of Indiana events (Squarespace eventlist)"""
+        try:
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            }
+            response = requests.get(source['url'], headers=headers, timeout=10)
+            soup = BeautifulSoup(response.content, 'html.parser')
+
+            # Venture Club uses Squarespace eventlist structure
+            event_items = soup.find_all('div', class_='eventlist-item')
+
+            print(f"Found {len(event_items)} potential events at Venture Club")
+
+            for item in event_items[:15]:
+                try:
+                    # Find title
+                    title_elem = item.find('div', class_='eventlist-title')
+                    if not title_elem:
+                        continue
+
+                    title_link = title_elem.find('a', href=True)
+                    if not title_link:
+                        continue
+
+                    title = title_link.get_text(strip=True)
+                    url = title_link['href']
+                    if url.startswith('/'):
+                        url = 'https://www.ventureclub.org' + url
+
+                    # Find date - Squarespace format has month and day separately
+                    date_container = item.find('div', class_='eventlist-date')
+                    month_elem = date_container.find('span', class_='eventlist-month') if date_container else None
+                    day_elem = date_container.find('span', class_='eventlist-day') if date_container else None
+
+                    # Also look in eventlist-meta for full date
+                    meta_elem = item.find('ul', class_='eventlist-meta')
+                    event_date = None
+
+                    if meta_elem:
+                        # First li usually has full date like "Wednesday, December 3, 2025"
+                        date_li = meta_elem.find('li')
+                        if date_li:
+                            date_str = date_li.get_text(strip=True)
+                            event_date = self._parse_date(date_str)
+
+                    # Fallback to month + day if full date parsing failed
+                    if not event_date and month_elem and day_elem:
+                        month = month_elem.get_text(strip=True)
+                        day = day_elem.get_text(strip=True)
+                        year = datetime.now().year
+                        if datetime.now().month == 12 and month in ['Jan', 'Feb', 'Mar']:
+                            year += 1
+                        date_str = f"{month} {day}, {year}"
+                        event_date = self._parse_date(date_str)
+
+                    if not event_date or event_date < datetime.now():
+                        continue
+
+                    # Description from meta or use title
+                    description = title
+                    if meta_elem:
+                        # Get location or other details
+                        meta_items = meta_elem.find_all('li')
+                        if len(meta_items) > 2:
+                            description = f"{title}. {meta_items[2].get_text(strip=True)}"[:500]
+
+                    event_data = {
+                        'title': title,
+                        'description': description,
+                        'url': url,
+                        'date': event_date.isoformat(),
+                        'source': source['name']
+                    }
+
+                    self._add_event(event_data)
+                    print(f"  Added: {title}")
+
+                except Exception as e:
+                    print(f"  Error parsing Venture Club event: {e}")
+                    continue
+
+        except Exception as e:
+            print(f"Error fetching Venture Club: {e}")
+
     def _matches_keywords(self, text: str) -> bool:
         """Check if text matches any keywords and doesn't match excluded keywords"""
         text_lower = text.lower()
@@ -382,6 +734,7 @@ class EventScraper:
             'evansville': {'lat': 37.9747, 'lng': -87.5558},
             'south bend': {'lat': 41.6764, 'lng': -86.2520},
             'carmel': {'lat': 39.9784, 'lng': -86.1180},
+            'fishers': {'lat': 39.9567, 'lng': -86.0139},
             'bloomington': {'lat': 39.1653, 'lng': -86.5264}
         }
 

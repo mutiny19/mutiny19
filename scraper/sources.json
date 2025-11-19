@@ -76,6 +76,34 @@
       "url": "https://www.eventbrite.com/d/in--indianapolis/food-festival/",
       "enabled": true,
       "description": "Food festivals and events"
+    },
+    {
+      "name": "16 Tech Innovation District",
+      "type": "custom",
+      "url": "https://16tech.com/calendar/",
+      "enabled": false,
+      "description": "Events at Indianapolis innovation district (requires JavaScript rendering)"
+    },
+    {
+      "name": "The Mill at Dimension Mill",
+      "type": "custom",
+      "url": "https://www.dimensionmill.org/",
+      "enabled": false,
+      "description": "Bloomington coworking and entrepreneur events (requires JavaScript rendering)"
+    },
+    {
+      "name": "Launch Fishers",
+      "type": "custom",
+      "url": "https://www.launchfishers.com/events-calendar/",
+      "enabled": false,
+      "description": "Fishers coworking, IoT Lab, and entrepreneur events (requires JavaScript rendering)"
+    },
+    {
+      "name": "Venture Club of Indiana",
+      "type": "custom",
+      "url": "https://www.ventureclub.org/events-2-1",
+      "enabled": false,
+      "description": "Venture capital and entrepreneur events (requires JavaScript rendering)"
     }
   ],
   "keywords": [
