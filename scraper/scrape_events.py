@@ -61,8 +61,8 @@ class EventScraper:
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
                 })
 
-                # Navigate to URL
-                page.goto(url, wait_until='networkidle', timeout=30000)
+                # Navigate to URL (use domcontentloaded for faster loading)
+                page.goto(url, wait_until='domcontentloaded', timeout=30000)
 
                 # Wait for specific selector if provided
                 if wait_selector:
@@ -564,50 +564,41 @@ class EventScraper:
 
             soup = BeautifulSoup(html_content, 'html.parser')
 
-            # Look for event links and headings
-            event_links = soup.find_all('a', href=re.compile('/event/'))
+            # Launch Fishers uses Tribe Events calendar (like 16 Tech)
+            event_items = soup.find_all('article', class_=lambda x: x and 'tribe-events-calendar-list__event' in x)
 
-            print(f"Found {len(event_links)} potential events at Launch Fishers")
+            print(f"Found {len(event_items)} potential events at Launch Fishers")
 
-            seen_urls = set()
-            for link in event_links[:15]:
+            for item in event_items[:15]:
                 try:
-                    url = link['href']
-                    if not url.startswith('http'):
+                    # Find title h3
+                    title_elem = item.find('h3', class_=lambda x: x and 'tribe-events-calendar-list__event-title' in x)
+                    if not title_elem:
+                        continue
+
+                    # Get title and link
+                    link = title_elem.find('a')
+                    if not link:
+                        continue
+
+                    title = link.get_text(strip=True)
+                    url = link.get('href', '')
+                    if url.startswith('/'):
                         url = 'https://www.launchfishers.com' + url
 
-                    # Avoid duplicates
-                    if url in seen_urls:
-                        continue
-                    seen_urls.add(url)
-
-                    # Find title - might be in h3 or the link text
-                    title = link.get_text(strip=True)
-                    if not title or len(title) < 5:
-                        # Look for h3 near this link
-                        h3 = link.find_parent().find('h3')
-                        if h3:
-                            title = h3.get_text(strip=True)
-
-                    if not title or len(title) < 5:
-                        continue
-
-                    # Look for date near the link - format "Month Day @ Time"
-                    parent = link.find_parent()
-                    date_text = parent.get_text(strip=True) if parent else ''
-
-                    # Try to extract date using regex
-                    date_match = re.search(r'([A-Z][a-z]+\s+\d+)\s*@\s*(\d+:\d+\s*[ap]m)', date_text, re.IGNORECASE)
+                    # Find date/time
+                    time_elem = item.find('time')
                     event_date = None
-                    if date_match:
-                        date_str = date_match.group(0)
+                    if time_elem:
+                        date_str = time_elem.get('datetime', '') or time_elem.get_text(strip=True)
                         event_date = self._parse_date(date_str)
 
                     if not event_date or event_date < datetime.now():
                         continue
 
-                    # Description - use title for now
-                    description = title
+                    # Description - look for description paragraph
+                    desc_elem = item.find('div', class_=lambda x: x and 'description' in str(x).lower())
+                    description = desc_elem.get_text(strip=True)[:500] if desc_elem else title
 
                     event_data = {
                         'title': title,
@@ -704,63 +695,53 @@ class EventScraper:
 
             soup = BeautifulSoup(html_content, 'html.parser')
 
-            # Venture Club uses Squarespace eventlist structure
-            event_items = soup.find_all('div', class_='eventlist-item')
+            # Venture Club uses Squarespace with article tags
+            # Look for articles with event links
+            event_items = soup.find_all('article')
 
             print(f"Found {len(event_items)} potential events at Venture Club")
 
             for item in event_items[:15]:
                 try:
-                    # Find title
-                    title_elem = item.find('div', class_='eventlist-title')
-                    if not title_elem:
+                    # Find event link
+                    link = item.find('a', href=re.compile('/events'))
+                    if not link:
                         continue
 
-                    title_link = title_elem.find('a', href=True)
-                    if not title_link:
-                        continue
-
-                    title = title_link.get_text(strip=True)
-                    url = title_link['href']
+                    url = link.get('href', '')
                     if url.startswith('/'):
                         url = 'https://www.ventureclub.org' + url
 
-                    # Find date - Squarespace format has month and day separately
-                    date_container = item.find('div', class_='eventlist-date')
-                    month_elem = date_container.find('span', class_='eventlist-month') if date_container else None
-                    day_elem = date_container.find('span', class_='eventlist-day') if date_container else None
+                    # Find title - might be in h1, h2, h3, or link text
+                    title_elem = item.find(['h1', 'h2', 'h3', 'h4'])
+                    if not title_elem:
+                        title = link.get_text(strip=True)
+                    else:
+                        title = title_elem.get_text(strip=True)
 
-                    # Also look in eventlist-meta for full date
-                    meta_elem = item.find('ul', class_='eventlist-meta')
+                    if not title or len(title) < 5:
+                        continue
+
+                    # Find date - look for time tag or text with date pattern
+                    time_elem = item.find('time')
                     event_date = None
 
-                    if meta_elem:
-                        # First li usually has full date like "Wednesday, December 3, 2025"
-                        date_li = meta_elem.find('li')
-                        if date_li:
-                            date_str = date_li.get_text(strip=True)
-                            event_date = self._parse_date(date_str)
-
-                    # Fallback to month + day if full date parsing failed
-                    if not event_date and month_elem and day_elem:
-                        month = month_elem.get_text(strip=True)
-                        day = day_elem.get_text(strip=True)
-                        year = datetime.now().year
-                        if datetime.now().month == 12 and month in ['Jan', 'Feb', 'Mar']:
-                            year += 1
-                        date_str = f"{month} {day}, {year}"
+                    if time_elem:
+                        date_str = time_elem.get('datetime', '') or time_elem.get_text(strip=True)
                         event_date = self._parse_date(date_str)
+                    else:
+                        # Try to find date in text
+                        text = item.get_text()
+                        date_match = re.search(r'([A-Z][a-z]+\s+\d+,\s+\d{4})', text)
+                        if date_match:
+                            event_date = self._parse_date(date_match.group(1))
 
                     if not event_date or event_date < datetime.now():
                         continue
 
-                    # Description from meta or use title
-                    description = title
-                    if meta_elem:
-                        # Get location or other details
-                        meta_items = meta_elem.find_all('li')
-                        if len(meta_items) > 2:
-                            description = f"{title}. {meta_items[2].get_text(strip=True)}"[:500]
+                    # Description
+                    desc_elem = item.find('p')
+                    description = desc_elem.get_text(strip=True)[:500] if desc_elem else title
 
                     event_data = {
                         'title': title,

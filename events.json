@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-19T17:41:58.317789",
+  "lastUpdated": "2025-11-19T12:55:30.744550",
   "events": [
     {
       "title": "(Live Webinar) Careers in Tech: Exploring Indiana's Top Tech Opportunities",
@@ -21,7 +21,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "6805795941743125307"
+      "id": "8285625378933166852"
     },
     {
       "title": "2025 Healthy Care Healthy Costs Final Showcase Event",
@@ -43,7 +43,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "9092415011628708765"
+      "id": "9190918282587307184"
     },
     {
       "title": "IndyHackers Fall Workshop",
@@ -65,7 +65,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "2759753386073416803"
+      "id": "6991681380582521596"
     },
     {
       "title": "Rose-Hulman\u2019s Virtual STEM Career Fair",
@@ -87,7 +87,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "8768186026258184966"
+      "id": "7353782350820128748"
     },
     {
       "title": "(Live Webinar) Careers in Tech: Exploring Indiana's Top Tech Opportunities",
@@ -109,7 +109,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "1132266583970297400"
+      "id": "692259668504367356"
     },
     {
       "title": "Trivia with Purpose: Leadership, Learning & Laughter",
@@ -131,7 +131,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "3628345259525722248"
+      "id": "7111374724662731835"
     },
     {
       "title": "TECHPOINT: Joint Network Breakfast",
@@ -153,7 +153,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "8511407055744870430"
+      "id": "7328551911506491042"
     },
     {
       "title": "Innovate Central Indiana - Indianapolis",
@@ -175,7 +175,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "6418933884671819865"
+      "id": "3759613662883975674"
     },
     {
       "title": "Innovate Indiana Series: Central Indiana",
@@ -197,7 +197,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "3088836696307712030"
+      "id": "7034556176731368474"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -219,7 +219,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "2077003331127652730"
+      "id": "1657959478345341869"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -241,7 +241,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "4848628379697863707"
+      "id": "6724328301219765453"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -263,7 +263,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "7613703348589420491"
+      "id": "82404521209104117"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -285,7 +285,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "6461789812998995288"
+      "id": "1137865095453800816"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -307,7 +307,227 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "4502475470861182668"
+      "id": "492539344672060614"
+    },
+    {
+      "title": "CCA Cornhole",
+      "description": "CCA Cornhole. $55.00",
+      "url": "https://16tech.com/event/cca-cornhole-46/",
+      "date": "2025-11-19T18:30:00",
+      "source": "16 Tech Innovation District",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, IN",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": false,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false
+      },
+      "organizer": "16 Tech Innovation District",
+      "id": "916511078337849303"
+    },
+    {
+      "title": "The 4th Annual Halloween Boo Bash",
+      "description": "The 4th Annual Halloween Boo Bash",
+      "url": "https://16tech.com/event/the-4th-annual-halloween-boo-bash/",
+      "date": "2025-11-19T16:30:00",
+      "source": "16 Tech Innovation District",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, IN",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": false,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false
+      },
+      "organizer": "16 Tech Innovation District",
+      "id": "2025654128673664524"
+    },
+    {
+      "title": "Welding & CNC Plasma Cutter Workshop",
+      "description": "Welding & CNC Plasma Cutter Workshop. $65",
+      "url": "https://16tech.com/event/welding-cnc-plasma-cutter-workshop-2/",
+      "date": "2025-11-19T13:00:00",
+      "source": "16 Tech Innovation District",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, IN",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": false,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false
+      },
+      "organizer": "16 Tech Innovation District",
+      "id": "6229756441162593229"
+    },
+    {
+      "title": "Launch Fishers Thanksgiving Community Pitch-In",
+      "description": "This event is open to LAUNCH FISHERS MEMBERS ONLY. Gobble til you wobble! \ud83e\udd83 Come join your fellow Launch Fishers members at the family table for our annual Thanksgiving pitch-in. Let's toast to our incredible community with good food and camaraderie, as we feast together...",
+      "url": "https://launchfishers.com/event-calendar/launch-fishers-thanksgiving-community-pitch-in/",
+      "date": "2025-11-20T00:00:00",
+      "source": "Launch Fishers",
+      "location": {
+        "name": "Fishers",
+        "address": "Fishers, Indiana",
+        "lat": 39.9567,
+        "lng": -86.0139
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": false,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false
+      },
+      "organizer": "Launch Fishers",
+      "id": "8066388002655241410"
+    },
+    {
+      "title": "Free Cowork Friday: November 2025",
+      "description": "One Friday a month, we open our doors to anyone interested in trying out coworking! Potential new members can come in and enjoy free coffee & coworking as they test drive what a Launch Fishers membership is all about. We provide a reliable place to...",
+      "url": "https://launchfishers.com/event-calendar/free-cowork-friday-november-2025/",
+      "date": "2025-11-21T00:00:00",
+      "source": "Launch Fishers",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, IN",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": true,
+        "food": false,
+        "appetizers": false,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false
+      },
+      "organizer": "Launch Fishers",
+      "id": "2301087900718745080"
+    },
+    {
+      "title": "Holiday Sweet Swap",
+      "description": "This event is open to LAUNCH FISHERS MEMBERS ONLY. Treats are always best when shared. Which is why we absolutely love our sweetest annual tradition: the Holiday Sweet Swap! Each year, we gather in the main space around RISE Coffee Shop to swap delicious treats....",
+      "url": "https://launchfishers.com/event-calendar/holiday-sweet-swap/",
+      "date": "2025-12-10T00:00:00",
+      "source": "Launch Fishers",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, IN",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": false,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false
+      },
+      "organizer": "Launch Fishers",
+      "id": "3461788066655670513"
+    },
+    {
+      "title": "Coffee & Conversation: December 2025",
+      "description": "Mornings are better when we get together. \u2615\ufe0f Imagine starting your day with a vibrant buzz, not just from your coffee, but from connecting with fellow local innovators. Our monthly Coffee & Conversation event is designed to do just that. Join us on the second...",
+      "url": "https://launchfishers.com/event-calendar/coffee-conversation-december-2025/",
+      "date": "2025-12-11T00:00:00",
+      "source": "Launch Fishers",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, IN",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": false,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false
+      },
+      "organizer": "Launch Fishers",
+      "id": "5730848127667203361"
+    },
+    {
+      "title": "Free Cowork Friday: December 2025",
+      "description": "One Friday a month, we open our doors to anyone interested in trying out coworking! Potential new members can come in and enjoy free coffee & coworking as they test drive what a Launch Fishers membership is all about. We provide a reliable place to...",
+      "url": "https://launchfishers.com/event-calendar/free-cowork-friday-december-2025/",
+      "date": "2025-12-19T00:00:00",
+      "source": "Launch Fishers",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, IN",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": true,
+        "food": false,
+        "appetizers": false,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false
+      },
+      "organizer": "Launch Fishers",
+      "id": "6371333273407698166"
+    },
+    {
+      "title": "Upcoming events.",
+      "description": "Celebrate the Season with the Venture Club of Indiana",
+      "url": "https://www.ventureclub.org/events-2-1/vci-christmas-party-at-ruths-chris",
+      "date": "2025-12-03T00:00:00",
+      "source": "Venture Club of Indiana",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, IN",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": false,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false
+      },
+      "organizer": "Venture Club of Indiana",
+      "id": "1123052048786450144"
+    },
+    {
+      "title": "VCI Holiday Party at Ruth\u2019s Chris",
+      "description": "Celebrate the Season with the Venture Club of Indiana",
+      "url": "https://www.ventureclub.org/events-2-1/vci-christmas-party-at-ruths-chris",
+      "date": "2025-12-03T00:00:00",
+      "source": "Venture Club of Indiana",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, IN",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": false,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false
+      },
+      "organizer": "Venture Club of Indiana",
+      "id": "7270391112157659943"
     }
   ]
 }
