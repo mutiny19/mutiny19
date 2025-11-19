@@ -65,6 +65,48 @@ html::before {
     );
     background-size: 100% 4px;
     animation: scanlines 8s linear infinite;
+    /* Add pixel noise grain */
+    background-image:
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E"),
+        linear-gradient(to bottom, transparent 50%, rgba(0, 217, 255, 0.03) 50%);
+    background-blend-mode: overlay;
+    animation: scanlines 8s linear infinite, noise 0.2s steps(2) infinite;
+}
+
+@keyframes noise {
+    0% {
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(-1px, -1px);
+    }
+    20% {
+        transform: translate(1px, 1px);
+    }
+    30% {
+        transform: translate(-1px, 1px);
+    }
+    40% {
+        transform: translate(1px, -1px);
+    }
+    50% {
+        transform: translate(-1px, 0);
+    }
+    60% {
+        transform: translate(1px, 0);
+    }
+    70% {
+        transform: translate(0, -1px);
+    }
+    80% {
+        transform: translate(0, 1px);
+    }
+    90% {
+        transform: translate(-1px, -1px);
+    }
+    100% {
+        transform: translate(1px, 1px);
+    }
 }
 
 @keyframes scanlines {
