@@ -7,7 +7,7 @@
 body {
     font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
-    color: #2a2520;
+    color: #1a1510;
     background: #e8dcc8;
     background-image:
         url("data:image/svg+xml,%3Csvg viewBox='0 0 600 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='5' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.15'/%3E%3C/svg%3E"),
@@ -221,7 +221,7 @@ header {
     background-size: 300px 300px, 100% 100%, cover;
     background-position: center, center, center;
     background-blend-mode: overlay, normal, multiply;
-    color: #2a2520;
+    color: #1a1510;
     padding: 3rem 2rem;
     text-align: center;
     box-shadow:
@@ -286,8 +286,8 @@ header h1 {
 header p {
     font-size: 1.2rem;
     opacity: 0.9;
-    color: #a0d8e8;
-    text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+    color: #2a2520;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
 
 /* Hero Section - Warmer Parchment */
@@ -377,18 +377,18 @@ header p {
 
 .hero-text p {
     font-size: 1.5rem;
-    color: #b8d8e8;
+    color: #2a2520;
     margin-bottom: 1rem;
     font-weight: 600;
 }
 
 .hero-text .hero-subtitle {
     font-size: 1.2rem;
-    color: #a0d8e8;
+    color: #3a342e;
     line-height: 1.8;
     margin-top: 1.5rem;
     font-weight: 400;
-    opacity: 0.9;
+    opacity: 1;
 }
 
 /* Responsive Hero */
@@ -431,7 +431,7 @@ header p {
         0 4px 20px rgba(0, 217, 255, 0.15),
         inset 0 0 100px rgba(42, 37, 32, 0.1);
     position: relative;
-    color: #2a2520;
+    color: #1a1510;
 }
 
 .manifesto::before {
@@ -456,12 +456,14 @@ header p {
 
 .manifesto h2 {
     text-align: center;
-    color: #00d9ff;
+    color: #dc143c;
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-transform: uppercase;
     letter-spacing: 4px;
-    text-shadow: 0 0 20px rgba(0, 217, 255, 0.8);
+    text-shadow:
+        0 0 20px rgba(220, 20, 60, 0.4),
+        1px 1px 2px rgba(42, 37, 32, 0.2);
 }
 
 .manifesto-grid {
@@ -546,13 +548,13 @@ header p {
 }
 
 .manifesto-footer p {
-    color: #b8d8e8;
+    color: #2a2520;
     font-size: 1.2rem;
     margin-bottom: 1rem;
 }
 
 .manifesto-footer strong {
-    color: #00d9ff;
+    color: #dc143c;
 }
 
 .manifesto-link {
