@@ -30,7 +30,19 @@ async function loadEvents() {
 
 // Initialize Leaflet map centered on Indiana
 function initializeMap() {
-    map = L.map('map').setView([39.7684, -86.1581], 7); // Centered on Indiana
+    // Indiana state boundaries (approximate)
+    const indianaBounds = [
+        [37.77, -88.10], // Southwest corner
+        [41.76, -84.78]  // Northeast corner
+    ];
+
+    map = L.map('map', {
+        center: [39.7684, -86.1581], // Center of Indiana
+        zoom: 7,
+        minZoom: 7,  // Prevent zooming out too far
+        maxBounds: indianaBounds,  // Restrict panning to Indiana
+        maxBoundsViscosity: 1.0  // Make bounds solid (can't drag outside)
+    });
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
