@@ -396,31 +396,39 @@ header p {
     opacity: 0.9;
 }
 
-/* Origin Story Accordion */
+/* Story Preview in right column */
+.story-preview {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid rgba(220, 20, 60, 0.3);
+}
+
+.story-title {
+    font-size: 1.1rem;
+    color: #dc143c;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.story-title strong {
+    color: #dc143c;
+    text-shadow: 0 0 10px rgba(220, 20, 60, 0.5);
+    font-size: 1.2rem;
+}
+
+.story-intro {
+    font-size: 1rem;
+    color: #dc143c;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+/* Origin Story Accordion - Full width expansion */
 .origin-story {
     grid-column: 1 / 3; /* Span both columns */
     grid-row: 2; /* Second row, below image and text */
-    margin-top: 2rem;
-    padding-top: 2rem;
-    border-top: 2px solid rgba(0, 217, 255, 0.3);
     z-index: 2; /* Ensure it's above other elements */
-}
-
-.story-blurb {
-    margin-bottom: 1.5rem;
-}
-
-.story-blurb p {
-    font-size: 1rem;
-    color: #e0f7ff;
-    line-height: 1.8;
-    margin-bottom: 0.75rem;
-}
-
-.story-blurb p strong {
-    color: #00d9ff;
-    text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
-    font-size: 1.1rem;
 }
 
 .read-more-btn {
@@ -456,13 +464,14 @@ header p {
 .full-story {
     margin-top: 2rem;
     padding: 2rem;
-    background: rgba(10, 14, 26, 0.6);
+    background: rgba(10, 14, 26, 0.8);
     border: 2px solid rgba(0, 217, 255, 0.4);
     border-radius: 12px;
     box-shadow:
         0 0 20px rgba(0, 217, 255, 0.2),
         inset 0 0 30px rgba(220, 20, 60, 0.1);
     animation: storyExpand 0.5s ease-out;
+    width: 100%;
 }
 
 @keyframes storyExpand {
@@ -570,6 +579,11 @@ header p {
         grid-row: auto;
     }
 
+    .story-preview {
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+    }
+
     .hero-text h2 {
         font-size: 5rem;
         letter-spacing: 0.5rem;
@@ -581,6 +595,14 @@ header p {
 
     .hero-text .hero-subtitle {
         font-size: 1rem;
+    }
+
+    .story-title strong {
+        font-size: 1.1rem;
+    }
+
+    .story-intro {
+        font-size: 0.95rem;
     }
 }
 
