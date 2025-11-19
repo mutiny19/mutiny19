@@ -337,6 +337,24 @@ function setupEventListeners() {
             modal.style.display = 'none';
         }
     };
+
+    // Story accordion
+    const readMoreBtn = document.getElementById('readMoreBtn');
+    const fullStory = document.getElementById('fullStory');
+
+    if (readMoreBtn && fullStory) {
+        readMoreBtn.addEventListener('click', () => {
+            if (fullStory.style.display === 'none' || fullStory.style.display === '') {
+                fullStory.style.display = 'block';
+                readMoreBtn.textContent = '⚡ Hide the Tale ⚡';
+            } else {
+                fullStory.style.display = 'none';
+                readMoreBtn.textContent = '⚡ Read the Full Tale ⚡';
+                // Scroll back to the button
+                readMoreBtn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        });
+    }
 }
 
 // Set view mode
