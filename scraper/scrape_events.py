@@ -184,7 +184,7 @@ class EventScraper:
                     if url.startswith('/'):
                         url = 'https://techpoint.org' + url
 
-                    # Extract date
+                    # Extract date from listing
                     date_str = ''
                     month_elem = item.find(class_='month')
                     day_elem = item.find(class_='day')
@@ -192,7 +192,11 @@ class EventScraper:
                     if month_elem and day_elem:
                         month = month_elem.get_text(strip=True)
                         day = day_elem.get_text(strip=True)
-                        date_str = f"{month} {day}, 2025"  # Assume current/next year
+                        # Try to get year, default to 2025
+                        year = datetime.now().year
+                        if datetime.now().month == 12 and month in ['Jan', 'Feb', 'Mar']:
+                            year += 1
+                        date_str = f"{month} {day}, {year}"
 
                     event_date = self._parse_date(date_str) if date_str else None
 
@@ -200,9 +204,39 @@ class EventScraper:
                     if event_date and event_date < datetime.now():
                         continue
 
-                    # Extract description
-                    desc_elem = item.find(class_='jet-listing-dynamic-field__content')
-                    description = desc_elem.get_text(strip=True) if desc_elem else title
+                    # Try to fetch individual event page for better details
+                    description = title
+                    if url and url != source['url']:
+                        try:
+                            event_response = requests.get(url, headers=headers, timeout=8)
+                            event_soup = BeautifulSoup(event_response.content, 'html.parser')
+
+                            # Try multiple selectors for description
+                            desc_elem = (
+                                event_soup.find('div', class_='entry-content') or
+                                event_soup.find('div', class_='event-description') or
+                                event_soup.find('div', class_='elementor-widget-text-editor') or
+                                event_soup.find('article')
+                            )
+
+                            if desc_elem:
+                                # Get text, clean it up
+                                desc_text = desc_elem.get_text(separator=' ', strip=True)
+                                # Limit to first 500 chars
+                                description = desc_text[:500] + '...' if len(desc_text) > 500 else desc_text
+
+                            # Try to find more specific date/time
+                            time_elem = event_soup.find('time') or event_soup.find(class_=re.compile('date|time'))
+                            if time_elem and not event_date:
+                                time_str = time_elem.get_text(strip=True)
+                                parsed_date = self._parse_date(time_str)
+                                if parsed_date:
+                                    event_date = parsed_date
+
+                        except Exception as e:
+                            print(f"  Could not fetch details for {title}: {e}")
+                            # Continue with what we have
+                            pass
 
                     event_data = {
                         'title': title,
@@ -231,72 +265,79 @@ class EventScraper:
             response = requests.get(source['url'], headers=headers, timeout=10)
             soup = BeautifulSoup(response.content, 'html.parser')
 
-            # 1MC typically has recurring events
+            # Determine city from URL
+            city = 'Indianapolis' if 'indy' in source['url'].lower() else 'South Bend'
+
             # Try to find event schedule or calendar
             event_items = soup.find_all(['div', 'article'], class_=re.compile('event|meeting|schedule'))
 
-            if not event_items:
-                # Generate recurring event for 1MC (they meet regularly)
-                # Indianapolis meets Wednesdays, South Bend meets 2nd Wednesday
-                city = 'Indianapolis' if 'indy' in source['url'].lower() else 'South Bend'
+            # Try to get description from the page
+            description = 'Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.'
+
+            desc_elem = (
+                soup.find('div', class_='description') or
+                soup.find('div', class_='content') or
+                soup.find('article') or
+                soup.find('p')
+            )
+
+            if desc_elem:
+                desc_text = desc_elem.get_text(separator=' ', strip=True)
+                if len(desc_text) > 50 and len(desc_text) < 600:
+                    description = desc_text[:500] + '...' if len(desc_text) > 500 else desc_text
+
+            # Generate recurring events for next 3 months
+            for i in range(3):
+                next_date = self._get_next_1mc_date(city, offset_months=i)
 
                 event_data = {
                     'title': f'1 Million Cups {city}',
-                    'description': 'Join entrepreneurs every month for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.',
+                    'description': description,
                     'url': source['url'],
-                    'date': self._get_next_1mc_date(city).isoformat(),
+                    'date': next_date.isoformat(),
                     'source': source['name']
                 }
 
                 self._add_event(event_data)
-                print(f"  Added recurring: 1 Million Cups {city}")
+                print(f"  Added recurring: 1 Million Cups {city} - {next_date.strftime('%b %d')}")
 
         except Exception as e:
             print(f"Error fetching 1MC: {e}")
 
-    def _get_next_1mc_date(self, city: str) -> datetime:
+    def _get_next_1mc_date(self, city: str, offset_months: int = 0) -> datetime:
         """Get next 1 Million Cups meeting date"""
         from datetime import timedelta
+        from dateutil.relativedelta import relativedelta
 
         today = datetime.now()
+        start_month = today + relativedelta(months=offset_months)
 
         if 'South Bend' in city:
             # 2nd Wednesday of month at 8 AM
-            day = 1
-            while day <= 31:
-                try:
-                    candidate = datetime(today.year, today.month, day, 8, 0)
-                    if candidate.weekday() == 2:  # Wednesday
-                        week_num = (day - 1) // 7 + 1
-                        if week_num == 2 and candidate > today:
-                            return candidate
-                except ValueError:
-                    break
-                day += 1
+            # Find the 2nd Wednesday of the target month
+            first_day = start_month.replace(day=1, hour=8, minute=0, second=0, microsecond=0)
 
-            # Try next month
-            next_month = today.month + 1 if today.month < 12 else 1
-            next_year = today.year if today.month < 12 else today.year + 1
-            day = 1
-            while day <= 31:
-                try:
-                    candidate = datetime(next_year, next_month, day, 8, 0)
-                    if candidate.weekday() == 2:
-                        week_num = (day - 1) // 7 + 1
-                        if week_num == 2:
-                            return candidate
-                except ValueError:
-                    break
-                day += 1
+            # Find first Wednesday
+            days_until_wed = (2 - first_day.weekday()) % 7
+            first_wed = first_day + timedelta(days=days_until_wed)
 
-        else:  # Indianapolis - typically weekly Wednesdays
-            days_ahead = 2 - today.weekday()  # Wednesday = 2
-            if days_ahead <= 0:
-                days_ahead += 7
-            next_wed = today + timedelta(days=days_ahead)
+            # Second Wednesday
+            second_wed = first_wed + timedelta(days=7)
+
+            # If this date has passed and offset is 0, get next month
+            if second_wed < today and offset_months == 0:
+                return self._get_next_1mc_date(city, offset_months=1)
+
+            return second_wed
+
+        else:  # Indianapolis - weekly Wednesdays at 9 AM
+            # Get next Wednesday from start_month
+            days_ahead = (2 - start_month.weekday()) % 7
+            if days_ahead == 0 and start_month <= today:
+                days_ahead = 7
+
+            next_wed = start_month + timedelta(days=days_ahead)
             return next_wed.replace(hour=9, minute=0, second=0, microsecond=0)
-
-        return today + timedelta(days=7)
 
     def _matches_keywords(self, text: str) -> bool:
         """Check if text matches any keywords and doesn't match excluded keywords"""

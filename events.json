@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2025-11-19T16:50:05.762030",
+  "lastUpdated": "2025-11-19T12:11:06.278102",
   "events": [
     {
       "title": "(Live Webinar) Careers in Tech: Exploring Indiana's Top Tech Opportunities",
-      "description": "Nov",
+      "description": "(Live Webinar) Careers in Tech: Exploring Indiana's Top Tech Opportunities",
       "url": "https://techpoint.org/tech-events/",
       "date": "2025-11-20T00:00:00",
       "source": "TechPoint Indiana Events",
@@ -21,11 +21,11 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "2665470389044481003"
+      "id": "2857255904757842478"
     },
     {
       "title": "2025 Healthy Care Healthy Costs Final Showcase Event",
-      "description": "Nov",
+      "description": "2025 Healthy Care Healthy Costs Final Showcase Event",
       "url": "https://techpoint.org/tech-events/",
       "date": "2025-11-20T00:00:00",
       "source": "TechPoint Indiana Events",
@@ -43,11 +43,11 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "4012676081421418517"
+      "id": "1945142227883198019"
     },
     {
       "title": "IndyHackers Fall Workshop",
-      "description": "Nov",
+      "description": "IndyHackers Fall Workshop",
       "url": "https://techpoint.org/tech-events/",
       "date": "2025-11-20T00:00:00",
       "source": "TechPoint Indiana Events",
@@ -65,11 +65,11 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "8193103817322032360"
+      "id": "2243312951538475760"
     },
     {
       "title": "Rose-Hulman\u2019s Virtual STEM Career Fair",
-      "description": "December Events",
+      "description": "Rose-Hulman\u2019s Virtual STEM Career Fair",
       "url": "https://techpoint.org/tech-events/",
       "date": "2025-12-04T00:00:00",
       "source": "TechPoint Indiana Events",
@@ -87,11 +87,11 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "4393108627395233450"
+      "id": "8789079985354747798"
     },
     {
       "title": "(Live Webinar) Careers in Tech: Exploring Indiana's Top Tech Opportunities",
-      "description": "Dec",
+      "description": "(Live Webinar) Careers in Tech: Exploring Indiana's Top Tech Opportunities",
       "url": "https://techpoint.org/tech-events/",
       "date": "2025-12-05T00:00:00",
       "source": "TechPoint Indiana Events",
@@ -109,11 +109,11 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "2297220480039169914"
+      "id": "883475261436695255"
     },
     {
       "title": "Trivia with Purpose: Leadership, Learning & Laughter",
-      "description": "Dec",
+      "description": "Trivia with Purpose: Leadership, Learning & Laughter",
       "url": "https://techpoint.org/tech-events/",
       "date": "2025-12-05T00:00:00",
       "source": "TechPoint Indiana Events",
@@ -131,11 +131,11 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "7584857593048331960"
+      "id": "1474636378422514465"
     },
     {
       "title": "TECHPOINT: Joint Network Breakfast",
-      "description": "Dec",
+      "description": "TECHPOINT: Joint Network Breakfast",
       "url": "https://techpoint.org/tech-events/",
       "date": "2025-12-09T00:00:00",
       "source": "TechPoint Indiana Events",
@@ -153,11 +153,11 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "4443875204096378530"
+      "id": "2247689954099336971"
     },
     {
       "title": "Innovate Central Indiana - Indianapolis",
-      "description": "Dec",
+      "description": "Innovate Central Indiana - Indianapolis",
       "url": "https://techpoint.org/tech-events/",
       "date": "2025-12-09T00:00:00",
       "source": "TechPoint Indiana Events",
@@ -175,11 +175,11 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "1993690542081041023"
+      "id": "6943905646490467183"
     },
     {
       "title": "Innovate Indiana Series: Central Indiana",
-      "description": "Dec",
+      "description": "Innovate Indiana Series: Central Indiana",
       "url": "https://techpoint.org/tech-events/",
       "date": "2025-12-11T00:00:00",
       "source": "TechPoint Indiana Events",
@@ -197,11 +197,11 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "1360973624735602241"
+      "id": "490626665378664738"
     },
     {
       "title": "1 Million Cups Indianapolis",
-      "description": "Join entrepreneurs every month for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
       "url": "https://www.1millioncups.com/indy",
       "date": "2025-11-26T09:00:00",
       "source": "1 Million Cups Indianapolis",
@@ -219,11 +219,55 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "2150093313248086856"
+      "id": "8045536035150292908"
+    },
+    {
+      "title": "1 Million Cups Indianapolis",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/indy",
+      "date": "2025-12-24T09:00:00",
+      "source": "1 Million Cups Indianapolis",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, Indiana",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": false,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false
+      },
+      "organizer": "1 Million Cups Indianapolis",
+      "id": "2399176520496429923"
+    },
+    {
+      "title": "1 Million Cups Indianapolis",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/indy",
+      "date": "2026-01-21T09:00:00",
+      "source": "1 Million Cups Indianapolis",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, Indiana",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": false,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false
+      },
+      "organizer": "1 Million Cups Indianapolis",
+      "id": "5084089264421400513"
     },
     {
       "title": "1 Million Cups South Bend",
-      "description": "Join entrepreneurs every month for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
       "url": "https://www.1millioncups.com/southbend",
       "date": "2025-12-10T08:00:00",
       "source": "1 Million Cups South Bend",
@@ -241,7 +285,29 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "956864954718948099"
+      "id": "6139061180902100187"
+    },
+    {
+      "title": "1 Million Cups South Bend",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/southbend",
+      "date": "2026-01-14T08:00:00",
+      "source": "1 Million Cups South Bend",
+      "location": {
+        "name": "South Bend",
+        "address": "South Bend, Indiana",
+        "lat": 41.6764,
+        "lng": -86.252
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": false,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false
+      },
+      "organizer": "1 Million Cups South Bend",
+      "id": "5414905515768077557"
     }
   ]
 }
