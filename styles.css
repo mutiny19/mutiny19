@@ -593,14 +593,18 @@ header p {
 }
 
 aside.filters {
-    background: rgba(15, 20, 35, 0.9);
+    background:
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='5' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.15'/%3E%3C/svg%3E"),
+        linear-gradient(135deg, #f2e8d8 0%, #e8dcc8 100%);
+    background-size: 280px 280px, 100% 100%;
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow:
-        0 0 30px rgba(0, 217, 255, 0.3),
-        0 8px 32px rgba(0, 0, 0, 0.8),
-        inset 0 1px 0 rgba(0, 217, 255, 0.2);
-    border: 2px solid #00d9ff;
+        0 0 15px rgba(220, 20, 60, 0.2),
+        0 0 15px rgba(0, 217, 255, 0.15),
+        0 4px 12px rgba(42, 37, 32, 0.2),
+        inset 0 0 30px rgba(42, 37, 32, 0.05);
+    border: 3px solid #dc143c;
     width: 280px;
     height: fit-content;
     position: sticky;
@@ -609,13 +613,15 @@ aside.filters {
 
 aside.filters h2 {
     margin-bottom: 1.5rem;
-    color: #00d9ff;
+    color: #dc143c;
     font-size: 1.4rem;
     text-transform: uppercase;
     letter-spacing: 3px;
-    border-bottom: 2px solid #00d9ff;
+    border-bottom: 3px solid #00d9ff;
     padding-bottom: 0.8rem;
-    text-shadow: 0 0 15px rgba(0, 217, 255, 0.8);
+    text-shadow:
+        0 0 15px rgba(220, 20, 60, 0.3),
+        1px 1px 2px rgba(42, 37, 32, 0.2);
     font-weight: 900;
 }
 
@@ -627,27 +633,30 @@ aside.filters h2 {
     display: block;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #00d9ff;
-    text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+    color: #2a2520;
 }
 
 .filter-group input[type="date"] {
     width: 100%;
     padding: 0.5rem;
-    border: 1px solid #00d9ff;
-    background: rgba(10, 14, 26, 0.8);
-    color: #e0f7ff;
+    border: 2px solid #dc143c;
+    background: rgba(255, 255, 255, 0.6);
+    color: #1a1510;
     border-radius: 6px;
     margin-bottom: 0.5rem;
     transition: all 0.3s;
-    box-shadow: 0 0 10px rgba(0, 217, 255, 0.2);
+    box-shadow:
+        0 0 10px rgba(220, 20, 60, 0.15),
+        inset 0 1px 3px rgba(42, 37, 32, 0.1);
 }
 
 .filter-group input[type="date"]:focus {
     outline: none;
     border-color: #00d9ff;
-    box-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
-    background: rgba(10, 14, 26, 0.95);
+    box-shadow:
+        0 0 15px rgba(0, 217, 255, 0.3),
+        0 0 10px rgba(220, 20, 60, 0.2);
+    background: rgba(255, 255, 255, 0.9);
 }
 
 .checkbox-group label {
@@ -656,18 +665,18 @@ aside.filters h2 {
     font-weight: 400;
     margin-bottom: 0.5rem;
     cursor: pointer;
-    color: #a0d8e8;
+    color: #3a342e;
     transition: color 0.3s;
 }
 
 .checkbox-group label:hover {
-    color: #00d9ff;
+    color: #1a1510;
 }
 
 .checkbox-group input[type="checkbox"] {
     margin-right: 0.5rem;
     cursor: pointer;
-    accent-color: #00d9ff;
+    accent-color: #dc143c;
 }
 
 .view-toggle {
@@ -678,9 +687,9 @@ aside.filters h2 {
 .view-toggle button {
     flex: 1;
     padding: 0.5rem;
-    border: 2px solid #00d9ff;
-    background: rgba(10, 14, 26, 0.8);
-    color: #00d9ff;
+    border: 2px solid #dc143c;
+    background: rgba(255, 255, 255, 0.5);
+    color: #2a2520;
     border-radius: 6px;
     cursor: pointer;
     font-size: 0.85rem;
@@ -688,33 +697,33 @@ aside.filters h2 {
     transition: all 0.3s;
     text-transform: uppercase;
     letter-spacing: 1px;
-    box-shadow: 0 0 10px rgba(0, 217, 255, 0.2);
+    box-shadow: 0 0 8px rgba(220, 20, 60, 0.15);
 }
 
 .view-toggle button.active {
-    background: linear-gradient(135deg, #00d9ff 0%, #0099ff 100%);
-    color: #0a0e1a;
+    background: linear-gradient(135deg, #dc143c 0%, #ff6347 100%);
+    color: #fff;
     box-shadow:
-        0 0 20px rgba(0, 217, 255, 0.6),
-        0 4px 12px rgba(0, 217, 255, 0.4);
-    border-color: #00d9ff;
+        0 0 15px rgba(220, 20, 60, 0.4),
+        0 4px 12px rgba(220, 20, 60, 0.3);
+    border-color: #dc143c;
 }
 
 .view-toggle button:hover {
-    background: linear-gradient(135deg, #00d9ff 0%, #0099ff 100%);
-    color: #0a0e1a;
+    background: linear-gradient(135deg, #dc143c 0%, #ff6347 100%);
+    color: #fff;
     box-shadow:
-        0 0 20px rgba(0, 217, 255, 0.6),
-        0 4px 12px rgba(0, 217, 255, 0.4);
+        0 0 15px rgba(220, 20, 60, 0.4),
+        0 4px 12px rgba(220, 20, 60, 0.3);
     transform: translateY(-1px);
 }
 
 .btn-secondary {
     width: 100%;
     padding: 0.8rem;
-    background: linear-gradient(135deg, rgba(0, 217, 255, 0.2) 0%, rgba(255, 0, 128, 0.2) 100%);
-    border: 2px solid #00d9ff;
-    color: #00d9ff;
+    background: linear-gradient(135deg, rgba(220, 20, 60, 0.15) 0%, rgba(255, 140, 0, 0.15) 100%);
+    border: 2px solid #dc143c;
+    color: #2a2520;
     border-radius: 8px;
     cursor: pointer;
     font-weight: 700;
@@ -722,28 +731,31 @@ aside.filters h2 {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     box-shadow:
-        0 0 20px rgba(0, 217, 255, 0.3),
-        0 4px 12px rgba(0, 0, 0, 0.6);
+        0 0 12px rgba(220, 20, 60, 0.2),
+        0 4px 12px rgba(42, 37, 32, 0.2);
     font-size: 0.95rem;
 }
 
 .btn-secondary:hover {
-    background: linear-gradient(135deg, #00d9ff 0%, #0099ff 100%);
-    color: #0a0e1a;
+    background: linear-gradient(135deg, #dc143c 0%, #ff6347 100%);
+    color: #fff;
     box-shadow:
-        0 0 30px rgba(0, 217, 255, 0.8),
-        0 6px 16px rgba(0, 217, 255, 0.4);
+        0 0 20px rgba(220, 20, 60, 0.5),
+        0 6px 16px rgba(220, 20, 60, 0.3);
     transform: translateY(-2px);
 }
 
 main.content {
     flex: 1;
-    background: rgba(15, 20, 35, 0.9);
+    background:
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='5' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.15'/%3E%3C/svg%3E"),
+        linear-gradient(135deg, #f2e8d8 0%, #e8dcc8 100%);
+    background-size: 280px 280px, 100% 100%;
     border-radius: 12px;
     box-shadow:
-        0 0 30px rgba(0, 217, 255, 0.3),
-        0 8px 32px rgba(0, 0, 0, 0.8),
-        inset 0 1px 0 rgba(0, 217, 255, 0.2);
+        0 0 20px rgba(220, 20, 60, 0.15),
+        0 8px 32px rgba(42, 37, 32, 0.2),
+        inset 0 1px 0 rgba(0, 217, 255, 0.1);
     border: 2px solid #00d9ff;
     overflow: hidden;
 }
@@ -768,13 +780,13 @@ main.content {
 }
 
 .list-container::-webkit-scrollbar-track {
-    background: rgba(10, 14, 26, 0.8);
+    background: rgba(232, 220, 200, 0.5);
 }
 
 .list-container::-webkit-scrollbar-thumb {
-    background: #00d9ff;
+    background: #dc143c;
     border-radius: 4px;
-    box-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+    box-shadow: 0 0 8px rgba(220, 20, 60, 0.3);
 }
 
 .events-list {
@@ -782,16 +794,19 @@ main.content {
 }
 
 .event-card {
-    background: rgba(10, 14, 26, 0.8);
-    border: 2px solid #00d9ff;
+    background:
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.0' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.12'/%3E%3C/svg%3E"),
+        linear-gradient(135deg, #f8f0e3 0%, #ede5d8 100%);
+    background-size: 250px 250px, 100% 100%;
+    border: 2px solid #dc143c;
     border-radius: 8px;
     padding: 1rem;
     margin-bottom: 1rem;
     cursor: pointer;
     transition: all 0.3s;
     box-shadow:
-        0 0 15px rgba(0, 217, 255, 0.2),
-        0 4px 12px rgba(0, 0, 0, 0.6);
+        0 0 10px rgba(220, 20, 60, 0.15),
+        0 4px 12px rgba(42, 37, 32, 0.15);
     position: relative;
 }
 
@@ -802,7 +817,7 @@ main.content {
     left: 0;
     width: 4px;
     height: 100%;
-    background: linear-gradient(180deg, #00d9ff 0%, #ff0080 100%);
+    background: linear-gradient(180deg, #dc143c 0%, #00d9ff 100%);
     opacity: 0;
     transition: opacity 0.3s;
 }
@@ -813,21 +828,21 @@ main.content {
 
 .event-card:hover {
     box-shadow:
-        0 0 30px rgba(0, 217, 255, 0.5),
-        0 6px 20px rgba(0, 0, 0, 0.8);
+        0 0 20px rgba(220, 20, 60, 0.3),
+        0 6px 20px rgba(42, 37, 32, 0.2);
     transform: translateY(-2px);
-    border-color: #0ff;
+    border-color: #dc143c;
 }
 
 .event-card h3 {
-    color: #00d9ff;
+    color: #dc143c;
     margin-bottom: 0.5rem;
     font-weight: 700;
-    text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+    text-shadow: 0 0 8px rgba(220, 20, 60, 0.2);
 }
 
 .event-card p {
-    color: #b8d8e8;
+    color: #3a342e;
 }
 
 .event-meta {
