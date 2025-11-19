@@ -516,6 +516,7 @@ header p {
 
 .manifesto-box p {
     color: #b8d8e8;
+    font-size: 1rem;
     line-height: 1.8;
     margin-bottom: 1rem;
 }
@@ -813,6 +814,8 @@ main.content {
 
 .event-card p {
     color: #b8d8e8;
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 .event-meta {
