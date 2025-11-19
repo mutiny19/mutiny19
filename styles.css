@@ -47,6 +47,95 @@ body > * {
     z-index: 1;
 }
 
+/* CRT Screen Effects */
+html::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    /* Scanlines */
+    background: linear-gradient(
+        to bottom,
+        transparent 50%,
+        rgba(0, 217, 255, 0.03) 50%
+    );
+    background-size: 100% 4px;
+    animation: scanlines 8s linear infinite;
+}
+
+@keyframes scanlines {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 100%;
+    }
+}
+
+html::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9998;
+    /* CRT flicker and glow */
+    background: radial-gradient(
+        ellipse at center,
+        transparent 0%,
+        rgba(0, 217, 255, 0.02) 100%
+    );
+    animation: crtFlicker 0.15s infinite alternate;
+    opacity: 0.8;
+}
+
+@keyframes crtFlicker {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.82;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+/* CRT Curvature Vignette */
+body {
+    box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.4);
+}
+
+/* Pixelation Effect (subtle) */
+* {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+/* RGB Shift on Hover (subtle chromatic aberration) */
+h1, h2, h3 {
+    position: relative;
+}
+
+h1::after, h2::after, h3::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 2px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: screen;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
 /* Floating Particles */
 body::after {
     content: "";
