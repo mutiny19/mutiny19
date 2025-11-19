@@ -7,14 +7,12 @@
 body {
     font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
-    color: #e0f7ff;
-    background: #0a0e1a;
+    color: #2a2520;
+    background: #e8dcc8;
     background-image:
-        radial-gradient(circle at 10% 20%, rgba(220, 20, 60, 0.12) 0%, transparent 25%),
-        radial-gradient(circle at 90% 80%, rgba(0, 217, 255, 0.10) 0%, transparent 25%),
-        radial-gradient(circle at 50% 50%, rgba(255, 140, 0, 0.05) 0%, transparent 40%),
-        linear-gradient(180deg, #0a0e1a 0%, #13152b 50%, #0a0e1a 100%);
-    background-size: cover;
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 600 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='5' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.15'/%3E%3C/svg%3E"),
+        linear-gradient(180deg, #f4ede0 0%, #e8dcc8 20%, #ddd0bb 50%, #e8dcc8 80%, #f4ede0 100%);
+    background-size: 400px 400px, 100% 100%;
     background-position: center;
     background-attachment: fixed;
     position: relative;
@@ -217,20 +215,21 @@ body::after {
 
 header {
     background:
-        linear-gradient(135deg, rgba(10, 14, 26, 0.92) 0%, rgba(19, 21, 43, 0.95) 100%),
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 600 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='6' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.12'/%3E%3C/svg%3E"),
+        linear-gradient(135deg, #f5e6d3 0%, #ead5bb 50%, #f5e6d3 100%),
         url('https://images.squarespace-cdn.com/content/v1/6465536c4ab56d064ce9b2f6/a674212a-709c-4e8d-8106-5eaeac015d8c/Untitled+2.002.png?format=1500w');
-    background-size: cover;
-    background-position: center;
-    color: #00d9ff;
+    background-size: 300px 300px, 100% 100%, cover;
+    background-position: center, center, center;
+    background-blend-mode: overlay, normal, multiply;
+    color: #2a2520;
     padding: 3rem 2rem;
     text-align: center;
     box-shadow:
-        0 0 40px rgba(220, 20, 60, 0.4),
-        0 0 60px rgba(0, 217, 255, 0.3),
-        0 8px 32px rgba(0, 0, 0, 0.8),
-        inset 0 1px 0 rgba(0, 217, 255, 0.2);
-    border-top: 3px solid #dc143c;
-    border-bottom: 3px solid #00d9ff;
+        0 4px 20px rgba(220, 20, 60, 0.2),
+        0 4px 20px rgba(0, 217, 255, 0.15),
+        inset 0 0 100px rgba(42, 37, 32, 0.1);
+    border-top: 4px solid #dc143c;
+    border-bottom: 4px solid #00d9ff;
     position: relative;
 }
 
@@ -291,15 +290,19 @@ header p {
     text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
 }
 
-/* Hero Section */
+/* Hero Section - Warmer Parchment */
 .hero-section {
-    background: linear-gradient(135deg, rgba(10, 14, 26, 0.98) 0%, rgba(19, 21, 43, 0.98) 100%);
+    background:
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 600 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='5' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.18'/%3E%3C/svg%3E"),
+        linear-gradient(135deg, #f0dfc8 0%, #e6cfb0 50%, #f0dfc8 100%);
+    background-size: 350px 350px, 100% 100%;
     padding: 4rem 2rem;
-    border-top: 3px solid #00d9ff;
-    border-bottom: 3px solid #dc143c;
+    border-top: 4px solid #00d9ff;
+    border-bottom: 4px solid #dc143c;
     box-shadow:
-        0 8px 32px rgba(220, 20, 60, 0.4),
-        0 8px 32px rgba(0, 217, 255, 0.3);
+        0 4px 20px rgba(220, 20, 60, 0.2),
+        0 4px 20px rgba(0, 217, 255, 0.15),
+        inset 0 0 100px rgba(42, 37, 32, 0.08);
     position: relative;
     overflow: hidden;
 }
@@ -312,9 +315,9 @@ header p {
     right: 0;
     bottom: 0;
     background-image:
-        radial-gradient(circle at 30% 50%, rgba(220, 20, 60, 0.15) 0%, transparent 50%),
-        radial-gradient(circle at 70% 50%, rgba(0, 217, 255, 0.12) 0%, transparent 50%),
-        radial-gradient(circle at 50% 80%, rgba(255, 140, 0, 0.08) 0%, transparent 40%);
+        radial-gradient(circle at 30% 50%, rgba(220, 20, 60, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 70% 50%, rgba(0, 217, 255, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 50% 80%, rgba(255, 140, 0, 0.05) 0%, transparent 40%);
     pointer-events: none;
 }
 
@@ -413,18 +416,22 @@ header p {
     }
 }
 
-/* Manifesto Section */
+/* Manifesto Section - Cooler Parchment */
 .manifesto {
-    background: linear-gradient(135deg, rgba(10, 14, 26, 0.95) 0%, rgba(19, 21, 43, 0.95) 50%, rgba(10, 14, 26, 0.95) 100%);
+    background:
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 600 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='5' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.2'/%3E%3C/svg%3E"),
+        linear-gradient(135deg, #e6ddd0 0%, #d8cfc0 50%, #e6ddd0 100%);
+    background-size: 380px 380px, 100% 100%;
     padding: 3rem 2rem;
     margin: 0;
-    border-top: 3px solid #dc143c;
-    border-bottom: 3px solid #00d9ff;
+    border-top: 4px solid #dc143c;
+    border-bottom: 4px solid #00d9ff;
     box-shadow:
-        0 0 40px rgba(220, 20, 60, 0.3),
-        0 0 40px rgba(0, 217, 255, 0.2),
-        0 8px 32px rgba(0, 0, 0, 0.8);
+        0 4px 20px rgba(220, 20, 60, 0.2),
+        0 4px 20px rgba(0, 217, 255, 0.15),
+        inset 0 0 100px rgba(42, 37, 32, 0.1);
     position: relative;
+    color: #2a2520;
 }
 
 .manifesto::before {
@@ -465,18 +472,22 @@ header p {
 }
 
 .manifesto-box {
-    background: rgba(15, 20, 35, 0.8);
+    background:
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.0' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.12'/%3E%3C/svg%3E"),
+        linear-gradient(135deg, #f8f0e3 0%, #ede5d8 100%);
+    background-size: 250px 250px, 100% 100%;
     padding: 1.5rem;
     border-radius: 12px;
-    border: 2px solid #00d9ff;
+    border: 3px solid #00d9ff;
     box-shadow:
-        0 0 20px rgba(0, 217, 255, 0.3),
-        0 0 15px rgba(220, 20, 60, 0.2),
-        0 4px 12px rgba(0, 0, 0, 0.6),
-        inset 0 1px 0 rgba(0, 217, 255, 0.1);
+        0 0 15px rgba(0, 217, 255, 0.3),
+        0 0 12px rgba(220, 20, 60, 0.2),
+        0 4px 12px rgba(42, 37, 32, 0.2),
+        inset 0 0 30px rgba(42, 37, 32, 0.05);
     transition: all 0.3s;
     position: relative;
     overflow: hidden;
+    color: #2a2520;
 }
 
 .manifesto-box::before {
@@ -506,22 +517,24 @@ header p {
 }
 
 .manifesto-box h3 {
-    color: #00d9ff;
+    color: #dc143c;
     font-size: 1.5rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 0 0 10px rgba(0, 217, 255, 0.6);
+    text-shadow:
+        0 0 20px rgba(220, 20, 60, 0.4),
+        1px 1px 2px rgba(42, 37, 32, 0.2);
 }
 
 .manifesto-box p {
-    color: #b8d8e8;
+    color: #3a342e;
     line-height: 1.8;
     margin-bottom: 1rem;
 }
 
 .manifesto-box strong {
-    color: #00d9ff;
+    color: #dc143c;
     font-weight: 700;
 }
 
