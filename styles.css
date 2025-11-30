@@ -357,8 +357,9 @@ img {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: calc(var(--nav-height) + var(--space-3xl)) var(--space-lg) var(--space-lg);
+    justify-content: center;
+    padding: var(--nav-height) var(--space-lg) var(--space-xl);
+    padding-bottom: 80px; /* Space for scroll indicator */
     position: relative;
     overflow: hidden;
 }
