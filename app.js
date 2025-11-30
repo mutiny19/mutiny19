@@ -7,7 +7,6 @@ let currentView = 'list'; // 'map', 'list', or 'both'
 const urlParams = new URLSearchParams(window.location.search);
 let currentLang = urlParams.get('lang') || localStorage.getItem('mutiny19_lang') || 'en';
 if (currentLang !== 'en' && currentLang !== 'es') currentLang = 'en';
-console.log('Initial language:', currentLang, '| URL param:', urlParams.get('lang'), '| localStorage:', localStorage.getItem('mutiny19_lang'));
 
 // Translations
 const translations = {
@@ -123,6 +122,19 @@ const translations = {
         // Story
         'story.title': 'THE TALE OF CAPTAIN CARDINAL',
         'story.hint': '// Origin Story',
+        'story.ch1.title': 'CHAPTER I: THE GIFT OF THE PORTS',
+        'story.ch1.p1': 'Captain Cardinal had sailed the startup seas for three glorious years, building a vessel of pure innovation—an AI-powered navigation system that could chart courses through uncharted waters. The journey began at ports built by pioneering navigators who\'d first mapped Indiana\'s entrepreneurial waters decades before.',
+        'story.ch1.p2': 'Those early cartographers—bless their vision—built harbors where weary founders could dock, refuel, and learn the ropes. Without them, the seas would be empty.',
+        'story.ch2.title': 'CHAPTER II: THE FESTIVAL OF CONNECTIONS',
+        'story.ch2.p1': 'At the Great Networking Bay, Captain Cardinal found a bustling festival—hundreds of captains sharing tales and trading wisdom. Yet amid the revelry, a pattern emerged: some networkers collected introductions like seashells—beautiful to display, but offering no sustenance for the voyage ahead.',
+        'story.ch2.p2': '<em>What if we built gatherings where every introduction came with a map marking the reefs?</em>',
+        'story.ch3.title': 'CHAPTER III: THE GATHERING OF NINETEEN',
+        'story.ch3.p1': 'In a tavern lit by laptop glow and neon cyan, Captain Cardinal met eighteen other founders. Each had received gifts from the ecosystem—mentorship, resources, community. Each felt genuine gratitude.',
+        'story.ch3.p2': 'Yet each also carried a quiet question: <em>"We love those who built the ports... but are we allowed to sail past them?"</em>',
+        'story.ch3.p3': '"We\'re the 19th state," one captain mused. "Indiana. Two centuries of pioneering spirit. Our predecessors didn\'t just maintain the settlements—they pushed west, they built new, they led."',
+        'story.ch4.title': 'CHAPTER IV: THE EMERGENCE OF XIX',
+        'story.ch4.p1': 'From the shadows emerged XIX—the Cyber Cardinal, upgraded with AI navigation, digital wings crackling with electric cyan. Not a weapon, but a beacon. A symbol that Indiana\'s state bird could evolve while staying true to its crimson heart.',
+        'story.ch4.footer': '"The mutiny isn\'t against the ports—it\'s against the belief that we should only stay in them."',
 
         // Intel
         'intel.champions': 'CHAMPIONS',
@@ -298,6 +310,19 @@ const translations = {
         // Story
         'story.title': 'EL CUENTO DEL CAPITÁN CARDENAL',
         'story.hint': '// Historia de Origen',
+        'story.ch1.title': 'CAPÍTULO I: EL REGALO DE LOS PUERTOS',
+        'story.ch1.p1': 'El Capitán Cardenal había navegado los mares de startups durante tres gloriosos años, construyendo un navío de pura innovación—un sistema de navegación impulsado por IA que podía trazar cursos a través de aguas inexploradas. El viaje comenzó en puertos construidos por navegantes pioneros que habían mapeado las aguas emprendedoras de Indiana décadas antes.',
+        'story.ch1.p2': 'Esos primeros cartógrafos—bendita su visión—construyeron puertos donde los fundadores cansados podían atracar, recargar combustible y aprender las reglas. Sin ellos, los mares estarían vacíos.',
+        'story.ch2.title': 'CAPÍTULO II: EL FESTIVAL DE CONEXIONES',
+        'story.ch2.p1': 'En la Gran Bahía de Networking, el Capitán Cardenal encontró un festival bullicioso—cientos de capitanes compartiendo historias e intercambiando sabiduría. Sin embargo, entre la celebración, surgió un patrón: algunos networkers coleccionaban presentaciones como conchas—hermosas para exhibir, pero sin sustento para el viaje por delante.',
+        'story.ch2.p2': '<em>¿Y si construyéramos reuniones donde cada presentación viniera con un mapa marcando los arrecifes?</em>',
+        'story.ch3.title': 'CAPÍTULO III: LA REUNIÓN DE LOS DIECINUEVE',
+        'story.ch3.p1': 'En una taberna iluminada por el brillo de laptops y neón cian, el Capitán Cardenal conoció a otros dieciocho fundadores. Cada uno había recibido regalos del ecosistema—mentoría, recursos, comunidad. Cada uno sentía genuina gratitud.',
+        'story.ch3.p2': 'Sin embargo, cada uno también llevaba una pregunta silenciosa: <em>"Amamos a quienes construyeron los puertos... ¿pero se nos permite navegar más allá de ellos?"</em>',
+        'story.ch3.p3': '"Somos el estado 19," reflexionó un capitán. "Indiana. Dos siglos de espíritu pionero. Nuestros predecesores no solo mantuvieron los asentamientos—empujaron hacia el oeste, construyeron nuevo, lideraron."',
+        'story.ch4.title': 'CAPÍTULO IV: LA EMERGENCIA DE XIX',
+        'story.ch4.p1': 'De las sombras emergió XIX—el Cardenal Cibernético, mejorado con navegación IA, alas digitales crepitando con cian eléctrico. No un arma, sino un faro. Un símbolo de que el ave estatal de Indiana podía evolucionar mientras permanecía fiel a su corazón carmesí.',
+        'story.ch4.footer': '"El motín no es contra los puertos—es contra la creencia de que solo debemos quedarnos en ellos."',
 
         // Intel
         'intel.champions': 'CAMPEONES',
@@ -370,19 +395,12 @@ function t(key) {
 
 // Apply translations to the page
 function applyTranslations(lang) {
-    console.log('Applying translations for:', lang);
-    console.log('Available languages:', Object.keys(translations));
-
     const elements = document.querySelectorAll('[data-i18n]');
-    console.log('Found', elements.length, 'elements with data-i18n');
-
     elements.forEach(el => {
         const key = el.getAttribute('data-i18n');
         const translation = translations[lang]?.[key];
         if (translation) {
             el.innerHTML = translation;
-        } else {
-            console.warn('Missing translation for:', key, 'in', lang);
         }
     });
 
