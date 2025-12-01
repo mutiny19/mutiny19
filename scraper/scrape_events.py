@@ -315,6 +315,8 @@ class EventScraper:
             self.scrape_matchbox(source)
         elif 'Madjax' in name:
             self.scrape_madjax(source)
+        elif 'Flagship' in name:
+            self.scrape_flagship(source)
         elif 'IU Innovates' in name:
             self.scrape_iu_innovates(source)
         elif 'Indy Arts' in name:
@@ -1476,7 +1478,7 @@ class EventScraper:
                     link = item.find('a', href=True)
                     url = link.get('href', source['url']) if link else source['url']
                     if url.startswith('/'):
-                        url = 'https://madjax.org' + url
+                        url = 'https://www.madjax.org' + url
 
                     # Find description
                     desc_elem = item.find('p')
@@ -1505,6 +1507,104 @@ class EventScraper:
             print(f"  Found events at Madjax Muncie")
         except Exception as e:
             print(f"  Error scraping Madjax: {e}")
+
+    def scrape_flagship(self, source: Dict[str, Any]):
+        """Scrape Flagship Enterprise Center events in Anderson"""
+        try:
+            html_content = self.fetch_with_playwright(
+                source['url'],
+                wait_selector='[class*="event"], [class*="calendar"], img',
+                wait_time=5000
+            )
+            if not html_content:
+                return
+
+            soup = BeautifulSoup(html_content, 'html.parser')
+
+            # Look for event cards/items
+            event_items = soup.find_all(['div', 'article', 'a'], class_=re.compile('event|card|item', re.I))
+
+            for item in event_items[:20]:
+                try:
+                    # Find title
+                    title_elem = item.find(['h2', 'h3', 'h4', 'a', 'span'], class_=re.compile('title|name|heading', re.I))
+                    if not title_elem:
+                        title_elem = item.find(['h2', 'h3', 'h4'])
+                    if not title_elem:
+                        continue
+
+                    title = title_elem.get_text(strip=True)
+                    if not title or len(title) < 5:
+                        continue
+
+                    # Skip navigation/generic items
+                    if title.lower() in ['view event', 'learn more', 'register', 'events']:
+                        continue
+
+                    # Find date
+                    date_elem = item.find(['time', 'span', 'div', 'p'], class_=re.compile('date|time|when', re.I))
+                    event_date = None
+                    if date_elem:
+                        date_str = date_elem.get('datetime', '') or date_elem.get_text(strip=True)
+                        event_date = self._parse_date(date_str)
+
+                    # If no date found, try to extract from text
+                    if not event_date:
+                        text = item.get_text()
+                        # Look for year patterns like "2025" or "2026"
+                        import re as regex
+                        year_match = regex.search(r'(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},?\s+202[4-6]', text, regex.I)
+                        if year_match:
+                            event_date = self._parse_date(year_match.group())
+
+                    # For Flagship, many events are annual - set future date if not found
+                    if not event_date:
+                        # Check if it's a known annual event
+                        if 'PITCH 2026' in title or '2026' in title:
+                            event_date = datetime(2026, 3, 1)  # Approximate
+                        elif 'SHIFT' in title.upper():
+                            event_date = datetime(2025, 9, 1)  # Approximate
+                        else:
+                            continue
+
+                    if event_date < datetime.now():
+                        continue
+
+                    # Find URL
+                    link = item.find('a', href=True)
+                    if not link:
+                        link = item if item.name == 'a' and item.get('href') else None
+                    url = link.get('href', source['url']) if link else source['url']
+                    if url.startswith('/'):
+                        url = 'https://www.flagshipenterprise.org' + url
+
+                    # Find description
+                    desc_elem = item.find('p')
+                    description = desc_elem.get_text(strip=True)[:500] if desc_elem else title
+
+                    event_data = {
+                        'title': title,
+                        'description': description,
+                        'url': url,
+                        'date': event_date.isoformat(),
+                        'source': source['name'],
+                        'location': {
+                            'name': 'Flagship Enterprise Center',
+                            'address': '4100 S Madison Ave, Anderson, IN 46013',
+                            'lat': 40.0648,
+                            'lng': -85.6803
+                        }
+                    }
+
+                    self._add_event(event_data)
+                    print(f"  Added: {title}")
+
+                except Exception as e:
+                    continue
+
+            print(f"  Found events at Flagship Enterprise Center")
+        except Exception as e:
+            print(f"  Error scraping Flagship: {e}")
 
     def scrape_iu_innovates(self, source: Dict[str, Any]):
         """Scrape IU Innovates entrepreneurship events"""

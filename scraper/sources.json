@@ -269,9 +269,16 @@
     {
       "name": "Madjax Maker Force",
       "type": "custom",
-      "url": "https://madjax.org/events",
+      "url": "https://www.madjax.org/events",
       "enabled": true,
       "description": "Muncie maker space workshops, equipment training, and community events"
+    },
+    {
+      "name": "Flagship Enterprise Center",
+      "type": "custom",
+      "url": "https://www.flagshipenterprise.org/events",
+      "enabled": true,
+      "description": "Anderson entrepreneurship center, PITCH competition, SHIFT conference"
     },
     {
       "name": "Dimension Mill Bloomington",
