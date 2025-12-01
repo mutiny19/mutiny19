@@ -284,6 +284,25 @@
                 <button id="clearFilters" class="btn-reset">
                     <span>↻</span> <span data-i18n="filters.reset">RESET ALL</span>
                 </button>
+
+                <!-- Submit Event Form -->
+                <div class="submit-event-card">
+                    <div class="submit-event-header">
+                        <span class="submit-icon">📡</span>
+                        <span data-i18n="submit.title">SUBMIT AN EVENT</span>
+                    </div>
+                    <p class="submit-desc" data-i18n="submit.desc">Know of an event we're missing? Drop the link below.</p>
+                    <form id="submitEventForm" class="submit-event-form">
+                        <input type="url" id="eventUrl" name="eventUrl" required placeholder="https://..." data-i18n-placeholder="submit.placeholder">
+                        <!-- Honeypot -->
+                        <div style="position: absolute; left: -9999px;" aria-hidden="true">
+                            <input type="text" id="eventWebsite" name="website" tabindex="-1" autocomplete="off">
+                        </div>
+                        <button type="submit" class="submit-event-btn" data-i18n="submit.button">SUBMIT</button>
+                    </form>
+                    <div id="submitEventSuccess" class="submit-message success" style="display: none;" data-i18n="submit.success">✓ Thanks! We'll check it out.</div>
+                    <div id="submitEventError" class="submit-message error" style="display: none;" data-i18n="submit.error">✗ Error. Try again.</div>
+                </div>
             </aside>
 
             <main class="events-main">
@@ -663,6 +682,57 @@
             // Re-apply translations when story is expanded
             if (storyContent.classList.contains('active') && typeof applyTranslations === 'function') {
                 applyTranslations(currentLang);
+            }
+        });
+
+        // Submit Event Form
+        const submitEventForm = document.getElementById('submitEventForm');
+        const submitEventSuccess = document.getElementById('submitEventSuccess');
+        const submitEventError = document.getElementById('submitEventError');
+
+        submitEventForm?.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Honeypot check
+            const honeypot = document.getElementById('eventWebsite');
+            if (honeypot && honeypot.value) {
+                // Bot detected, silently fail
+                submitEventSuccess.style.display = 'block';
+                submitEventForm.reset();
+                return;
+            }
+
+            const eventUrl = document.getElementById('eventUrl').value;
+
+            // Discord webhook URL
+            const webhookUrl = 'https://discord.com/api/webhooks/1312107714928672920/jw0nSAPqtmE8gQ04vTjKuXM1W2xpsGa4mm7XBgV3EPpq93myRrxE92unmk5gsH0pbmnq';
+
+            try {
+                const response = await fetch(webhookUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        content: `📡 **New Event Submission**\n${eventUrl}`,
+                        username: 'Mutiny19 Event Bot'
+                    })
+                });
+
+                if (response.ok) {
+                    submitEventSuccess.style.display = 'block';
+                    submitEventError.style.display = 'none';
+                    submitEventForm.reset();
+                    setTimeout(() => {
+                        submitEventSuccess.style.display = 'none';
+                    }, 5000);
+                } else {
+                    throw new Error('Failed to submit');
+                }
+            } catch (error) {
+                submitEventError.style.display = 'block';
+                submitEventSuccess.style.display = 'none';
+                setTimeout(() => {
+                    submitEventError.style.display = 'none';
+                }, 5000);
             }
         });
 

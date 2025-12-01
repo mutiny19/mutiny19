@@ -69,6 +69,14 @@ const translations = {
         'events.noEvents': 'No events found matching your filters.',
         'events.error': 'Error loading events. Please refresh.',
 
+        // Submit event
+        'submit.title': 'SUBMIT AN EVENT',
+        'submit.desc': 'Know of an event we\'re missing? Drop the link below.',
+        'submit.placeholder': 'https://...',
+        'submit.button': 'SUBMIT',
+        'submit.success': '✓ Thanks! We\'ll check it out.',
+        'submit.error': '✗ Error. Try again.',
+
         // Event card labels
         'event.free': 'Free',
         'event.food': 'Food',
@@ -263,6 +271,14 @@ const translations = {
         'events.loading': 'Cargando eventos...',
         'events.noEvents': 'No se encontraron eventos con tus filtros.',
         'events.error': 'Error al cargar eventos. Actualiza la página.',
+
+        // Submit event
+        'submit.title': 'ENVIAR UN EVENTO',
+        'submit.desc': '¿Conoces un evento que nos falta? Deja el enlace abajo.',
+        'submit.placeholder': 'https://...',
+        'submit.button': 'ENVIAR',
+        'submit.success': '✓ ¡Gracias! Lo revisaremos.',
+        'submit.error': '✗ Error. Intenta de nuevo.',
 
         // Event card labels
         'event.free': 'Gratis',
