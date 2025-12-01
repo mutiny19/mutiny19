@@ -176,12 +176,19 @@ const translations = {
         'form.error': '✗ Error submitting. Please try again.',
 
         // Discord
-        'discord.feat1': 'Honest Navigation',
-        'discord.feat2': 'Founder-Only Channels',
-        'discord.feat3': 'Deal Wisdom',
-        'discord.feat4': 'IRL Meetups',
+        'discord.whatWeShare': 'WHAT WE SHARE ON DECK',
+        'discord.benefit1.title': 'Honest Navigation',
+        'discord.benefit1.desc': 'Real conversations about partners, routes, and strategies. Fellow captains sharing actual maps, not just success stories.',
+        'discord.benefit2.title': 'Founder-Only Channels',
+        'discord.benefit2.desc': 'Private quarters where captains share revenue numbers, ask vulnerable questions, and get wisdom from those who\'ve sailed similar waters.',
+        'discord.benefit3.title': 'Long-Voyage Support',
+        'discord.benefit3.desc': 'Connect with founders building for decades, not quarters. We celebrate the patient builders who chart courses beyond the next harbor.',
+        'discord.benefit4.title': 'Deal Wisdom',
+        'discord.benefit4.desc': 'Before you sign that term sheet, get perspective from crew members who\'ve navigated these straits.',
+        'discord.benefit5.title': 'IRL Gatherings',
+        'discord.benefit5.desc': 'Regular meetups at Indiana taverns. Real conversations, real founders, real community.',
+        'discord.noFees': 'No fees. No applications. No ulterior motives. Just founders who choose the long voyage.',
         'discord.cta': 'JOIN MUTINY19 ON DISCORD',
-        'discord.loading': 'Loading Discord widget...',
 
         // Teaser
         'teaser.month': 'SEPT',
@@ -364,12 +371,19 @@ const translations = {
         'form.error': '✗ Error al enviar. Por favor intenta de nuevo.',
 
         // Discord
-        'discord.feat1': 'Navegación Honesta',
-        'discord.feat2': 'Canales Solo Fundadores',
-        'discord.feat3': 'Sabiduría de Negocios',
-        'discord.feat4': 'Encuentros Presenciales',
+        'discord.whatWeShare': 'LO QUE COMPARTIMOS A BORDO',
+        'discord.benefit1.title': 'Navegación Honesta',
+        'discord.benefit1.desc': 'Conversaciones reales sobre socios, rutas y estrategias. Capitanes compartiendo mapas reales, no solo historias de éxito.',
+        'discord.benefit2.title': 'Canales Solo Fundadores',
+        'discord.benefit2.desc': 'Cuartos privados donde los capitanes comparten números de ingresos, hacen preguntas vulnerables y obtienen sabiduría de quienes han navegado aguas similares.',
+        'discord.benefit3.title': 'Apoyo de Largo Viaje',
+        'discord.benefit3.desc': 'Conecta con fundadores construyendo por décadas, no trimestres. Celebramos a los constructores pacientes que trazan cursos más allá del próximo puerto.',
+        'discord.benefit4.title': 'Sabiduría de Negocios',
+        'discord.benefit4.desc': 'Antes de firmar ese term sheet, obtén perspectiva de miembros de la tripulación que han navegado estos estrechos.',
+        'discord.benefit5.title': 'Encuentros Presenciales',
+        'discord.benefit5.desc': 'Reuniones regulares en tabernas de Indiana. Conversaciones reales, fundadores reales, comunidad real.',
+        'discord.noFees': 'Sin cuotas. Sin aplicaciones. Sin motivos ocultos. Solo fundadores que eligen el viaje largo.',
         'discord.cta': 'ÚNETE A MUTINY19 EN DISCORD',
-        'discord.loading': 'Cargando widget de Discord...',
 
         // Teaser
         'teaser.month': 'SEPT',
