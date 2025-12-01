@@ -943,24 +943,19 @@ img {
     }
 
     .events-main {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: 1fr auto;
         gap: var(--space-md);
-        /* Match height of sibling (filters-panel) */
-        height: 0;
-        min-height: 100%;
     }
 
     #listContainer,
     #mapContainer {
-        /* Fill remaining space after submit-event-card */
-        flex: 1;
-        min-height: 0; /* Allow shrinking below content height */
+        min-height: 0;
         overflow-y: auto;
     }
 
     .submit-event-card {
-        flex-shrink: 0;
+        align-self: end;
     }
 }
 
