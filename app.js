@@ -24,7 +24,7 @@ const translations = {
         'hero.revolt': 'MUTINY',
         'hero.tagline': 'From corner taverns to flagship fleets. One crew:',
         'hero.mission': 'Captains charting what\'s next.',
-        'hero.scaffolding': 'No admiralty. No harbor masters. Built by captains, for captains.',
+        'hero.scaffolding': 'Your deck. Your helm. Built by captains, for captains.',
         'hero.eventsMapped': 'PORTS CHARTED',
         'hero.citiesCovered': 'HARBORS MAPPED',
         'hero.founderSupport': 'CREW SUPPORT',
@@ -122,7 +122,7 @@ const translations = {
         'manifesto.card6.title': 'SHIPWRIGHTS ONLY',
         'manifesto.card6.desc': 'Not a social club. Not a beauty contest. A crew of captains actually building vessels. That\'s the whole manifest.',
         'manifesto.card7.title': 'CAPTAIN-FORGED',
-        'manifesto.card7.desc': 'No admiralty decrees. No harbor masters. No merchant guild playbooks. This hull was built by captains—where it sails depends on who shows up to crew it.',
+        'manifesto.card7.desc': 'This hull was built by captains who know what works. Where it sails depends on who shows up to crew it. Your ideas shape the voyage.',
 
         // Docs
         'docs.title': 'FOUNDER-FRIENDLY DOCS',
@@ -230,7 +230,7 @@ const translations = {
         'hero.revolt': 'MOTÍN',
         'hero.tagline': 'Desde tabernas de esquina hasta flotas insignia. Una tripulación:',
         'hero.mission': 'Capitanes trazando lo que viene.',
-        'hero.scaffolding': 'Sin almirantazgo. Sin capitanes de puerto. Construido por capitanes, para capitanes.',
+        'hero.scaffolding': 'Tu cubierta. Tu timón. Construido por capitanes, para capitanes.',
         'hero.eventsMapped': 'PUERTOS CARTOGRAFIADOS',
         'hero.citiesCovered': 'BAHÍAS MAPEADAS',
         'hero.founderSupport': 'APOYO DE TRIPULACIÓN',
@@ -328,7 +328,7 @@ const translations = {
         'manifesto.card6.title': 'SOLO CONSTRUCTORES DE NAVÍOS',
         'manifesto.card6.desc': 'No es un club social. No es un concurso de belleza. Una tripulación de capitanes realmente construyendo navíos. Ese es todo el manifiesto.',
         'manifesto.card7.title': 'FORJADO POR CAPITANES',
-        'manifesto.card7.desc': 'Sin decretos de almirantazgo. Sin capitanes de puerto. Sin playbooks de gremios mercantes. Este casco fue construido por capitanes—hacia dónde navega depende de quién aparezca a tripularlo.',
+        'manifesto.card7.desc': 'Este casco fue construido por capitanes que saben lo que funciona. Hacia dónde navega depende de quién aparezca a tripularlo. Tus ideas dan forma al viaje.',
 
         // Docs
         'docs.title': 'DOCUMENTOS AMIGABLES',
