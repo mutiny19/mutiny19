@@ -19,7 +19,7 @@ const translations = {
         'nav.joinCrew': 'JOIN THE CREW',
 
         // Hero
-        'hero.badge': 'ACTIVE REBELLION',
+        'hero.badge': 'FOUNDER WATERS',
         'hero.founders': 'FOUNDERS',
         'hero.revolt': 'MUTINY',
         'hero.tagline': 'From corner taverns to flagship fleets. One crew:',
@@ -34,7 +34,7 @@ const translations = {
         // Events
         'events.tag': '// NAVIGATION',
         'events.title': 'PLOT YOUR COURSE',
-        'events.desc': 'Every founder port in Indiana. Auto-pillaged. No curation. You choose your voyage.',
+        'events.desc': 'Every founder port in Indiana. Auto-pillaged daily. You choose your voyage.',
 
         // Ethos
         'manifesto.tag': '// ETHOS',
@@ -96,7 +96,7 @@ const translations = {
         // Ticker
         'ticker.autoPillaged': '⚡ AUTO-PILLAGED DAILY',
         'ticker.lastRaid': 'LAST RAID:',
-        'ticker.noGatekeepers': 'NO GATEKEEPERS',
+        'ticker.noGatekeepers': 'OPEN WATERS',
         'ticker.founderLed': 'FOUNDER-LED',
         'ticker.19thState': 'THE 19TH STATE LEADS',
         'ticker.secret': '09.19.26 // SOMETHING\'S COMING',
@@ -111,7 +111,7 @@ const translations = {
         'manifesto.card1.title': 'CAPTAINS LEAD',
         'manifesto.card1.desc': 'Founders steer. Supporters provide wind. Both essential—but the builder holds the wheel. Always.',
         'manifesto.card2.title': 'TRANSPARENT MAPS',
-        'manifesto.card2.desc': 'Every event. Every opportunity. No curation, no gatekeeping. You see everything. You choose your path.',
+        'manifesto.card2.desc': 'Every event. Every opportunity. Full visibility. You see everything. You choose your path.',
         'manifesto.card3.title': 'BUILD ARMADAS',
         'manifesto.card3.desc': 'We build vessels that capture other ships. Fleets that enrich the whole harbor, with eyes on the crown. The real treasure is built after the first buyout offers arrive.',
         'manifesto.card4.title': 'FAIR TRADE',
@@ -145,7 +145,7 @@ const translations = {
         'story.ch3.p3': '"We\'re the 19th state," one captain mused. "Indiana. Two centuries of pioneering spirit. Our predecessors didn\'t just maintain the settlements—they pushed west, they built new, they led."',
         'story.ch4.title': 'CHAPTER IV: THE EMERGENCE OF XIX',
         'story.ch4.p1': 'From the shadows emerged XIX—the Cyber Cardinal, upgraded with AI navigation, digital wings crackling with electric cyan. Not a weapon, but a beacon. A symbol that Indiana\'s state bird could evolve while staying true to its crimson heart.',
-        'story.ch4.footer': '"The mutiny isn\'t against the ports—it\'s against the belief that we should only stay in them."',
+        'story.ch4.footer': '"The mutiny is for what comes next—vessels worth building, voyages worth taking."',
 
         // Intel
         'intel.champions': 'ALLIES',
@@ -213,8 +213,8 @@ const translations = {
         'footer.reportIntel': 'Report Intel',
         'footer.builtBy': 'Built by founders, for founders.',
         'footer.aiPowered': '⚡ AI-powered by <a href="https://claude.ai" target="_blank">Claude</a> • Content synthesized from 100+ Indiana entrepreneurs',
-        'footer.noSponsors': 'No corporate sponsors',
-        'footer.noGatekeepers': 'No gatekeepers'
+        'footer.noSponsors': 'Founder-funded',
+        'footer.noGatekeepers': 'Open waters'
     },
     es: {
         // Navigation
@@ -225,7 +225,7 @@ const translations = {
         'nav.joinCrew': 'ÚNETE A LA TRIPULACIÓN',
 
         // Hero
-        'hero.badge': 'REBELIÓN ACTIVA',
+        'hero.badge': 'AGUAS DE FUNDADORES',
         'hero.founders': 'FUNDADORES',
         'hero.revolt': 'MOTÍN',
         'hero.tagline': 'Desde tabernas de esquina hasta flotas insignia. Una tripulación:',
@@ -240,7 +240,7 @@ const translations = {
         // Events
         'events.tag': '// NAVEGACIÓN',
         'events.title': 'TRAZA TU RUMBO',
-        'events.desc': 'Cada puerto de fundadores en Indiana. Auto-saqueado. Sin curación. Tú eliges tu viaje.',
+        'events.desc': 'Cada puerto de fundadores en Indiana. Auto-saqueado diario. Tú eliges tu viaje.',
 
         // Manifesto
         'manifesto.tag': '// ETHOS',
@@ -302,7 +302,7 @@ const translations = {
         // Ticker
         'ticker.autoPillaged': '⚡ AUTO-SAQUEADO DIARIO',
         'ticker.lastRaid': 'ÚLTIMO SAQUEO:',
-        'ticker.noGatekeepers': 'SIN GUARDIANES',
+        'ticker.noGatekeepers': 'AGUAS ABIERTAS',
         'ticker.founderLed': 'LIDERADO POR FUNDADORES',
         'ticker.19thState': 'EL ESTADO 19 LIDERA',
         'ticker.secret': '19.09.26 // ALGO VIENE',
@@ -317,7 +317,7 @@ const translations = {
         'manifesto.card1.title': 'LOS CAPITANES LIDERAN',
         'manifesto.card1.desc': 'Los fundadores dirigen. Los apoyos dan viento. Ambos esenciales—pero el constructor sostiene el timón. Siempre.',
         'manifesto.card2.title': 'MAPAS TRANSPARENTES',
-        'manifesto.card2.desc': 'Cada evento. Cada oportunidad. Sin curación, sin guardianes. Ves todo. Eliges tu camino.',
+        'manifesto.card2.desc': 'Cada evento. Cada oportunidad. Visibilidad total. Ves todo. Eliges tu camino.',
         'manifesto.card3.title': 'CONSTRUIR ARMADAS',
         'manifesto.card3.desc': 'Construimos navíos que capturan otros barcos. Flotas que enriquecen todo el puerto, con ojos en la corona. El verdadero tesoro se construye después de que llegan las primeras ofertas de compra.',
         'manifesto.card4.title': 'COMERCIO JUSTO',
@@ -351,7 +351,7 @@ const translations = {
         'story.ch3.p3': '"Somos el estado 19," reflexionó un capitán. "Indiana. Dos siglos de espíritu pionero. Nuestros predecesores no solo mantuvieron los asentamientos—empujaron hacia el oeste, construyeron nuevo, lideraron."',
         'story.ch4.title': 'CAPÍTULO IV: LA EMERGENCIA DE XIX',
         'story.ch4.p1': 'De las sombras emergió XIX—el Cardenal Cibernético, mejorado con navegación IA, alas digitales crepitando con cian eléctrico. No un arma, sino un faro. Un símbolo de que el ave estatal de Indiana podía evolucionar mientras permanecía fiel a su corazón carmesí.',
-        'story.ch4.footer': '"El motín no es contra los puertos—es contra la creencia de que solo debemos quedarnos en ellos."',
+        'story.ch4.footer': '"El motín es por lo que viene—navíos que vale la pena construir, viajes que vale la pena tomar."',
 
         // Intel
         'intel.champions': 'ALIADOS',
@@ -419,8 +419,8 @@ const translations = {
         'footer.reportIntel': 'Reportar Intel',
         'footer.builtBy': 'Construido por fundadores, para fundadores.',
         'footer.aiPowered': '⚡ Impulsado por IA con <a href="https://claude.ai" target="_blank">Claude</a> • Contenido sintetizado de 100+ emprendedores de Indiana',
-        'footer.noSponsors': 'Sin patrocinadores corporativos',
-        'footer.noGatekeepers': 'Sin guardianes'
+        'footer.noSponsors': 'Financiado por fundadores',
+        'footer.noGatekeepers': 'Aguas abiertas'
     }
 };
 
