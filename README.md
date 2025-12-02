@@ -208,11 +208,32 @@ Contributions are welcome! To add support for new event sources:
 
 Potential features to add:
 - Event categories (workshop, networking, pitch event, etc.)
-- User submissions form
 - Email notifications for new events
 - Advanced search and filtering
 - Mobile app version
 - Social sharing features
+
+## TODO: Messaging Clarity
+
+**Feedback received:** Users are unclear about what Mutiny19 is and who it's for.
+
+**Questions to address on the site:**
+1. "Is it just Indiana?" - Yes, Indiana-focused
+2. "No lawyers or ecosystem partners allowed?" - Founders-first, but ecosystem partners who support (not extract from) founders are welcome
+3. "Is it like IN Founders Network reboot?" - Similar spirit, but different execution (no gatekeeping, auto-scraped events, anonymous intel)
+
+**Potential solutions:**
+- Add a "What is Mutiny19?" section or FAQ
+- Clarify the hero tagline to explain the value prop
+- Add an "About" page with mission/vision
+- Update the manifesto to be more explicit about who's welcome
+
+**Key messages to convey:**
+- **Who:** Indiana founders actively building companies
+- **What:** Community (Discord) + event aggregator + anonymous intel sharing
+- **Scope:** Indiana-focused (the 19th state)
+- **Who's welcome:** Founders, and ecosystem partners who genuinely support builders
+- **What makes it different:** No gatekeeping, auto-scraped events from all sources, anonymous community intel, founder-led
 
 ## License
 
