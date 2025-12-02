@@ -1688,30 +1688,61 @@ img {
     font-weight: 600;
     color: var(--text-dim);
     background: var(--surface);
-    border: 1px solid var(--border);
+    border: 1px dashed var(--cyan-dim);
     border-radius: 8px;
     padding: var(--space-lg);
     cursor: pointer;
     transition: all var(--transition-fast);
+    position: relative;
+}
+
+.story-toggle::after {
+    content: 'CLICK TO EXPAND';
+    position: absolute;
+    right: var(--space-lg);
+    font-size: 0.7rem;
+    color: var(--cyan);
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+    animation: pulse-hint 2s ease-in-out infinite;
+}
+
+.story-toggle.active::after {
+    content: 'CLICK TO COLLAPSE';
+}
+
+@keyframes pulse-hint {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
 }
 
 .story-toggle:hover {
     border-color: var(--cyan);
+    border-style: solid;
     color: var(--text);
+    background: var(--surface-light);
 }
 
 .toggle-icon {
     font-size: 1.5rem;
     color: var(--cyan);
     transition: transform var(--transition-med);
+    animation: bounce-icon 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce-icon {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
 }
 
 .story-toggle.active .toggle-icon {
     transform: rotate(45deg);
+    animation: none;
 }
 
 .toggle-hint {
     margin-left: auto;
+    margin-right: 120px;
     font-size: 0.75rem;
     color: var(--text-muted);
 }
