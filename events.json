@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-12-05T06:42:24.263565",
+  "lastUpdated": "2025-12-06T06:39:15.810106",
   "events": [
     {
       "title": "TECHPOINT: Joint Network Breakfast",
@@ -21,7 +21,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "9149737590220077697"
+      "id": "2428373071255123337"
     },
     {
       "title": "Innovate Central Indiana - Indianapolis",
@@ -43,7 +43,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "5233402655448943391"
+      "id": "5618168771021919185"
     },
     {
       "title": "Webinar: Using SaaS Benchmarks to Build Your Startup's 2026 Financial Forecast",
@@ -65,7 +65,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "328734519038066745"
+      "id": "3655080426589448332"
     },
     {
       "title": "Innovate Indiana Series: Central Indiana",
@@ -87,7 +87,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "8675511129555364606"
+      "id": "8533728353055549760"
     },
     {
       "title": "Red for Our Kids 2026 presented by Republic Airways",
@@ -109,7 +109,7 @@
         "alcoholDrinks": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "3208404642589307204"
+      "id": "8946509738750138085"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -131,7 +131,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "3701054471143334248"
+      "id": "5550657036032455261"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -153,7 +153,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "4041604592382727702"
+      "id": "2887255113771327226"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -175,7 +175,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "1014058344731013796"
+      "id": "2824764868267634615"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -197,7 +197,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "8887303089294281384"
+      "id": "1263605319575963384"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -219,7 +219,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "4612927738619875932"
+      "id": "1859677817671688443"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -241,7 +241,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "5198529185076256648"
+      "id": "6147146550021455251"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -263,7 +263,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "5950258432988018852"
+      "id": "3823418002619917454"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -285,13 +285,13 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "4615584371798695260"
+      "id": "8136090537519644364"
     },
     {
       "title": "1 Million Cups Indianapolis",
       "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
       "url": "https://www.1millioncups.com/indy",
-      "date": "2026-08-05T09:00:00",
+      "date": "2026-08-12T09:00:00",
       "source": "1 Million Cups Indianapolis",
       "location": {
         "name": "Indianapolis",
@@ -307,7 +307,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "853593599391780968"
+      "id": "2002932197492864380"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -329,7 +329,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "1330800439908949890"
+      "id": "2234420629297857680"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -351,7 +351,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "4766187384984078870"
+      "id": "6216961018258022456"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -373,7 +373,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "6787164478705703129"
+      "id": "3563811462671868910"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -395,7 +395,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "7918308904482426490"
+      "id": "134326839831947301"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -417,7 +417,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "2775455516403547348"
+      "id": "9054806744224995499"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -439,7 +439,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "3992309574044416835"
+      "id": "8545751101653579489"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -461,7 +461,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "3141811016133260057"
+      "id": "3479147708804931350"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -483,7 +483,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "1745699485820705491"
+      "id": "5792303682827763110"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -505,7 +505,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "4755378569798893067"
+      "id": "4315800225201957279"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -527,7 +527,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "7097708626546059373"
+      "id": "5203048622628996839"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -549,7 +549,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "8461252914725868149"
+      "id": "940414292236543493"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -571,7 +571,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "7864291916974382161"
+      "id": "3416550184879509669"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -593,7 +593,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "8700452780703629759"
+      "id": "8220471525518544732"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -615,7 +615,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "1849344273506094672"
+      "id": "66923896463720122"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -637,7 +637,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "2766740689930688092"
+      "id": "6251566026809808348"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -659,7 +659,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "2052709461778112797"
+      "id": "64017772777977096"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -681,7 +681,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "4205794693673902506"
+      "id": "9122988994097536495"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -703,7 +703,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "5588897628337120667"
+      "id": "8138896318106462972"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -725,29 +725,7 @@
         "alcoholDrinks": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "6279037989178474611"
-    },
-    {
-      "title": "Trivia with Purpose: Leadership, Learning & Laughter",
-      "description": "Join us for an evening of leadership, laughter, and purpose! \nTrivia With Purpose is a fun, community-driven event hosted by Project Rise with Dr. Helen, Inc., designed to connect women professionals, allies, and DEI champions through team trivia, dinner, music, and prizes. \nProceeds support leadership development and certification scholarships for underrepresented professionals through Project Rise. \nCome ready to unwind, learn, and celebrate women\u2019s brilliance \u2014 all while supporting the next g",
-      "url": "https://16tech.com/event/trivia-with-purpose-leadership-learning-laughter/",
-      "date": "2025-12-05T17:00:00",
-      "source": "16 Tech Innovation District",
-      "location": {
-        "name": "Indianapolis",
-        "address": "Indianapolis, IN",
-        "lat": 39.7684,
-        "lng": -86.1581
-      },
-      "features": {
-        "free": false,
-        "food": true,
-        "appetizers": false,
-        "nonAlcoholDrinks": false,
-        "alcoholDrinks": false
-      },
-      "organizer": "16 Tech Innovation District",
-      "id": "2415899242527032512"
+      "id": "6930314656964232044"
     },
     {
       "title": "Indy Winter Farmers Market",
@@ -769,7 +747,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "7482734471424728432"
+      "id": "6840909145164993264"
     },
     {
       "title": "Laser Engraving Class: Certification & Leather Keychain",
@@ -791,7 +769,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "7594694857002454713"
+      "id": "5605875551433732736"
     },
     {
       "title": "Entrepreneurship Simulation",
@@ -813,7 +791,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "1966940189519672742"
+      "id": "2056458768275865998"
     },
     {
       "title": "The Luddy School Graduate Capstone Showcase at IU Indianapolis",
@@ -835,7 +813,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "3707238707627153200"
+      "id": "1632521952893014495"
     },
     {
       "title": "Indy Winter Farmers Market",
@@ -857,7 +835,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "7946474735823283247"
+      "id": "2248896877453059717"
     },
     {
       "title": "Big Gay Holiday",
@@ -879,7 +857,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "6083905969797194692"
+      "id": "2863274836714151624"
     },
     {
       "title": "Free Design Seminar - Laser Cut Holiday Ornaments",
@@ -901,7 +879,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "964266271720764904"
+      "id": "3039233932323988498"
     },
     {
       "title": "Indy Winter Farmers Market",
@@ -923,7 +901,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "6122663518983610698"
+      "id": "1756336515758404284"
     },
     {
       "title": "Indy Winter Farmers Market",
@@ -945,7 +923,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "6892378415987466966"
+      "id": "5887223765235012012"
     },
     {
       "title": "Indy Winter Farmers Market",
@@ -967,7 +945,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "6615915350709964850"
+      "id": "7419687445886524029"
     },
     {
       "title": "Indy Winter Farmers Market",
@@ -989,7 +967,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "531320242117453193"
+      "id": "7442704288677763102"
     },
     {
       "title": "Indy Winter Farmers Market",
@@ -1011,7 +989,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "8756678087278580577"
+      "id": "5533289849939328688"
     },
     {
       "title": "Indy Winter Farmers Market",
@@ -1033,7 +1011,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "5439864747241215142"
+      "id": "130771373736947783"
     },
     {
       "title": "Indy Winter Farmers Market",
@@ -1055,7 +1033,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "6365025542254967586"
+      "id": "7655510025363677109"
     },
     {
       "title": "Indy Winter Farmers Market",
@@ -1077,7 +1055,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "3072041036034362838"
+      "id": "2226565828463161475"
     },
     {
       "title": "Big Gay Valentines",
@@ -1099,7 +1077,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "2563703051851834124"
+      "id": "685942516542375509"
     },
     {
       "title": "Big Gay Valentines",
@@ -1121,7 +1099,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "8739890291143139242"
+      "id": "2325315358478015951"
     },
     {
       "title": "Indy Winter Farmers Market",
@@ -1143,7 +1121,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "1328552135485728889"
+      "id": "4193708183594748089"
     },
     {
       "title": "Indy Winter Farmers Market",
@@ -1165,7 +1143,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "3723473283983644116"
+      "id": "7761752793453961825"
     },
     {
       "title": "Indy Winter Farmers Market",
@@ -1187,7 +1165,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "850511565294830520"
+      "id": "8466504454019239346"
     },
     {
       "title": "Indy Winter Farmers Market",
@@ -1209,7 +1187,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "6333212298704768824"
+      "id": "7321617397945370985"
     },
     {
       "title": "Indy Winter Farmers Market",
@@ -1231,7 +1209,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "2756897852837013032"
+      "id": "3780888924379004850"
     },
     {
       "title": "Indy Winter Farmers Market",
@@ -1253,7 +1231,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "8568669181689548890"
+      "id": "2705503301955475996"
     },
     {
       "title": "Indy Winter Farmers Market",
@@ -1275,7 +1253,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "7544714680849113659"
+      "id": "1881432978455284927"
     },
     {
       "title": "Indy Winter Farmers Market",
@@ -1297,7 +1275,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "5312362507572753233"
+      "id": "2967446199527119189"
     },
     {
       "title": "Indy Winter Farmers Market",
@@ -1319,7 +1297,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "6262920036689590186"
+      "id": "1863330316619417408"
     },
     {
       "title": "Indy Winter Farmers Market",
@@ -1341,7 +1319,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "5011480204553833083"
+      "id": "1950468775964477027"
     },
     {
       "title": "Indy Winter Farmers Market",
@@ -1363,7 +1341,7 @@
         "alcoholDrinks": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "2505404409624973810"
+      "id": "7408008696567774683"
     },
     {
       "title": "Learn at Launch: Purpose and Profit - CSR in Small and Mid-size Companies",
@@ -1385,7 +1363,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Launch Fishers",
-      "id": "6008253961907712804"
+      "id": "6737128600569541707"
     },
     {
       "title": "Holiday Sweet Swap",
@@ -1407,7 +1385,7 @@
         "alcoholDrinks": true
       },
       "organizer": "Launch Fishers",
-      "id": "3598711414980692069"
+      "id": "4274349837784452952"
     },
     {
       "title": "Coffee & Conversation: December 2025",
@@ -1429,7 +1407,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Launch Fishers",
-      "id": "292081743984667157"
+      "id": "5622503347107318103"
     },
     {
       "title": "Free Cowork Friday: December 2025",
@@ -1451,7 +1429,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Launch Fishers",
-      "id": "5437438091061604890"
+      "id": "8643673959728368693"
     },
     {
       "title": "H7 Network, Carmel, IN",
@@ -1473,7 +1451,7 @@
         "alcoholDrinks": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "7624407813092561637"
+      "id": "93933286854392543"
     },
     {
       "title": "H7 Network, Westfield, IN",
@@ -1495,7 +1473,7 @@
         "alcoholDrinks": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "6110619629071384738"
+      "id": "198969239634289331"
     },
     {
       "title": "H7 Network, Indianapolis, IN Senior",
@@ -1517,7 +1495,7 @@
         "alcoholDrinks": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "7277710281543117198"
+      "id": "5503935992200457006"
     },
     {
       "title": "H7 Network, Fishers, IN",
@@ -1539,7 +1517,7 @@
         "alcoholDrinks": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "9092908888863509437"
+      "id": "1991887433408331832"
     },
     {
       "title": "Connect, Serve, and Ask\u00ae \u2014 The Heart of True Leadership",
@@ -1561,7 +1539,7 @@
         "alcoholDrinks": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "6533015501355615435"
+      "id": "3058524773723405038"
     },
     {
       "title": "H7 Network, Noblesville, IN",
@@ -1583,7 +1561,7 @@
         "alcoholDrinks": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "2021123292122193191"
+      "id": "7083684819275230816"
     },
     {
       "title": "H7 Network, Carmel, IN",
@@ -1605,7 +1583,7 @@
         "alcoholDrinks": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "7878979741293354087"
+      "id": "3028639436300313448"
     },
     {
       "title": "H7 Network, Westfield, IN",
@@ -1627,7 +1605,7 @@
         "alcoholDrinks": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "6819794714095894465"
+      "id": "7506001532018934380"
     },
     {
       "title": "H7 Network, Indianapolis, IN Senior",
@@ -1649,7 +1627,7 @@
         "alcoholDrinks": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "2557762778418977834"
+      "id": "4010846119051148052"
     },
     {
       "title": "H7 Network, Fishers, IN",
@@ -1671,7 +1649,7 @@
         "alcoholDrinks": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "7668638418929130142"
+      "id": "2619340391982988463"
     },
     {
       "title": "MatchBOX Free Coworking Day",
@@ -1693,29 +1671,7 @@
         "alcoholDrinks": false
       },
       "organizer": "MatchBOX Coworking Studio",
-      "id": "9168640366309312162"
-    },
-    {
-      "title": "Non-Members",
-      "description": "This workshop introduces participants to the art of working with polymer clay to create custom trinket trays. In this session, you\u2019ll learn how to shape and form polymer clay, bake it to a durable finish, and then sand, paint, and seal your piece for a polished look. We\u2019ll explore decorative techniques such as marbling clay colors together for unique patterns and adding gold-painted edging for a refined touch.",
-      "url": "?category=Non-Members",
-      "date": "2025-12-06T00:00:00",
-      "source": "Madjax Maker Force",
-      "location": {
-        "name": "Indianapolis",
-        "address": "Indianapolis, IN",
-        "lat": 39.7684,
-        "lng": -86.1581
-      },
-      "features": {
-        "free": false,
-        "food": false,
-        "appetizers": false,
-        "nonAlcoholDrinks": false,
-        "alcoholDrinks": false
-      },
-      "organizer": "Madjax Maker Force",
-      "id": "2818055074646562477"
+      "id": "5105702285860078045"
     },
     {
       "title": "Non-Members",
@@ -1737,7 +1693,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Madjax Maker Force",
-      "id": "7274528354280672131"
+      "id": "2467838737404616571"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1759,7 +1715,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "8279053501818962198"
+      "id": "1551086406273798083"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1781,7 +1737,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "292396767672160181"
+      "id": "1191495667694898095"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1803,7 +1759,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "7025254114751612354"
+      "id": "1694365540813151538"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1825,7 +1781,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "8715263127041042680"
+      "id": "2933548545052834567"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1847,7 +1803,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "7440078180867050696"
+      "id": "4556370916801349469"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1869,7 +1825,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "1989383730180582684"
+      "id": "2148840553870778940"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1891,7 +1847,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "5465473893478624517"
+      "id": "5539045957494240675"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1913,7 +1869,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "826610610793988863"
+      "id": "8099650090255099400"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1935,7 +1891,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "5837205016226053157"
+      "id": "3103870351734567879"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1957,7 +1913,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "6103229008043680585"
+      "id": "1613518640238454776"
     },
     {
       "title": "Indy.rb - The Indianapolis Ruby Brigade Monthly Meetup",
@@ -1979,7 +1935,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Indy.rb Ruby Brigade Meetup",
-      "id": "9115146363805131892"
+      "id": "2153026520555349708"
     },
     {
       "title": "Indy.rb - The Indianapolis Ruby Brigade Monthly Meetup",
@@ -2001,7 +1957,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Indy.rb Ruby Brigade Meetup",
-      "id": "7715363859658582171"
+      "id": "4277200152343966508"
     },
     {
       "title": "Indy.rb - The Indianapolis Ruby Brigade Monthly Meetup",
@@ -2023,7 +1979,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Indy.rb Ruby Brigade Meetup",
-      "id": "3319050967528468252"
+      "id": "730090018040641693"
     },
     {
       "title": "Indy.rb - The Indianapolis Ruby Brigade Monthly Meetup",
@@ -2045,7 +2001,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Indy.rb Ruby Brigade Meetup",
-      "id": "8774221741181117153"
+      "id": "1608965879441040354"
     },
     {
       "title": "Indy.rb - The Indianapolis Ruby Brigade Monthly Meetup",
@@ -2067,7 +2023,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Indy.rb Ruby Brigade Meetup",
-      "id": "2794401026363931086"
+      "id": "406504186630229350"
     },
     {
       "title": "Indy.rb - The Indianapolis Ruby Brigade Monthly Meetup",
@@ -2089,7 +2045,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Indy.rb Ruby Brigade Meetup",
-      "id": "7510689545329372034"
+      "id": "8988305748562825549"
     },
     {
       "title": "Indy.rb - The Indianapolis Ruby Brigade Monthly Meetup",
@@ -2111,7 +2067,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Indy.rb Ruby Brigade Meetup",
-      "id": "7278598064931235742"
+      "id": "7904593130613420263"
     },
     {
       "title": "Indy.rb - The Indianapolis Ruby Brigade Monthly Meetup",
@@ -2133,7 +2089,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Indy.rb Ruby Brigade Meetup",
-      "id": "3437726460238157165"
+      "id": "5336605902715997244"
     },
     {
       "title": "Indy.rb - The Indianapolis Ruby Brigade Monthly Meetup",
@@ -2155,7 +2111,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Indy.rb Ruby Brigade Meetup",
-      "id": "3242253140587138034"
+      "id": "4174681473486860680"
     },
     {
       "title": "Indy.rb - The Indianapolis Ruby Brigade Monthly Meetup",
@@ -2177,7 +2133,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Indy.rb Ruby Brigade Meetup",
-      "id": "4857598860765620085"
+      "id": "1533659769616571615"
     },
     {
       "title": "RSVP for the next Indianapolis RHUG! ",
@@ -2199,7 +2155,7 @@
         "alcoholDrinks": false
       },
       "organizer": "Indianapolis RHUG",
-      "id": "3173565452494324570"
+      "id": "6460497646037925087"
     }
   ]
 }
