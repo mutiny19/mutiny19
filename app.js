@@ -61,6 +61,7 @@ const translations = {
         'filters.coffee': 'COFFEE',
         'filters.drinks': 'DRINKS',
         'filters.captainForged': 'CAPTAIN-FORGED',
+        'filters.captainForgedOnly': 'CAPTAIN-FORGED ONLY',
         'filters.viewMode': 'VIEW MODE',
         'filters.list': 'LIST',
         'filters.map': 'MAP',
@@ -271,6 +272,7 @@ const translations = {
         'filters.coffee': 'CAFÉ',
         'filters.drinks': 'BEBIDAS',
         'filters.captainForged': 'FORJADO POR CAPITANES',
+        'filters.captainForgedOnly': 'SOLO FORJADO POR CAPITANES',
         'filters.viewMode': 'MODO DE VISTA',
         'filters.list': 'LISTA',
         'filters.map': 'MAPA',
@@ -853,14 +855,34 @@ function applyFilters() {
 // Setup event listeners
 function setupEventListeners() {
     // Filter listeners
+    const filterChangeHandler = () => {
+        // If any filter is manually changed, deactivate captain-forged only mode
+        const captainForgedBtn = document.getElementById('captainForgedOnlyBtn');
+        if (captainForgedBtn && captainForgedBtn.classList.contains('active')) {
+            // Check if we're still in captain-forged only state
+            const isCaptainForgedOnly =
+                !document.getElementById('filterFree').checked &&
+                !document.getElementById('filterFood').checked &&
+                !document.getElementById('filterAppetizers').checked &&
+                !document.getElementById('filterNonAlcohol').checked &&
+                !document.getElementById('filterAlcohol').checked &&
+                document.getElementById('filterCaptainForged').checked;
+
+            if (!isCaptainForgedOnly) {
+                captainForgedBtn.classList.remove('active');
+            }
+        }
+        applyFilters();
+    };
+
     document.getElementById('startDate').addEventListener('change', applyFilters);
     document.getElementById('endDate').addEventListener('change', applyFilters);
-    document.getElementById('filterFree').addEventListener('change', applyFilters);
-    document.getElementById('filterFood').addEventListener('change', applyFilters);
-    document.getElementById('filterAppetizers').addEventListener('change', applyFilters);
-    document.getElementById('filterNonAlcohol').addEventListener('change', applyFilters);
-    document.getElementById('filterAlcohol').addEventListener('change', applyFilters);
-    document.getElementById('filterCaptainForged').addEventListener('change', applyFilters);
+    document.getElementById('filterFree').addEventListener('change', filterChangeHandler);
+    document.getElementById('filterFood').addEventListener('change', filterChangeHandler);
+    document.getElementById('filterAppetizers').addEventListener('change', filterChangeHandler);
+    document.getElementById('filterNonAlcohol').addEventListener('change', filterChangeHandler);
+    document.getElementById('filterAlcohol').addEventListener('change', filterChangeHandler);
+    document.getElementById('filterCaptainForged').addEventListener('change', filterChangeHandler);
 
     // Clear filters
     document.getElementById('clearFilters').addEventListener('click', () => {
@@ -872,8 +894,45 @@ function setupEventListeners() {
         document.getElementById('filterNonAlcohol').checked = true;
         document.getElementById('filterAlcohol').checked = true;
         document.getElementById('filterCaptainForged').checked = true;
+
+        // Remove active state from captain-forged only button
+        const captainForgedBtn = document.getElementById('captainForgedOnlyBtn');
+        if (captainForgedBtn) {
+            captainForgedBtn.classList.remove('active');
+        }
+
         applyFilters();
     });
+
+    // Captain-Forged Only button
+    const captainForgedOnlyBtn = document.getElementById('captainForgedOnlyBtn');
+    if (captainForgedOnlyBtn) {
+        captainForgedOnlyBtn.addEventListener('click', () => {
+            const isActive = captainForgedOnlyBtn.classList.contains('active');
+
+            if (!isActive) {
+                // Activate: Show only captain-forged events
+                document.getElementById('filterFree').checked = false;
+                document.getElementById('filterFood').checked = false;
+                document.getElementById('filterAppetizers').checked = false;
+                document.getElementById('filterNonAlcohol').checked = false;
+                document.getElementById('filterAlcohol').checked = false;
+                document.getElementById('filterCaptainForged').checked = true;
+                captainForgedOnlyBtn.classList.add('active');
+            } else {
+                // Deactivate: Show all events
+                document.getElementById('filterFree').checked = true;
+                document.getElementById('filterFood').checked = true;
+                document.getElementById('filterAppetizers').checked = true;
+                document.getElementById('filterNonAlcohol').checked = true;
+                document.getElementById('filterAlcohol').checked = true;
+                document.getElementById('filterCaptainForged').checked = true;
+                captainForgedOnlyBtn.classList.remove('active');
+            }
+
+            applyFilters();
+        });
+    }
 
     // View toggle listeners
     document.getElementById('mapViewBtn').addEventListener('click', () => {

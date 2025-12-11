@@ -1232,6 +1232,56 @@ img {
     background: rgba(0, 242, 255, 0.1);
 }
 
+/* Captain-Forged Only Button */
+.btn-captain-forged-only {
+    width: 100%;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--black);
+    background: var(--accent);
+    border: 2px solid var(--accent);
+    border-radius: 6px;
+    padding: var(--space-sm);
+    margin-bottom: var(--space-sm);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+    box-shadow: 0 2px 8px rgba(0, 242, 255, 0.3);
+}
+
+.btn-captain-forged-only:hover {
+    background: var(--text);
+    border-color: var(--text);
+    box-shadow: 0 4px 12px rgba(0, 242, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-captain-forged-only:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 242, 255, 0.4);
+}
+
+.btn-captain-forged-only.active {
+    background: var(--crimson);
+    border-color: var(--crimson);
+    box-shadow: 0 4px 12px rgba(255, 42, 109, 0.5);
+    animation: pulse-button 2s ease-in-out infinite;
+}
+
+@keyframes pulse-button {
+    0%, 100% {
+        box-shadow: 0 4px 12px rgba(255, 42, 109, 0.5);
+    }
+    50% {
+        box-shadow: 0 4px 20px rgba(255, 42, 109, 0.8);
+    }
+}
+
 /* View Toggle */
 .view-toggle {
     display: flex;

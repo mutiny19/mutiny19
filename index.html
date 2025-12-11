@@ -247,7 +247,19 @@
 
                 <div class="filter-group">
                     <label class="filter-label" data-i18n="filters.included">WHAT'S INCLUDED</label>
+
+                    <!-- Quick Captain-Forged Only Toggle -->
+                    <button id="captainForgedOnlyBtn" class="btn-captain-forged-only">
+                        <span>⚓</span>
+                        <span data-i18n="filters.captainForgedOnly">CAPTAIN-FORGED ONLY</span>
+                    </button>
+
                     <div class="filter-checks">
+                        <label class="check-item check-item-highlight">
+                            <input type="checkbox" id="filterCaptainForged" checked>
+                            <span class="check-box"></span>
+                            <span class="check-label" data-i18n="filters.captainForged">CAPTAIN-FORGED</span>
+                        </label>
                         <label class="check-item">
                             <input type="checkbox" id="filterFree" checked>
                             <span class="check-box"></span>
@@ -272,11 +284,6 @@
                             <input type="checkbox" id="filterAlcohol" checked>
                             <span class="check-box"></span>
                             <span class="check-label" data-i18n="filters.drinks">DRINKS</span>
-                        </label>
-                        <label class="check-item check-item-highlight">
-                            <input type="checkbox" id="filterCaptainForged" checked>
-                            <span class="check-box"></span>
-                            <span class="check-label" data-i18n="filters.captainForged">CAPTAIN-FORGED</span>
                         </label>
                     </div>
                 </div>
