@@ -699,9 +699,10 @@ function displayEventsList(events) {
         const shortDesc = truncate(event.description, 100);
         const shortTitle = truncate(event.title, 60);
         const shortLocation = truncate(event.location.name + ', ' + event.location.address, 50);
+        const captainForgedClass = event.features.captainForged ? ' event-card-captain-forged' : '';
 
         return `
-            <div class="event-card" onclick="showEventDetails('${event.id}')">
+            <div class="event-card${captainForgedClass}" onclick="showEventDetails('${event.id}')">
                 <h3>${shortTitle}</h3>
                 <p>${shortDesc}</p>
                 <p><strong>📅 ${date.toLocaleDateString()}</strong> ${date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}${endDate ? ' - ' + endDate.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}) : ''}</p>

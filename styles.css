@@ -1481,6 +1481,43 @@ img {
     transform: translateX(4px);
 }
 
+.event-card-captain-forged {
+    background: linear-gradient(135deg, rgba(0, 242, 255, 0.03) 0%, var(--darker) 50%, rgba(0, 242, 255, 0.03) 100%);
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.2), inset 0 0 20px rgba(0, 242, 255, 0.05);
+    position: relative;
+    overflow: visible;
+}
+
+.event-card-captain-forged::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, var(--accent), transparent, var(--accent));
+    border-radius: 6px;
+    z-index: -1;
+    opacity: 0.3;
+    animation: borderGlow 3s ease-in-out infinite;
+}
+
+@keyframes borderGlow {
+    0%, 100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
+
+.event-card-captain-forged:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 30px rgba(0, 242, 255, 0.4), inset 0 0 30px rgba(0, 242, 255, 0.1);
+    transform: translateX(4px) scale(1.01);
+}
+
 .event-card p,
 .event-card span,
 .event-card div {
