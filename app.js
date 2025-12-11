@@ -125,7 +125,7 @@ const translations = {
         'manifesto.card5.desc': 'Indiana became the 19th state in 1816. Our ancestors didn\'t settle—they pioneered. We honor them by building, not following.',
         'manifesto.card5.date': 'December 11, 1816 → Forever',
         'manifesto.card6.title': 'SHIPWRIGHTS ONLY',
-        'manifesto.card6.desc': 'Not a social club. Not a beauty contest. A crew of captains actually building vessels. That\'s the whole manifest.',
+        'manifesto.card6.desc': 'Shipwrights building for shipwrights. What we forge together strengthens our fleet. Mutual investment. Collective rise. That\'s the whole manifest.',
         'manifesto.card7.title': 'CAPTAIN-FORGED',
         'manifesto.card7.desc': 'This hull was built by captains who know what works. Where it sails depends on who shows up to crew it. Your ideas shape the voyage.',
 
@@ -336,7 +336,7 @@ const translations = {
         'manifesto.card5.desc': 'Indiana se convirtió en el estado 19 en 1816. Nuestros ancestros no se asentaron—fueron pioneros. Los honramos construyendo, no siguiendo.',
         'manifesto.card5.date': '11 de Diciembre, 1816 → Siempre',
         'manifesto.card6.title': 'SOLO CONSTRUCTORES DE NAVÍOS',
-        'manifesto.card6.desc': 'No es un club social. No es un concurso de belleza. Una tripulación de capitanes realmente construyendo navíos. Ese es todo el manifiesto.',
+        'manifesto.card6.desc': 'Constructores de navíos construyendo para constructores de navíos. Lo que forjamos juntos fortalece nuestra flota. Inversión mutua. Ascenso colectivo. Ese es todo el manifiesto.',
         'manifesto.card7.title': 'FORJADO POR CAPITANES',
         'manifesto.card7.desc': 'Este casco fue construido por capitanes que saben lo que funciona. Hacia dónde navega depende de quién aparezca a tripularlo. Tus ideas dan forma al viaje.',
 
