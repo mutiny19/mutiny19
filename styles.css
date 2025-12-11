@@ -1559,40 +1559,77 @@ img {
 }
 
 .event-card-captain-forged {
-    background: linear-gradient(135deg, rgba(0, 242, 255, 0.03) 0%, var(--darker) 50%, rgba(0, 242, 255, 0.03) 100%);
-    border: 2px solid var(--accent);
-    box-shadow: 0 0 20px rgba(0, 242, 255, 0.2), inset 0 0 20px rgba(0, 242, 255, 0.05);
+    background: linear-gradient(135deg, rgba(0, 242, 255, 0.12) 0%, rgba(0, 242, 255, 0.06) 50%, rgba(0, 242, 255, 0.12) 100%);
+    border: 3px solid var(--accent);
+    box-shadow: 0 0 30px rgba(0, 242, 255, 0.5),
+                0 0 15px rgba(0, 242, 255, 0.3),
+                inset 0 0 40px rgba(0, 242, 255, 0.08);
     position: relative;
     overflow: visible;
 }
 
 .event-card-captain-forged::before {
+    content: '⚓ CAPTAIN-FORGED';
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    background: var(--accent);
+    color: var(--black);
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 4px 10px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 3px;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0, 242, 255, 0.6);
+}
+
+.event-card-captain-forged::after {
     content: '';
     position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
     background: linear-gradient(45deg, var(--accent), transparent, var(--accent));
     border-radius: 6px;
     z-index: -1;
-    opacity: 0.3;
-    animation: borderGlow 3s ease-in-out infinite;
+    opacity: 0.5;
+    animation: borderGlow 2s ease-in-out infinite;
 }
 
 @keyframes borderGlow {
     0%, 100% {
-        opacity: 0.3;
+        opacity: 0.5;
+        transform: scale(1);
     }
     50% {
-        opacity: 0.6;
+        opacity: 0.8;
+        transform: scale(1.01);
     }
 }
 
 .event-card-captain-forged:hover {
     border-color: var(--accent);
-    box-shadow: 0 0 30px rgba(0, 242, 255, 0.4), inset 0 0 30px rgba(0, 242, 255, 0.1);
-    transform: translateX(4px) scale(1.01);
+    box-shadow: 0 0 40px rgba(0, 242, 255, 0.7),
+                0 0 20px rgba(0, 242, 255, 0.5),
+                inset 0 0 50px rgba(0, 242, 255, 0.12);
+    transform: translateX(4px) scale(1.02);
+}
+
+.event-card-captain-forged:hover::after {
+    animation: borderGlowHover 1.5s ease-in-out infinite;
+}
+
+@keyframes borderGlowHover {
+    0%, 100% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 1;
+    }
 }
 
 .event-card p,
