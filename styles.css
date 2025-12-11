@@ -1623,6 +1623,78 @@ img {
     animation: borderGlowHover 1.5s ease-in-out infinite;
 }
 
+/* Ghosted background text on hover */
+.event-card-captain-forged h3 {
+    position: relative;
+}
+
+.event-card-captain-forged:hover h3::before {
+    content: 'CAPTAIN\'S VOYAGE';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-mono);
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: var(--accent);
+    opacity: 0;
+    z-index: -1;
+    white-space: nowrap;
+    pointer-events: none;
+    animation: ghostTextReveal 0.4s ease-out forwards,
+               ghostTextGlitch 0.3s linear infinite;
+}
+
+.event-card-captain-forged:hover h3::after {
+    content: 'CAPTAIN\'S VOYAGE';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-mono);
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: var(--crimson);
+    opacity: 0;
+    z-index: -2;
+    white-space: nowrap;
+    pointer-events: none;
+    animation: ghostTextReveal 0.4s ease-out forwards,
+               ghostTextGlitch2 0.3s linear infinite;
+}
+
+@keyframes ghostTextReveal {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    100% {
+        opacity: 0.15;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes ghostTextGlitch {
+    0% { clip-path: inset(20% 0 60% 0); transform: translate(calc(-50% - 2px), calc(-50% + 1px)) scale(1); }
+    20% { clip-path: inset(60% 0 20% 0); transform: translate(calc(-50% + 2px), calc(-50% - 1px)) scale(1); }
+    40% { clip-path: inset(40% 0 40% 0); transform: translate(calc(-50% - 1px), calc(-50% + 2px)) scale(1); }
+    60% { clip-path: inset(80% 0 10% 0); transform: translate(calc(-50% + 1px), calc(-50% - 2px)) scale(1); }
+    80% { clip-path: inset(10% 0 80% 0); transform: translate(calc(-50% - 2px), calc(-50% + 1px)) scale(1); }
+    100% { clip-path: inset(50% 0 30% 0); transform: translate(calc(-50% + 2px), calc(-50% - 1px)) scale(1); }
+}
+
+@keyframes ghostTextGlitch2 {
+    0% { clip-path: inset(60% 0 20% 0); transform: translate(calc(-50% + 2px), calc(-50% - 1px)) scale(1); }
+    20% { clip-path: inset(20% 0 60% 0); transform: translate(calc(-50% - 2px), calc(-50% + 1px)) scale(1); }
+    40% { clip-path: inset(80% 0 10% 0); transform: translate(calc(-50% + 1px), calc(-50% - 2px)) scale(1); }
+    60% { clip-path: inset(40% 0 40% 0); transform: translate(calc(-50% - 1px), calc(-50% + 2px)) scale(1); }
+    80% { clip-path: inset(60% 0 30% 0); transform: translate(calc(-50% + 2px), calc(-50% - 1px)) scale(1); }
+    100% { clip-path: inset(30% 0 60% 0); transform: translate(calc(-50% - 2px), calc(-50% + 1px)) scale(1); }
+}
+
 @keyframes borderGlowHover {
     0%, 100% {
         opacity: 0.7;
