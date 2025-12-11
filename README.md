@@ -1,259 +1,369 @@
-# Mutiny19 - Indiana Swashbuckling Entrepreneurs
+# Mutiny19 - Indiana Founders Charting What's Next
 
-A free, interactive map and list of entrepreneurship events across Indiana. The website automatically aggregates events from various sources, displays them on an interactive map, and allows filtering by date and event features.
+A cyber-pirate themed platform for Indiana founders. Automatically aggregates entrepreneur events from 100+ sources across Indiana, featuring an interactive map, captain-forged event highlighting, Discord community intel, and founder-friendly resources.
+
+Live at: **https://mutiny19.github.io**
+
+## Brand Identity
+
+**Mutiny19** celebrates Indiana becoming the 19th state (December 11, 1816). The cyber-pirate theme represents founders charting their own course with full autonomy.
+
+**Mascot:** XIX Captain Cardinal - Indiana's state bird, cyber-enhanced
+**Core Values:**
+- Captains Lead (founders hold the wheel)
+- Transparent Maps (full visibility)
+- Shipwrights Only (founders building for founders)
+- Mutual Investment (collective rise)
 
 ## Features
 
-- **Interactive Map**: View all events on a Leaflet-powered map of Indiana
-- **List View**: Browse events in a searchable, sortable list
-- **Smart Filtering**: Filter by date range and event features
-- **Event Icons**: Visual indicators for:
-  - Free events
-  - Food provided
-  - Appetizers available
-  - Non-alcoholic drinks
-  - Alcoholic beverages
-- **Calendar Integration**: Add events to Google Calendar or download as iCal files
-- **Auto-Updates**: GitHub Actions automatically scrapes new events daily
-- **100% Free**: Hosted on GitHub Pages with no hosting costs
+### Event Discovery
+- **100+ Sources**: Auto-scraped from TechPoint, Eventbrite, 1MC, SBDC, chambers, universities, makerspaces, and more
+- **Interactive Map**: Leaflet-powered map of Indiana with event markers
+- **List View**: Searchable, filterable event list with captain-forged highlighting
+- **Captain-Forged Filter**: Dedicated system for founder-created events
+  - ⚓ Visual badges and glowing cyan borders
+  - Ghost hover effects ("CAPTAIN'S VOYAGE")
+  - Quick toggle to show only captain-forged events
+- **Smart Filtering**: Date range, free events, food, drinks, captain-forged
+- **Daily Updates**: GitHub Actions runs scraper daily at 6 AM UTC
 
-## Live Demo
+### Community Features
+- **Discord Integration**: "Signal a New Port" form for community event submissions
+- **Anonymous Intel**: Honeypot-protected submission form
+- **Bilingual Support**: Full English/Spanish (i18n)
 
-Once deployed, your site will be available at:
-`https://mutiny19.github.io/mutiny19/`
+### Visual Design
+- **Cyber-Pirate Theme**: CRT scanlines, neon cyan/crimson, glitch effects
+- **Animated Hero**: MP4 video of XIX Captain Cardinal
+- **Responsive**: Mobile-optimized with touch-friendly interactions
+
+### Founder Resources
+- **Founder-Friendly Docs**: SAFE, FAST, term sheet guides
+- **Origin Story**: "The Tale of XIX Captain Cardinal" (collapsible narrative)
+
+## Project Structure
+
+```
+.
+├── index.html              # Main page
+├── styles.css              # All styling (CRT effects, pirate theme)
+├── app.js                  # JS logic + i18n translations (EN/ES)
+├── events.json             # Event data (auto-generated daily)
+├── hero-cardinal-xix.mp4   # Animated hero video
+├── scraper/
+│   ├── scrape_events.py   # Python scraper with Playwright support
+│   ├── sources.json       # 100+ event sources + configuration
+│   └── requirements.txt   # beautifulsoup4, requests, icalendar, python-dateutil, playwright
+├── .github/
+│   └── workflows/
+│       └── scrape-events.yml  # Daily automation
+└── .claude/
+    ├── CLAUDE.md          # Project instructions for AI assistants
+    └── settings.local.json # (gitignored)
+```
 
 ## Quick Start
 
-### 1. Fork or Clone This Repository
-
+### 1. Clone & Setup
 ```bash
 git clone https://github.com/mutiny19/mutiny19.git
 cd mutiny19
 ```
 
 ### 2. Enable GitHub Pages
-
-1. Go to your repository settings
-2. Navigate to "Pages" in the left sidebar
-3. Under "Source", select "Deploy from a branch"
-4. Select the `main` branch and `/ (root)` folder
-5. Click "Save"
-
-Your site will be live in a few minutes at `https://mutiny19.github.io/mutiny19/`
+1. Repo Settings → Pages
+2. Source: Deploy from branch `main`, root folder
+3. Site live at: `https://mutiny19.github.io`
 
 ### 3. Enable GitHub Actions
+1. Actions tab → Enable workflows
+2. Scraper runs daily at 6 AM UTC (1 AM EST)
+3. Manual trigger: Actions → "Scrape Events" → Run workflow
 
-1. Go to the "Actions" tab in your repository
-2. If prompted, click "I understand my workflows, go ahead and enable them"
-3. The scraper will now run daily at 6 AM UTC (1 AM EST)
+## Event Sources Configuration
 
-### 4. Manual Trigger (Optional)
+### Adding New Sources
 
-To manually run the scraper:
-1. Go to "Actions" tab
-2. Click "Scrape Events" workflow
-3. Click "Run workflow"
-
-## Project Structure
-
-```
-.
-├── index.html              # Main HTML file
-├── styles.css              # Stylesheet
-├── app.js                  # JavaScript application logic
-├── events.json             # Events data (auto-updated by scraper)
-├── scraper/
-│   ├── scrape_events.py   # Python scraper script
-│   ├── sources.json       # Configuration for event sources
-│   └── requirements.txt   # Python dependencies
-└── .github/
-    └── workflows/
-        └── scrape-events.yml  # GitHub Actions workflow
-```
-
-## Customizing Event Sources
-
-Edit `scraper/sources.json` to add or modify event sources:
+Edit `scraper/sources.json`:
 
 ```json
 {
   "sources": [
     {
       "name": "Your Event Source",
-      "type": "custom",
+      "type": "custom|eventbrite_search|ical|luma_event",
       "url": "https://example.com/events",
-      "enabled": true
+      "enabled": true,
+      "description": "Brief description",
+      "captainForged": false  // Set true for founder-created events
     }
-  ],
-  "keywords": ["entrepreneur", "startup", "networking"],
-  "excluded_keywords": ["webinar only", "virtual only"]
+  ]
 }
 ```
 
 ### Supported Source Types
 
-- `eventbrite_search`: Eventbrite search results
-- `meetup_group`: Meetup.com groups
-- `custom`: Custom websites (requires implementation in `scrape_events.py`)
+- **`custom`**: Custom websites (requires scraper logic)
+- **`eventbrite_search`**: Eventbrite search results pages
+- **`ical`**: iCalendar feeds (`.ics` files)
+- **`luma_event`**: Single Luma.com events (with fallback for anti-bot detection)
 
-### Adding Custom Scrapers
+### Manual Overrides for Difficult Sites
 
-To scrape a new website, edit `scraper/scrape_events.py` and add logic in the `scrape_custom()` method:
-
-```python
-def scrape_custom(self, source: Dict[str, Any]):
-    if source['name'] == 'Your Event Source':
-        # Add your scraping logic here
-        pass
-```
-
-## Manual Event Entry
-
-You can also manually add events by editing `events.json`:
+For sites with anti-bot protection (like Luma), add manual overrides:
 
 ```json
 {
-  "id": "unique-id",
-  "title": "Event Title",
-  "description": "Event description",
-  "date": "2025-12-01T18:00:00",
-  "endDate": "2025-12-01T20:00:00",
-  "location": {
-    "name": "Venue Name",
-    "address": "123 Main St, Indianapolis, IN 46204",
-    "lat": 39.7684,
-    "lng": -86.1581
-  },
-  "url": "https://event-website.com",
-  "organizer": "Organization Name",
-  "features": {
-    "free": true,
-    "food": true,
-    "appetizers": true,
-    "nonAlcoholDrinks": true,
-    "alcoholDrinks": false
-  }
+  "name": "Event Name",
+  "type": "luma_event",
+  "url": "https://luma.com/eventid",
+  "enabled": true,
+  "captainForged": true,
+  "date": "2025-12-18T18:37:00",
+  "location": "Venue Name, 123 Main St, Indianapolis, IN"
 }
 ```
 
-## Local Development
+## Scraper Features
 
-To test locally:
+### Advanced Capabilities
+- **Playwright Support**: Renders JavaScript-heavy sites
+- **Anti-Bot Fallback**: Static HTML parsing when Playwright is blocked
+- **Geocoding**: OpenStreetMap Nominatim API for precise coordinates
+- **Rate Limiting**: 1 req/sec for geocoding, respects API limits
+- **Caching**: Geocoding cache to reduce API calls
+- **JSON-LD Parsing**: Structured data extraction for dates/locations
+- **Date Parsing**: Multiple strategies (JSON-LD, time elements, text patterns)
 
-1. Simply open `index.html` in a web browser, or
-2. Use a local server:
+### Captain-Forged Event Detection
+Set `captainForged: true` in sources.json for founder-created events. The scraper:
+1. Tags event with `captainForged` feature flag
+2. Frontend applies special styling (glowing borders, badges, etc.)
+3. Filterable via dedicated "Captain-Forged Only" button
 
-```bash
-# Python
-python -m http.server 8000
-
-# Node.js
-npx http-server
-
-# PHP
-php -S localhost:8000
-```
-
-Then visit `http://localhost:8000`
-
-## Scraper Development
-
-To test the scraper locally:
+### Running Scraper Locally
 
 ```bash
 cd scraper
 pip install -r requirements.txt
+playwright install chromium  # For JavaScript rendering
 python scrape_events.py
 ```
 
-## Technologies Used
+Output: `../events.json` (86+ events from 100+ sources)
 
-- **Frontend**: Vanilla HTML, CSS, JavaScript
-- **Mapping**: Leaflet.js with OpenStreetMap
-- **Scraping**: Python, BeautifulSoup, Requests
-- **Automation**: GitHub Actions
-- **Hosting**: GitHub Pages (100% free)
+## Local Development
+
+### Frontend Testing
+```bash
+# Option 1: Direct file opening
+open index.html
+
+# Option 2: Local server (recommended)
+python -m http.server 8000
+# Visit http://localhost:8000
+```
+
+### Scraper Development
+```bash
+cd scraper
+python scrape_events.py  # Run full scrape
+```
+
+## Technologies
+
+**Frontend:**
+- Vanilla HTML/CSS/JS (no framework)
+- Leaflet.js for maps
+- i18n translations in app.js
+
+**Scraping:**
+- Python 3.9+
+- BeautifulSoup4 (HTML parsing)
+- Playwright (JavaScript rendering)
+- icalendar (iCal feed parsing)
+- python-dateutil (date parsing)
+- requests (HTTP)
+
+**Hosting & Automation:**
+- GitHub Pages (free static hosting)
+- GitHub Actions (daily scraper runs)
+
+**APIs:**
+- OpenStreetMap Nominatim (geocoding)
+- Discord Webhooks (community submissions)
+
+## Key Files Reference
+
+### `.claude/CLAUDE.md`
+Project instructions for AI assistants. Contains:
+- Privacy rules (no personal info, anonymous commits)
+- Brand voice guidelines
+- Tech stack overview
+- SEO format
+
+### `scraper/sources.json`
+Master configuration for all event sources:
+- 100+ sources across Indiana
+- Keywords: entrepreneur, startup, tech, maker, food, art, defense, hardtech
+- Excluded keywords: webinar only, virtual only, cancelled
+
+### `app.js`
+All JavaScript + translations:
+- Event filtering logic
+- Map/list view switching
+- Captain-forged highlighting
+- Discord form submission
+- Bilingual support (EN/ES)
+
+### `styles.css`
+Complete styling:
+- Cyber-pirate theme (neon cyan, crimson)
+- CRT scanlines and glitch effects
+- Captain-forged visual effects (glow, badges, hover animations)
+- Responsive breakpoints
+
+## Recent Updates (December 2025)
+
+### Captain-Forged System
+- Added `captainForged` feature flag to event schema
+- Visual enhancements: cyan borders, glowing effects, corner ribbons
+- Ghost hover animation ("CAPTAIN'S VOYAGE")
+- Quick filter button for captain-forged-only view
+- Luma event scraper with manual overrides
+
+### Hero Section
+- Animated MP4 video (hero-cardinal-xix.mp4)
+- Title updated to "INDIANA FOUNDERS MUTINY19"
+- Story title: "THE TALE OF XIX CAPTAIN CARDINAL"
+
+### Messaging Updates
+- Shifted from oppositional to ownership tone
+- "Shipwrights Only" emphasizes mutual investment and collective rise
+- Removed negative framing ("No gatekeepers" → "Full visibility")
+
+### Scraper Enhancements
+- Geocoding via Nominatim API for precise locations
+- Playwright stealth mode for anti-bot bypass
+- Static HTML fallback when Playwright blocked
+- Manual date/location overrides in sources.json
+- JSON-LD structured data parsing
+
+## Future Tasks
+
+### High Priority
+- [ ] Fix geocoding for manual location overrides (currently defaults to city-level)
+- [ ] Add more captain-forged events (currently: Indy Tech Founders Happy Hour)
+- [ ] Improve Luma scraper reliability (currently using manual overrides)
+
+### Feature Ideas
+- [ ] Individual "Add to Calendar" buttons for events
+- [ ] Event categories/tags beyond features
+- [ ] Founder profiles/bios for captain-forged event hosts
+- [ ] Event photos/images
+- [ ] Search by keyword in title/description
+- [ ] Save favorite events (localStorage)
+- [ ] Email notifications for new captain-forged events
+
+### Content
+- [ ] Expand founder-friendly docs section
+- [ ] Add FAQ or "What is Mutiny19?" explainer
+- [ ] Community guidelines for Discord
+- [ ] Success stories from Indiana founders
+
+### Technical Debt
+- [ ] Optimize video file size (currently 1.9MB)
+- [ ] Add loading states for map/events
+- [ ] Error handling for failed API calls
+- [ ] Playwright cache management
 
 ## Contributing
 
-Contributions are welcome! To add support for new event sources:
+### Adding Event Sources
+1. Fork repository
+2. Add source to `scraper/sources.json`
+3. Test locally: `cd scraper && python scrape_events.py`
+4. Verify events appear in `events.json`
+5. Submit pull request
 
-1. Fork the repository
-2. Add the source to `scraper/sources.json`
-3. If needed, implement custom scraping logic in `scraper/scrape_events.py`
-4. Test the scraper locally
-5. Submit a pull request
+### Adding Custom Scrapers
+Edit `scraper/scrape_events.py` and add logic:
+
+```python
+def scrape_custom(self, source: Dict[str, Any]):
+    if source['name'] == 'Your Event Source':
+        # Your scraping logic here
+        # Use self.fetch_with_playwright() for JS sites
+        # Use BeautifulSoup for static HTML
+        pass
+```
+
+### Captain-Forged Events
+To mark an event as captain-forged:
+1. Add `"captainForged": true` to source in `sources.json`
+2. Ensure it's genuinely created & hosted by a founder
+3. Not corporate sponsors, accelerators, or third-party orgs
 
 ## Troubleshooting
 
-### Events not updating
+### Events Not Updating
+- Check Actions tab for workflow status
+- Ensure GitHub Actions is enabled
+- Verify workflow has write permissions
 
-- Check the "Actions" tab for workflow run status
-- Ensure GitHub Actions is enabled for your repository
-- Check that the workflow has write permissions to the repository
+### Scraper Errors
+- Review Actions logs for specific errors
+- Test locally: `cd scraper && python scrape_events.py`
+- Check if target website changed structure
+- Some sites require Playwright: `playwright install chromium`
 
-### Scraper errors
-
-- Review the workflow logs in the "Actions" tab
-- Some websites may require additional scraping logic or authentication
-- Consider using official APIs when available (e.g., Eventbrite API, Meetup API)
-
-### Map not displaying
-
+### Map Not Displaying
 - Check browser console for errors
-- Ensure `events.json` is properly formatted
-- Verify latitude/longitude coordinates are correct
+- Verify `events.json` is valid JSON
+- Confirm lat/lng coordinates are correct
 
-## Future Enhancements
+### Captain-Forged Events Not Highlighting
+- Verify `captainForged: true` in events.json
+- Check CSS is loaded (cyan borders, glow effects)
+- Try hard refresh (Cmd+Shift+R / Ctrl+Shift+R)
 
-Potential features to add:
-- Event categories (workshop, networking, pitch event, etc.)
-- Email notifications for new events
-- Advanced search and filtering
-- Mobile app version
-- Social sharing features
+## Privacy & Security
 
-## TODO: Messaging Clarity
+- **No personal data**: Anonymous git commits (Mutiny19 <crew@mutiny19.com>)
+- **Discord webhook exposed**: Known limitation of static site, mitigated with honeypot
+- **No tracking**: No analytics, cookies, or user tracking
+- **Open source**: Fully transparent codebase
 
-**Feedback received:** Users are unclear about what Mutiny19 is and who it's for.
+## Git Commit Rules
 
-**Questions to address on the site:**
-1. "Is it just Indiana?" - Yes, Indiana-focused
-2. "No lawyers or ecosystem partners allowed?" - Founders-first, but ecosystem partners who support (not extract from) founders are welcome
-3. "Is it like IN Founders Network reboot?" - Similar spirit, but different execution (no gatekeeping, auto-scraped events, anonymous intel)
-
-**Potential solutions:**
-- Add a "What is Mutiny19?" section or FAQ
-- Clarify the hero tagline to explain the value prop
-- Add an "About" page with mission/vision
-- Update the manifesto to be more explicit about who's welcome
-
-**Key messages to convey:**
-- **Who:** Indiana founders actively building companies
-- **What:** Community (Discord) + event aggregator + anonymous intel sharing
-- **Scope:** Indiana-focused (the 19th state)
-- **Who's welcome:** Founders, and ecosystem partners who genuinely support builders
-- **What makes it different:** No gatekeeping, auto-scraped events from all sources, anonymous community intel, founder-led
+Per `.claude/CLAUDE.md`:
+- Author: `Mutiny19 <crew@mutiny19.com>`
+- No personal names, company names, or emails
+- All commits anonymous
 
 ## License
 
-MIT License - feel free to use this for your own community!
+MIT License - Build your own community!
 
 ## Credits
 
-Built with:
-- [Leaflet](https://leafletjs.com/) for mapping
-- [OpenStreetMap](https://www.openstreetmap.org/) for map data
-- [GitHub Pages](https://pages.github.com/) for hosting
-- [GitHub Actions](https://github.com/features/actions) for automation
+- **Mapping**: Leaflet.js + OpenStreetMap
+- **Geocoding**: Nominatim (OpenStreetMap)
+- **Hosting**: GitHub Pages
+- **Automation**: GitHub Actions
+- **Scraping**: BeautifulSoup, Playwright, icalendar
 
 ## Support
 
-For issues or questions:
-1. Check existing [Issues](https://github.com/mutiny19/mutiny19/issues)
-2. Create a new issue with details
-3. Include error messages and screenshots if applicable
+Questions or issues?
+1. Check [existing issues](https://github.com/mutiny19/mutiny19/issues)
+2. Create new issue with details
+3. Include error messages and screenshots
 
 ---
 
-Made with ❤️ for the Indiana entrepreneurship community
+**Built by captains, for captains.**
+Shipwrights building for shipwrights. What we forge together strengthens our fleet.
+
+🏴‍☠️ Join the crew: [mutiny19.github.io](https://mutiny19.github.io)
