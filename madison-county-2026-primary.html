@@ -166,6 +166,44 @@
   .nominee.empty .nominee-name { font-style: italic; color: var(--ink-soft); font-weight: 500; }
   .matchup-foot { font-size: 11px; color: var(--ink-soft); margin-top: 8px; padding-top: 8px; border-top: 1px dashed var(--rule); }
 
+  .callout {
+    max-width: 1100px; margin: 22px auto 0; padding: 0 24px;
+  }
+  .callout-card {
+    background: linear-gradient(180deg, #fff1ec 0%, #ffd9c8 100%);
+    border: 1px solid #e08164;
+    border-left: 6px solid #9b1c1c;
+    border-radius: 12px;
+    padding: 18px 22px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 18px;
+    align-items: center;
+  }
+  .callout-num {
+    font-size: 56px; font-weight: 800; line-height: 1;
+    color: #9b1c1c;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
+  }
+  .callout-num small { display:block; font-size: 13px; font-weight: 600; color: #7c2d12; margin-top: 6px; letter-spacing: 0.04em; text-transform: uppercase; }
+  .callout-body { font-size: 14px; line-height: 1.5; color: #5b2107; }
+  .callout-body strong { color: #1f1208; }
+  .callout-body .breakdown {
+    display: flex; flex-wrap: wrap; gap: 6px 14px;
+    margin-top: 8px; font-size: 12px; color: #6b3815;
+  }
+  .callout-body .breakdown span { white-space: nowrap; }
+  .callout-body button.linkish {
+    background: none; border: none; color: #9a3412; font: inherit; padding: 0;
+    cursor: pointer; text-decoration: underline; text-underline-offset: 2px;
+  }
+  .callout-body button.linkish:hover { color: #5b2107; }
+  @media (max-width: 600px) {
+    .callout-card { grid-template-columns: 1fr; gap: 8px; }
+    .callout-num { font-size: 36px; }
+  }
+
   .sort-group { display: flex; gap: 0; border: 1px solid var(--rule); border-radius: 999px; overflow: hidden; background: #fff; }
   .sort-group .pill { border-radius: 0; border: none; border-right: 1px solid var(--rule); }
   .sort-group .pill:last-child { border-right: none; }
@@ -319,6 +357,21 @@
   </div>
 </header>
 
+<div class="callout">
+  <div class="callout-card" role="region" aria-label="Uncontested seats callout">
+    <div class="callout-num">61%<small>of offices already decided</small></div>
+    <div class="callout-body">
+      <strong>Tonight's primary effectively ended the election for most offices.</strong>
+      34 of 56 offices on the ballot will not have a contested November race. Voters had no choice between the major parties for <strong>the prosecutor</strong>, <strong>three of the four circuit court judges</strong>, the <strong>county assessor</strong>, <strong>treasurer</strong>, and <strong>commissioner</strong>, and the majority of township and town positions. <strong>3 offices</strong> had no candidate from either major party file at all. Only <strong>22 of 56</strong> offices will see both parties on the November ballot.
+      <div class="breakdown">
+        <span>&middot; <strong>28</strong> Republican-only</span>
+        <span>&middot; <strong>3</strong> Democrat-only</span>
+        <span>&middot; <strong>3</strong> no major-party candidate</span>
+        <span>&middot; <button type="button" class="linkish" id="callout-jump">See the full list</button></span>
+      </div>
+    </div>
+  </div>
+</div>
 <section class="matchups-section">
   <div class="section-head">
     <div>
@@ -484,6 +537,16 @@
     `).join('');
   }
   renderMatchups();
+
+  // Callout "See the list" — filter matchups to decided and scroll
+  const calloutJump = document.getElementById('callout-jump');
+  if (calloutJump) {
+    calloutJump.addEventListener('click', () => {
+      const decidedTab = document.querySelector('.pill[data-mu="decided"]');
+      if (decidedTab) decidedTab.click();
+      document.querySelector('.matchups-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
 
   function fmt(n) { return (n||0).toLocaleString('en-US'); }
   function partyClass(p) { return p === 'REP' ? 'rep' : p === 'DEM' ? 'dem' : 'non'; }
