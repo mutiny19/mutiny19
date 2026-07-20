@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-19T08:31:17.096839",
+  "lastUpdated": "2026-07-20T09:30:32.205888",
   "events": [
     {
       "title": "IN AI Roadshow - Central Indiana",
@@ -22,7 +22,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "2466508276885276901"
+      "id": "1711774962242401217"
     },
     {
       "title": "Paid Media in 2026: What\u2019s Driving Results Now",
@@ -45,7 +45,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "8128380766212845209"
+      "id": "223856463792915272"
     },
     {
       "title": "Industry Exchange Session: Building a Tech and AI Adoption Roadmap",
@@ -68,7 +68,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "7069903714260540671"
+      "id": "9215599375714911763"
     },
     {
       "title": "AnalytiXIN Spotlight Series",
@@ -91,7 +91,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "8034013097054067908"
+      "id": "3391650544922326421"
     },
     {
       "title": "LEARN AT LAUNCH | From Startup to Scale",
@@ -114,7 +114,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "3239637396551139351"
+      "id": "2389942058116111680"
     },
     {
       "title": "AI Hackathon",
@@ -137,7 +137,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "4283939768068823212"
+      "id": "4849180532532736114"
     },
     {
       "title": "STARTUP MASTERY | Beyond Species: The Biotech Crossover",
@@ -160,7 +160,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "4101793216985800362"
+      "id": "1597664952203678752"
     },
     {
       "title": "IndyPy: Cybersecurity Game Night",
@@ -183,7 +183,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "9013349767219511343"
+      "id": "3091642549361394777"
     },
     {
       "title": "Innovate West Central Indiana - Terre Haute",
@@ -206,7 +206,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "1492950214477933177"
+      "id": "7497919293729504264"
     },
     {
       "title": "5th World Congress on Public Health and Epidemiology",
@@ -229,7 +229,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "3053739800929984390"
+      "id": "4698798866793347317"
     },
     {
       "title": "Infrastructure Simplified: A Lunch & Learn with EXOS and Scale Computing",
@@ -252,7 +252,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "3793420280403010372"
+      "id": "1225557243479168117"
     },
     {
       "title": "AgriNovus Quadrant",
@@ -275,7 +275,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "2065974612464344088"
+      "id": "1657915349026254888"
     },
     {
       "title": "Innovate Southern Indiana - New Albany",
@@ -298,7 +298,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "2440075252157371979"
+      "id": "3045382247960806532"
     },
     {
       "title": "Innovate East Central Indiana - Muncie",
@@ -321,7 +321,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "5165169697555516086"
+      "id": "766974518878664955"
     },
     {
       "title": "Fueling Your Future",
@@ -344,7 +344,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "5005251779271260059"
+      "id": "6290751764880319575"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -367,13 +367,13 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "2694763876593553875"
+      "id": "8798885341653106282"
     },
     {
       "title": "1 Million Cups Indianapolis",
       "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
       "url": "https://www.1millioncups.com/indy",
-      "date": "2026-08-19T09:00:00",
+      "date": "2026-08-26T09:00:00",
       "source": "1 Million Cups Indianapolis",
       "location": {
         "name": "Indianapolis",
@@ -390,7 +390,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "6739429687908889640"
+      "id": "1625637206398671171"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -413,7 +413,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "2059007774171431137"
+      "id": "5314573166983130160"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -436,7 +436,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "9161419373973672758"
+      "id": "3952968041064625654"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -459,7 +459,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "8777049010659061379"
+      "id": "2151295667783737423"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -482,7 +482,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "1527234592972071034"
+      "id": "1794769571433962952"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -505,7 +505,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "8794378120448144555"
+      "id": "3848649066562840844"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -528,7 +528,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "6223895967731747529"
+      "id": "1399441639946534089"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -551,7 +551,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "2145924541017177824"
+      "id": "5335762835926154053"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -574,13 +574,13 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "6828997018213347297"
+      "id": "3691167738296332632"
     },
     {
       "title": "1 Million Cups Indianapolis",
       "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
       "url": "https://www.1millioncups.com/indy",
-      "date": "2027-05-19T09:00:00",
+      "date": "2027-05-26T09:00:00",
       "source": "1 Million Cups Indianapolis",
       "location": {
         "name": "Indianapolis",
@@ -597,7 +597,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "6150518593587824789"
+      "id": "7316452390417312003"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -620,7 +620,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "7803974969905111487"
+      "id": "7210633529456381357"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -643,7 +643,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "4506304773388644258"
+      "id": "2009458097068198582"
     },
     {
       "title": "1 Million Cups Indianapolis",
@@ -666,7 +666,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups Indianapolis",
-      "id": "6548543717770533145"
+      "id": "625288440680113981"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -689,7 +689,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "3407902987145161768"
+      "id": "7955970227571253926"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -712,7 +712,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "5141228399960904443"
+      "id": "7531101957088064274"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -735,7 +735,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "3004209977096262243"
+      "id": "8837393906980815796"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -758,7 +758,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "5828211494293899510"
+      "id": "6567989276731812308"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -781,7 +781,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "8043513817745741982"
+      "id": "6086014303751281328"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -804,7 +804,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "1391214701518024311"
+      "id": "1469077504117118396"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -827,7 +827,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "6359178421230255581"
+      "id": "311050053729576287"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -850,7 +850,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "5359857933395854953"
+      "id": "3518464861885113688"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -873,7 +873,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "8631641622217458131"
+      "id": "4130124256805950009"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -896,7 +896,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "5577678809966987312"
+      "id": "2914988215380567389"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -919,7 +919,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "5848637710704399637"
+      "id": "4315046016194985383"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -942,7 +942,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "90652202087212498"
+      "id": "4587999572295023872"
     },
     {
       "title": "1 Million Cups South Bend",
@@ -965,7 +965,7 @@
         "captainForged": false
       },
       "organizer": "1 Million Cups South Bend",
-      "id": "7445216700559497193"
+      "id": "5800015805897411679"
     },
     {
       "title": "Mocktails w/ MRCI (Mercy)",
@@ -988,7 +988,7 @@
         "captainForged": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "160234844602033563"
+      "id": "190203943822630932"
     },
     {
       "title": "AMA with Elizabeth Yin from Hustle Fund",
@@ -1011,7 +1011,7 @@
         "captainForged": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "4786984126031354402"
+      "id": "7022007420825559175"
     },
     {
       "title": "Speed Dating and Matchmaking for Singles Ages 25-45",
@@ -1034,7 +1034,7 @@
         "captainForged": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "5413527737742624158"
+      "id": "2091990459527662585"
     },
     {
       "title": "Big Gay Summer\u2019s End",
@@ -1057,7 +1057,7 @@
         "captainForged": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "4876058709778508354"
+      "id": "331259912549626655"
     },
     {
       "title": "NITE Ride presented by Central Indiana Cycling",
@@ -1080,7 +1080,7 @@
         "captainForged": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "4200841954471057371"
+      "id": "7103851881696588574"
     },
     {
       "title": "Big Gay Summer\u2019s End",
@@ -1103,7 +1103,7 @@
         "captainForged": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "7758205230478156322"
+      "id": "3206289779640789843"
     },
     {
       "title": "Comedy Show",
@@ -1126,7 +1126,7 @@
         "captainForged": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "7011116577893348668"
+      "id": "874023074307642832"
     },
     {
       "title": "Design Seminar: Laser Engraved Flower Magnets",
@@ -1149,7 +1149,7 @@
         "captainForged": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "2929141312404238244"
+      "id": "3969684913325011398"
     },
     {
       "title": "Final Friday",
@@ -1172,7 +1172,7 @@
         "captainForged": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "6584748880190205569"
+      "id": "7082226036661707776"
     },
     {
       "title": "Laser Engraving Class: Certification & Leather Keychain",
@@ -1195,7 +1195,7 @@
         "captainForged": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "8819548708331987444"
+      "id": "4304025015144765101"
     },
     {
       "title": "Welding & CNC Plasma Cutter Workshop",
@@ -1218,7 +1218,7 @@
         "captainForged": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "902407938651963190"
+      "id": "3126346727180146833"
     },
     {
       "title": "Indy Pride Career Fair",
@@ -1241,7 +1241,7 @@
         "captainForged": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "4272774292445640780"
+      "id": "3879088005057790565"
     },
     {
       "title": "H7 Network, Carmel, IN",
@@ -1264,7 +1264,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "822252213707136562"
+      "id": "3431623797365715872"
     },
     {
       "title": "H7 Network, Westfield, IN",
@@ -1287,7 +1287,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "1356315973644999989"
+      "id": "2113039143493846407"
     },
     {
       "title": "H7 Network, Indianapolis, IN Senior",
@@ -1310,7 +1310,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "708963821962341426"
+      "id": "5918960735292183053"
     },
     {
       "title": "H7 Network, Fishers, IN",
@@ -1333,7 +1333,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "6431152432952434760"
+      "id": "9071920290883560354"
     },
     {
       "title": "H7 Network, Noblesville, IN",
@@ -1356,7 +1356,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "5968962543697413389"
+      "id": "1911763123741251729"
     },
     {
       "title": "H7 Network, Carmel, IN",
@@ -1379,7 +1379,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "6814234836537938457"
+      "id": "2246281371984270639"
     },
     {
       "title": "H7 Network, Westfield, IN",
@@ -1402,7 +1402,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "2808501487302634438"
+      "id": "3423108149147634887"
     },
     {
       "title": "H7 Network, Indianapolis, IN Senior",
@@ -1425,7 +1425,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "3200930049981438093"
+      "id": "7302170007310118176"
     },
     {
       "title": "H7 Network, Fishers, IN",
@@ -1448,7 +1448,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "796033686539157216"
+      "id": "1241058512683759148"
     },
     {
       "title": "H7 Network, Noblesville, IN",
@@ -1471,7 +1471,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "44651594814016338"
+      "id": "1781318108680332136"
     },
     {
       "title": "MatchBOX Free Coworking Day",
@@ -1480,10 +1480,10 @@
       "date": "2026-08-11T00:00:00",
       "source": "MatchBOX Coworking Studio",
       "location": {
-        "name": "MatchBOX Coworking Studio",
-        "address": "Lafayette, IN",
-        "lat": 40.4191229,
-        "lng": -86.8919011
+        "name": "Indianapolis",
+        "address": "Indianapolis, IN",
+        "lat": 39.7684,
+        "lng": -86.1581
       },
       "features": {
         "free": true,
@@ -1494,7 +1494,7 @@
         "captainForged": false
       },
       "organizer": "MatchBOX Coworking Studio",
-      "id": "6765423222527055555"
+      "id": "8353727387943017820"
     },
     {
       "title": "Non-Members",
@@ -1503,10 +1503,10 @@
       "date": "2026-07-23T00:00:00",
       "source": "Madjax Maker Force",
       "location": {
-        "name": "Madjax Maker Force",
-        "address": "515 E Main St, Muncie, IN 47305",
-        "lat": 40.1935076,
-        "lng": -85.381463
+        "name": "Indianapolis",
+        "address": "Indianapolis, IN",
+        "lat": 39.7684,
+        "lng": -86.1581
       },
       "features": {
         "free": false,
@@ -1517,7 +1517,7 @@
         "captainForged": false
       },
       "organizer": "Madjax Maker Force",
-      "id": "6130098729343710064"
+      "id": "7296734865172961372"
     },
     {
       "title": "COURTYARD SUMMER CONCERT SERIES: mason + vaughn project",
@@ -1526,10 +1526,10 @@
       "date": "2026-07-25T00:00:00",
       "source": "Madjax Maker Force",
       "location": {
-        "name": "Madjax Maker Force",
-        "address": "515 E Main St, Muncie, IN 47305",
-        "lat": 40.1935076,
-        "lng": -85.381463
+        "name": "Indianapolis",
+        "address": "Indianapolis, IN",
+        "lat": 39.7684,
+        "lng": -86.1581
       },
       "features": {
         "free": false,
@@ -1540,7 +1540,7 @@
         "captainForged": false
       },
       "organizer": "Madjax Maker Force",
-      "id": "2276237010015133436"
+      "id": "1813454270190879735"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1563,7 +1563,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "7142523614159903837"
+      "id": "8156909853181149167"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1586,7 +1586,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "3571101902801711479"
+      "id": "275954432595270701"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1609,7 +1609,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "5886536759440446866"
+      "id": "4427734790380293381"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1632,7 +1632,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "3302357623179077219"
+      "id": "8103871045795520066"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1655,7 +1655,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "4819720477692161574"
+      "id": "4369371336174089427"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1678,7 +1678,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "7967440387710869256"
+      "id": "315726752445301382"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1701,7 +1701,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "2875125601593532146"
+      "id": "8807414936978787757"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1724,7 +1724,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "41986845500823299"
+      "id": "6969609818818085508"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1747,7 +1747,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "5694127627044942971"
+      "id": "5244153035520153832"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1770,7 +1770,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "573342320220289841"
+      "id": "5104341287607750534"
     },
     {
       "title": "Indy.rb - The Indianapolis Ruby Brigade Monthly Meetup",
@@ -1793,7 +1793,7 @@
         "captainForged": false
       },
       "organizer": "Indy.rb Ruby Brigade Meetup",
-      "id": "8084962641589761762"
+      "id": "7172522484186400499"
     },
     {
       "title": "Indy.rb - The Indianapolis Ruby Brigade Monthly Meetup",
@@ -1816,7 +1816,7 @@
         "captainForged": false
       },
       "organizer": "Indy.rb Ruby Brigade Meetup",
-      "id": "7801370100123335923"
+      "id": "8916780722240498594"
     },
     {
       "title": "Indy.rb - The Indianapolis Ruby Brigade Monthly Meetup",
@@ -1839,7 +1839,7 @@
         "captainForged": false
       },
       "organizer": "Indy.rb Ruby Brigade Meetup",
-      "id": "6888498746029407219"
+      "id": "3709118668050023855"
     },
     {
       "title": "Indy.rb - The Indianapolis Ruby Brigade Monthly Meetup",
@@ -1862,7 +1862,7 @@
         "captainForged": false
       },
       "organizer": "Indy.rb Ruby Brigade Meetup",
-      "id": "4820840056485355298"
+      "id": "4861555420609757235"
     },
     {
       "title": "Indy.rb - The Indianapolis Ruby Brigade Monthly Meetup",
@@ -1885,7 +1885,7 @@
         "captainForged": false
       },
       "organizer": "Indy.rb Ruby Brigade Meetup",
-      "id": "3426438340973565993"
+      "id": "354385872698433414"
     },
     {
       "title": "Indy.rb - The Indianapolis Ruby Brigade Monthly Meetup",
@@ -1908,7 +1908,7 @@
         "captainForged": false
       },
       "organizer": "Indy.rb Ruby Brigade Meetup",
-      "id": "3862781597965894552"
+      "id": "187321176534335309"
     }
   ]
 }
