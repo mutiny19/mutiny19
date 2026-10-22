@@ -1,75 +1,6 @@
 {
-  "lastUpdated": "2026-10-21T11:37:35.886595",
+  "lastUpdated": "2026-10-22T11:37:22.945993",
   "events": [
-    {
-      "title": "AI Business Event",
-      "description": "Contact 1210 Waterway Blvd Suite 5000 Indianapolis, IN 46202 community@techpoint.org 317.275.2080",
-      "url": "https://techpoint.org/tech-events/ai-business-event/",
-      "date": "2026-10-22T00:00:00",
-      "source": "TechPoint Indiana Events",
-      "location": {
-        "name": "Indianapolis",
-        "address": "Indianapolis, IN",
-        "lat": 39.7684,
-        "lng": -86.1581
-      },
-      "features": {
-        "free": false,
-        "food": false,
-        "appetizers": false,
-        "nonAlcoholDrinks": true,
-        "alcoholDrinks": false,
-        "captainForged": false
-      },
-      "organizer": "TechPoint Indiana Events",
-      "id": "3531096271892436861"
-    },
-    {
-      "title": "Zionsville Build Hackathon",
-      "description": "Contact 1210 Waterway Blvd Suite 5000 Indianapolis, IN 46202 community@techpoint.org 317.275.2080",
-      "url": "https://techpoint.org/tech-events/zionsville-build-hackathon/",
-      "date": "2026-10-22T00:00:00",
-      "source": "TechPoint Indiana Events",
-      "location": {
-        "name": "Indianapolis",
-        "address": "Indianapolis, IN",
-        "lat": 39.7684,
-        "lng": -86.1581
-      },
-      "features": {
-        "free": false,
-        "food": false,
-        "appetizers": false,
-        "nonAlcoholDrinks": true,
-        "alcoholDrinks": false,
-        "captainForged": false
-      },
-      "organizer": "TechPoint Indiana Events",
-      "id": "5232429882929543521"
-    },
-    {
-      "title": "Cyber Threats on Tap: What Indianapolis Businesses Need to Know About Today's Cyber Risks",
-      "description": "Contact 1210 Waterway Blvd Suite 5000 Indianapolis, IN 46202 community@techpoint.org 317.275.2080",
-      "url": "https://techpoint.org/tech-events/cyber-threats-on-tap-what-indianapolis-businesses-need-to-know-about-todays-cyber-risks/",
-      "date": "2026-10-22T00:00:00",
-      "source": "TechPoint Indiana Events",
-      "location": {
-        "name": "Indianapolis",
-        "address": "Indianapolis, Indiana",
-        "lat": 39.7684,
-        "lng": -86.1581
-      },
-      "features": {
-        "free": false,
-        "food": false,
-        "appetizers": false,
-        "nonAlcoholDrinks": true,
-        "alcoholDrinks": false,
-        "captainForged": false
-      },
-      "organizer": "TechPoint Indiana Events",
-      "id": "5066046645546220147"
-    },
     {
       "title": "Slalom Innovation Day Indianapolis",
       "description": "Contact 1210 Waterway Blvd Suite 5000 Indianapolis, IN 46202 community@techpoint.org 317.275.2080",
@@ -91,7 +22,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "4447895092980370490"
+      "id": "1905261436521954160"
     },
     {
       "title": "BioCrossroads Life Sciences Summit",
@@ -114,7 +45,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "3667663145509723755"
+      "id": "8729522489634266630"
     },
     {
       "title": "UIndy Fall All-Majors Career Fair",
@@ -137,7 +68,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "7131007180256978515"
+      "id": "1727166394003610094"
     },
     {
       "title": "Innovate North Central - South Bend - Elkhart",
@@ -160,7 +91,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "3205645328218143501"
+      "id": "8180153663741183000"
     },
     {
       "title": "AMP Bloomington",
@@ -183,7 +114,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "8750583778847527393"
+      "id": "963713326840363187"
     },
     {
       "title": "Indiana AI Innovation Network: AI Reality Check",
@@ -206,7 +137,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "3124223497128139986"
+      "id": "4668731721981960646"
     },
     {
       "title": "Do This, Not That: AI That Earns Customer Trust",
@@ -229,7 +160,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "7272191880753388950"
+      "id": "6430753237373240363"
     },
     {
       "title": "AI Impact: From Possible to Proven",
@@ -252,7 +183,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "4568333117737528623"
+      "id": "5400207448816739231"
     },
     {
       "title": "Turning AI Usage into Measurable Impact | EXOS AI Series Session 3",
@@ -275,7 +206,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "3045737641707107517"
+      "id": "2240415932247602819"
     },
     {
       "title": "The Student Ventures Workshop",
@@ -298,7 +229,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "3473572232198124851"
+      "id": "2664921049988250631"
     },
     {
       "title": "The Cyber Pickle",
@@ -321,7 +252,30 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "8575844880978985184"
+      "id": "1256884317961037681"
+    },
+    {
+      "title": "SEPTalks: How AI Is Changing Discovery: Different Questions, Better Decisions, Quality Forecasts",
+      "description": "Contact 1210 Waterway Blvd Suite 5000 Indianapolis, IN 46202 community@techpoint.org 317.275.2080",
+      "url": "https://techpoint.org/tech-events/septalks-how-ai-is-changing-discovery-different-questions-better-decisions-quality-forecasts/",
+      "date": "2026-10-29T00:00:00",
+      "source": "TechPoint Indiana Events",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, IN",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": false,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "TechPoint Indiana Events",
+      "id": "3062538861817182782"
     },
     {
       "title": "Boo Bash",
@@ -344,7 +298,7 @@
         "captainForged": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "2034038546664597806"
+      "id": "417449442815258296"
     },
     {
       "title": "Momentum: Fueling Entrepreneurs, Fast-Tracking Ideas",
@@ -367,7 +321,7 @@
         "captainForged": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "557175573320414817"
+      "id": "5327145068960430036"
     },
     {
       "title": "Pitch a Single Friend",
@@ -390,7 +344,7 @@
         "captainForged": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "5779923985516500501"
+      "id": "5517759958982218979"
     },
     {
       "title": "Free Cowork Friday: October 2026",
@@ -413,7 +367,7 @@
         "captainForged": false
       },
       "organizer": "Launch Fishers",
-      "id": "9166237512124754392"
+      "id": "5184620630004003239"
     },
     {
       "title": "LEARN AT LAUNCH | The \"Soft\" Side of Hiring & Teambuilding",
@@ -436,7 +390,7 @@
         "captainForged": false
       },
       "organizer": "Launch Fishers",
-      "id": "1851899165568764518"
+      "id": "8946903026026978496"
     },
     {
       "title": "Coffee & Conversation: November 2026",
@@ -459,7 +413,7 @@
         "captainForged": false
       },
       "organizer": "Launch Fishers",
-      "id": "501534198950711837"
+      "id": "5388536376988387678"
     },
     {
       "title": "Annual Thanksgiving Community Pitch-In",
@@ -482,7 +436,7 @@
         "captainForged": false
       },
       "organizer": "Launch Fishers",
-      "id": "3581642101009566438"
+      "id": "3747295074178457066"
     },
     {
       "title": "Free Cowork Friday: November 2026",
@@ -505,7 +459,7 @@
         "captainForged": false
       },
       "organizer": "Launch Fishers",
-      "id": "1574095984129208093"
+      "id": "1582154912461606415"
     },
     {
       "title": "Coffee & Conversation: December 2026",
@@ -528,7 +482,7 @@
         "captainForged": false
       },
       "organizer": "Launch Fishers",
-      "id": "3191780417293888596"
+      "id": "7395465406053789136"
     },
     {
       "title": "Annual Holiday Sweet Swap",
@@ -551,7 +505,7 @@
         "captainForged": false
       },
       "organizer": "Launch Fishers",
-      "id": "5502686316456259629"
+      "id": "6906439788106938446"
     },
     {
       "title": "Free Cowork Friday: December 2026",
@@ -574,53 +528,7 @@
         "captainForged": false
       },
       "organizer": "Launch Fishers",
-      "id": "2568785211297948293"
-    },
-    {
-      "title": "H7 Network, Fishers, IN",
-      "description": "H7 Indianapolis IN Business Networking\n**Looking for Fishers, IN? Join us every Wednesday at 12:00PM EDT.**\n\n[Add to Calendar](https://www.addevent.com/event/et26135730)\n\n**H7 Fishers** is our weekly networking meeting open to local B2B and B2C professionals. Experience the distinct, structural, difference from other networking groups, associations, and chambers.\nOur community of meetings are led by Champion Leadership.\n\n***All meetings welcome visitors, we'd love to show you what we're all abou",
-      "url": "https://www.meetup.com/h7-network-indianapolis/events/316799066/",
-      "date": "2026-10-21T12:00:00",
-      "source": "H7 Network Indianapolis Meetup",
-      "location": {
-        "name": "Fishers",
-        "address": "Fishers, Indiana",
-        "lat": 39.9567,
-        "lng": -86.0139
-      },
-      "features": {
-        "free": false,
-        "food": false,
-        "appetizers": true,
-        "nonAlcoholDrinks": false,
-        "alcoholDrinks": false,
-        "captainForged": false
-      },
-      "organizer": "H7 Network Indianapolis Meetup",
-      "id": "3431471698705496012"
-    },
-    {
-      "title": "H7 Network, Noblesville, IN",
-      "description": "H7 Indianapolis IN Business Networking\n**Perkins**\n*250 Noble Creek Dr., Noblesville, IN 46060, USA*\n\n[Add to Calendar](https://www.addevent.com/event/Em26135662)\n\n**H7 Noblesville** is our weekly networking meeting open to local B2B and B2C professionals. Experience the distinct, structural, difference from other networking groups, associations, and chambers. Our community of meetings are led by Champion Leadership.\n\n***All meetings welcome visitors, we'd love to show you what we're all about!*",
-      "url": "https://www.meetup.com/h7-network-indianapolis/events/316811716/",
-      "date": "2026-10-22T08:00:00",
-      "source": "H7 Network Indianapolis Meetup",
-      "location": {
-        "name": "Noblesville",
-        "address": "Noblesville, Indiana",
-        "lat": 40.0456,
-        "lng": -86.0086
-      },
-      "features": {
-        "free": false,
-        "food": false,
-        "appetizers": true,
-        "nonAlcoholDrinks": false,
-        "alcoholDrinks": false,
-        "captainForged": false
-      },
-      "organizer": "H7 Network Indianapolis Meetup",
-      "id": "4191081454486770787"
+      "id": "1975200675462041492"
     },
     {
       "title": "H7 Network, Carmel, IN",
@@ -643,7 +551,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "7959629581854034331"
+      "id": "1274589918496744802"
     },
     {
       "title": "H7 Network, Westfield, IN",
@@ -666,7 +574,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "5512295299023186222"
+      "id": "4720511481737694559"
     },
     {
       "title": "H7 Network, Indianapolis, IN Senior",
@@ -689,7 +597,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "2637467825747792969"
+      "id": "3762865147476910147"
     },
     {
       "title": "H7 Network, Fishers, IN",
@@ -712,7 +620,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "2804778345128012819"
+      "id": "2317322740383531587"
     },
     {
       "title": "H7 Network, Noblesville, IN",
@@ -735,7 +643,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "5394397360053655916"
+      "id": "1873490946092724405"
     },
     {
       "title": "H7 Network, Carmel, IN",
@@ -758,7 +666,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "8136589353990396931"
+      "id": "1002890658622602436"
     },
     {
       "title": "H7 Network, Westfield, IN",
@@ -781,7 +689,53 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "813307568878412627"
+      "id": "8063959894310157397"
+    },
+    {
+      "title": "H7 Network, Indianapolis, IN Senior",
+      "description": "H7 Indianapolis IN Business Networking\n## Traditions at Solana\n\n*7721 Battery Pointe Way, Indianapolis, IN 46240*\n\n[Add to Calendar](https://www.addevent.com/event/Ph26135585)\n\n**H7 Indianapolis Senior** is our weekly networking meeting open to B2C professionals. Our focus is serving the 55+ community by building a network of professionals that serve this growing audience. Experience the distinct, structural, difference from other networking groups, associations, and chambers.\nOur community of m",
+      "url": "https://www.meetup.com/h7-network-indianapolis/events/316994296/",
+      "date": "2026-11-04T09:00:00",
+      "source": "H7 Network Indianapolis Meetup",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, Indiana",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": false,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "H7 Network Indianapolis Meetup",
+      "id": "2084262280034072431"
+    },
+    {
+      "title": "H7 Network, Fishers, IN",
+      "description": "H7 Indianapolis IN Business Networking\n**Looking for Fishers, IN? Join us every Wednesday at 12:00PM EDT.**\n\n[Add to Calendar](https://www.addevent.com/event/et26135730)\n\n**H7 Fishers** is our weekly networking meeting open to local B2B and B2C professionals. Experience the distinct, structural, difference from other networking groups, associations, and chambers.\nOur community of meetings are led by Champion Leadership.\n\n***All meetings welcome visitors, we'd love to show you what we're all abou",
+      "url": "https://www.meetup.com/h7-network-indianapolis/events/316996610/",
+      "date": "2026-11-04T12:00:00",
+      "source": "H7 Network Indianapolis Meetup",
+      "location": {
+        "name": "Fishers",
+        "address": "Fishers, Indiana",
+        "lat": 39.9567,
+        "lng": -86.0139
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": false,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "H7 Network Indianapolis Meetup",
+      "id": "5625774474733022283"
     },
     {
       "title": "Upcoming events.",
@@ -804,7 +758,7 @@
         "captainForged": false
       },
       "organizer": "Venture Club of Indiana",
-      "id": "8600168538081722842"
+      "id": "8029418886971405204"
     },
     {
       "title": "VCI Holiday Party",
@@ -827,13 +781,13 @@
         "captainForged": false
       },
       "organizer": "Venture Club of Indiana",
-      "id": "6004611737205909377"
+      "id": "500266922247973289"
     },
     {
-      "title": "Spooky Happy Hour",
-      "description": "Spooky Happy Hour",
-      "url": "https://mbx.studio/events/spooky-happy-hour-oct-27",
-      "date": "2026-10-27T00:00:00",
+      "title": "Pitch Swarm | MatchBOX Business Accelerator",
+      "description": "Pitch Swarm | MatchBOX Business Accelerator",
+      "url": "https://mbx.studio/events/arconic-pitch-swarm",
+      "date": "2026-10-26T00:00:00",
       "source": "MatchBOX Coworking Studio",
       "location": {
         "name": "MatchBOX Coworking Studio",
@@ -846,11 +800,34 @@
         "food": false,
         "appetizers": false,
         "nonAlcoholDrinks": false,
-        "alcoholDrinks": true,
+        "alcoholDrinks": false,
         "captainForged": false
       },
       "organizer": "MatchBOX Coworking Studio",
-      "id": "6822789289106278369"
+      "id": "2684801990076443744"
+    },
+    {
+      "title": "Non-Members",
+      "description": "Welding Member Training is MadJax\u2019s introductory course designed for Maker Space members who want to gain access to our welding equipment and build foundational metalworking skills.",
+      "url": "?category=Non-Members",
+      "date": "2026-10-24T00:00:00",
+      "source": "Madjax Maker Force",
+      "location": {
+        "name": "Madjax Maker Force",
+        "address": "515 E Main St, Muncie, IN 47305",
+        "lat": 40.1935076,
+        "lng": -85.381463
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": false,
+        "nonAlcoholDrinks": false,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "Madjax Maker Force",
+      "id": "9169534040027800170"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -873,7 +850,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "8477134938358345372"
+      "id": "2106717307731754769"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -896,7 +873,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "5914389517809182402"
+      "id": "8646725280366011740"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -919,7 +896,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "7197333581637712603"
+      "id": "8133706801017901941"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -942,7 +919,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "8317773187059780778"
+      "id": "2732940572620500391"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -965,7 +942,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "8710328232289527445"
+      "id": "1998314664955862206"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -988,7 +965,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "1877792683862896291"
+      "id": "8089047293782070954"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1011,7 +988,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "641678380264131570"
+      "id": "702209619866148340"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1034,7 +1011,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "6389288877491546824"
+      "id": "267341157616458672"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1057,7 +1034,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "2684635794531347620"
+      "id": "6388645265283954891"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1080,7 +1057,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "2683021480931894833"
+      "id": "56506508300292366"
     },
     {
       "title": "Indy.rb - The Indianapolis Ruby Brigade Monthly Meetup",
@@ -1103,7 +1080,7 @@
         "captainForged": false
       },
       "organizer": "Indy.rb Ruby Brigade Meetup",
-      "id": "7901619749715083250"
+      "id": "3154935209828502223"
     },
     {
       "title": "Indy.rb - The Indianapolis Ruby Brigade Monthly Meetup",
@@ -1126,7 +1103,7 @@
         "captainForged": false
       },
       "organizer": "Indy.rb Ruby Brigade Meetup",
-      "id": "3552783731400333418"
+      "id": "4545473921509400337"
     },
     {
       "title": "Indy.rb - The Indianapolis Ruby Brigade Monthly Meetup",
@@ -1149,7 +1126,7 @@
         "captainForged": false
       },
       "organizer": "Indy.rb Ruby Brigade Meetup",
-      "id": "2769108679017532644"
+      "id": "1469289369395709528"
     }
   ]
 }
