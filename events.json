@@ -1,29 +1,6 @@
 {
-  "lastUpdated": "2026-10-29T12:48:13.408686",
+  "lastUpdated": "2026-10-30T12:39:07.355023",
   "events": [
-    {
-      "title": "LEARN AT LAUNCH | The \"Soft\" Side of Hiring & Teambuilding",
-      "description": "Contact 1210 Waterway Blvd Suite 5000 Indianapolis, IN 46202 community@techpoint.org 317.275.2080",
-      "url": "https://techpoint.org/tech-events/learn-at-launch-the-soft-side-of-hiring-teambuilding/",
-      "date": "2026-10-30T00:00:00",
-      "source": "TechPoint Indiana Events",
-      "location": {
-        "name": "Indianapolis",
-        "address": "Indianapolis, IN",
-        "lat": 39.7684,
-        "lng": -86.1581
-      },
-      "features": {
-        "free": false,
-        "food": false,
-        "appetizers": false,
-        "nonAlcoholDrinks": true,
-        "alcoholDrinks": false,
-        "captainForged": false
-      },
-      "organizer": "TechPoint Indiana Events",
-      "id": "5389722180801173464"
-    },
     {
       "title": "STEM Familia Fest",
       "description": "Contact 1210 Waterway Blvd Suite 5000 Indianapolis, IN 46202 community@techpoint.org 317.275.2080",
@@ -45,7 +22,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "7534929904059626888"
+      "id": "1210502200343230099"
     },
     {
       "title": "Colts STEAM Combine powered by Purdue University",
@@ -68,7 +45,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "4815776103075642785"
+      "id": "6930256015957545294"
     },
     {
       "title": "Rose Hulman Virtual Career Fair",
@@ -91,7 +68,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "3570167196325892827"
+      "id": "2844782970586497699"
     },
     {
       "title": "Workday Developer Meetup Indianapolis",
@@ -114,7 +91,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "7600920292969737940"
+      "id": "2073432608944858331"
     },
     {
       "title": "From AI Pilot to Production: What It Actually Takes",
@@ -137,7 +114,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "1388321489509777811"
+      "id": "2002128476483094220"
     },
     {
       "title": "Innovate South Central Indiana - Bloomington",
@@ -160,7 +137,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "2202438847260189066"
+      "id": "7673542981680743679"
     },
     {
       "title": "Indy\u00b7Init_",
@@ -183,7 +160,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "4313450231820563320"
+      "id": "8452989550556220853"
     },
     {
       "title": "AnalytiXIN Spotlight Series",
@@ -206,7 +183,7 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "9086123276460795359"
+      "id": "1108518714491899917"
     },
     {
       "title": "Momentum: Fueling Entrepreneurs, Fast-Tracking Ideas",
@@ -229,7 +206,743 @@
         "captainForged": false
       },
       "organizer": "TechPoint Indiana Events",
-      "id": "3528305680658294185"
+      "id": "1363018201312315526"
+    },
+    {
+      "title": "November ClickSide Chat",
+      "description": "Contact 1210 Waterway Blvd Suite 5000 Indianapolis, IN 46202 community@techpoint.org 317.275.2080",
+      "url": "https://techpoint.org/tech-events/november-clickside-chat-save-the-date/",
+      "date": "2026-11-11T00:00:00",
+      "source": "TechPoint Indiana Events",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, IN",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": false,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "TechPoint Indiana Events",
+      "id": "2577034188662496334"
+    },
+    {
+      "title": "AI for Executives",
+      "description": "Contact 1210 Waterway Blvd Suite 5000 Indianapolis, IN 46202 community@techpoint.org 317.275.2080",
+      "url": "https://techpoint.org/tech-events/ai-for-executives/",
+      "date": "2026-11-12T00:00:00",
+      "source": "TechPoint Indiana Events",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, IN",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": false,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "TechPoint Indiana Events",
+      "id": "3870584216246615737"
+    },
+    {
+      "title": "Indianapolis Dreamforce 2 U for Nonprofits: Announcements & Agentic Success Stories",
+      "description": "Contact 1210 Waterway Blvd Suite 5000 Indianapolis, IN 46202 community@techpoint.org 317.275.2080",
+      "url": "https://techpoint.org/tech-events/indianapolis-dreamforce-2-u-for-nonprofits-announcements-agentic-success-stories/",
+      "date": "2026-11-12T00:00:00",
+      "source": "TechPoint Indiana Events",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, Indiana",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": false,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "TechPoint Indiana Events",
+      "id": "3392662019288606815"
+    },
+    {
+      "title": "Organization Day Legislative Update & Reception",
+      "description": "Contact 1210 Waterway Blvd Suite 5000 Indianapolis, IN 46202 community@techpoint.org 317.275.2080",
+      "url": "https://techpoint.org/tech-events/organization-day-legislative-update-reception/",
+      "date": "2026-11-17T00:00:00",
+      "source": "TechPoint Indiana Events",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, IN",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "TechPoint Indiana Events",
+      "id": "423671260065190667"
+    },
+    {
+      "title": "Indiana AI Innovation Network: Butler University Case Study",
+      "description": "Contact 1210 Waterway Blvd Suite 5000 Indianapolis, IN 46202 community@techpoint.org 317.275.2080",
+      "url": "https://techpoint.org/tech-events/indiana-ai-innovation-network-butler-university-case-study/",
+      "date": "2026-11-18T00:00:00",
+      "source": "TechPoint Indiana Events",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, IN",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": false,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "TechPoint Indiana Events",
+      "id": "5564448249412762202"
+    },
+    {
+      "title": "1 Million Cups Indianapolis",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/indy",
+      "date": "2026-11-04T09:00:00",
+      "source": "1 Million Cups Indianapolis",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, Indiana",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups Indianapolis",
+      "id": "949981833043429493"
+    },
+    {
+      "title": "1 Million Cups Indianapolis",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/indy",
+      "date": "2026-12-02T09:00:00",
+      "source": "1 Million Cups Indianapolis",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, Indiana",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups Indianapolis",
+      "id": "3943860489817224761"
+    },
+    {
+      "title": "1 Million Cups Indianapolis",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/indy",
+      "date": "2026-12-30T09:00:00",
+      "source": "1 Million Cups Indianapolis",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, Indiana",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups Indianapolis",
+      "id": "2937433830391931482"
+    },
+    {
+      "title": "1 Million Cups Indianapolis",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/indy",
+      "date": "2027-02-03T09:00:00",
+      "source": "1 Million Cups Indianapolis",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, Indiana",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups Indianapolis",
+      "id": "4778371566485723187"
+    },
+    {
+      "title": "1 Million Cups Indianapolis",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/indy",
+      "date": "2027-03-03T09:00:00",
+      "source": "1 Million Cups Indianapolis",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, Indiana",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups Indianapolis",
+      "id": "815307894999312389"
+    },
+    {
+      "title": "1 Million Cups Indianapolis",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/indy",
+      "date": "2027-03-31T09:00:00",
+      "source": "1 Million Cups Indianapolis",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, Indiana",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups Indianapolis",
+      "id": "8481102778318390035"
+    },
+    {
+      "title": "1 Million Cups Indianapolis",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/indy",
+      "date": "2027-05-05T09:00:00",
+      "source": "1 Million Cups Indianapolis",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, Indiana",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups Indianapolis",
+      "id": "4551464035778049356"
+    },
+    {
+      "title": "1 Million Cups Indianapolis",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/indy",
+      "date": "2027-06-02T09:00:00",
+      "source": "1 Million Cups Indianapolis",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, Indiana",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups Indianapolis",
+      "id": "76286559767624085"
+    },
+    {
+      "title": "1 Million Cups Indianapolis",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/indy",
+      "date": "2027-06-30T09:00:00",
+      "source": "1 Million Cups Indianapolis",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, Indiana",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups Indianapolis",
+      "id": "895882265015737315"
+    },
+    {
+      "title": "1 Million Cups Indianapolis",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/indy",
+      "date": "2027-08-04T09:00:00",
+      "source": "1 Million Cups Indianapolis",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, Indiana",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups Indianapolis",
+      "id": "1544312406123636476"
+    },
+    {
+      "title": "1 Million Cups Indianapolis",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/indy",
+      "date": "2027-09-01T09:00:00",
+      "source": "1 Million Cups Indianapolis",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, Indiana",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups Indianapolis",
+      "id": "2491607265153936860"
+    },
+    {
+      "title": "1 Million Cups Indianapolis",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/indy",
+      "date": "2027-10-06T09:00:00",
+      "source": "1 Million Cups Indianapolis",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, Indiana",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups Indianapolis",
+      "id": "4954203126705988933"
+    },
+    {
+      "title": "1 Million Cups Indianapolis",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/indy",
+      "date": "2027-11-03T09:00:00",
+      "source": "1 Million Cups Indianapolis",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, Indiana",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups Indianapolis",
+      "id": "1793296517537952325"
+    },
+    {
+      "title": "1 Million Cups Indianapolis",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/indy",
+      "date": "2027-12-01T09:00:00",
+      "source": "1 Million Cups Indianapolis",
+      "location": {
+        "name": "Indianapolis",
+        "address": "Indianapolis, Indiana",
+        "lat": 39.7684,
+        "lng": -86.1581
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups Indianapolis",
+      "id": "6306104150751961518"
+    },
+    {
+      "title": "1 Million Cups South Bend",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/southbend",
+      "date": "2026-11-11T08:00:00",
+      "source": "1 Million Cups South Bend",
+      "location": {
+        "name": "South Bend",
+        "address": "South Bend, Indiana",
+        "lat": 41.6764,
+        "lng": -86.252
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups South Bend",
+      "id": "6511438452048993887"
+    },
+    {
+      "title": "1 Million Cups South Bend",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/southbend",
+      "date": "2026-12-09T08:00:00",
+      "source": "1 Million Cups South Bend",
+      "location": {
+        "name": "South Bend",
+        "address": "South Bend, Indiana",
+        "lat": 41.6764,
+        "lng": -86.252
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups South Bend",
+      "id": "8149091741586778370"
+    },
+    {
+      "title": "1 Million Cups South Bend",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/southbend",
+      "date": "2027-01-13T08:00:00",
+      "source": "1 Million Cups South Bend",
+      "location": {
+        "name": "South Bend",
+        "address": "South Bend, Indiana",
+        "lat": 41.6764,
+        "lng": -86.252
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups South Bend",
+      "id": "7650064083272772151"
+    },
+    {
+      "title": "1 Million Cups South Bend",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/southbend",
+      "date": "2027-02-10T08:00:00",
+      "source": "1 Million Cups South Bend",
+      "location": {
+        "name": "South Bend",
+        "address": "South Bend, Indiana",
+        "lat": 41.6764,
+        "lng": -86.252
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups South Bend",
+      "id": "4313358605823086720"
+    },
+    {
+      "title": "1 Million Cups South Bend",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/southbend",
+      "date": "2027-03-10T08:00:00",
+      "source": "1 Million Cups South Bend",
+      "location": {
+        "name": "South Bend",
+        "address": "South Bend, Indiana",
+        "lat": 41.6764,
+        "lng": -86.252
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups South Bend",
+      "id": "2106989071742433425"
+    },
+    {
+      "title": "1 Million Cups South Bend",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/southbend",
+      "date": "2027-04-14T08:00:00",
+      "source": "1 Million Cups South Bend",
+      "location": {
+        "name": "South Bend",
+        "address": "South Bend, Indiana",
+        "lat": 41.6764,
+        "lng": -86.252
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups South Bend",
+      "id": "3270670680421484063"
+    },
+    {
+      "title": "1 Million Cups South Bend",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/southbend",
+      "date": "2027-05-12T08:00:00",
+      "source": "1 Million Cups South Bend",
+      "location": {
+        "name": "South Bend",
+        "address": "South Bend, Indiana",
+        "lat": 41.6764,
+        "lng": -86.252
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups South Bend",
+      "id": "8406274488323626639"
+    },
+    {
+      "title": "1 Million Cups South Bend",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/southbend",
+      "date": "2027-06-09T08:00:00",
+      "source": "1 Million Cups South Bend",
+      "location": {
+        "name": "South Bend",
+        "address": "South Bend, Indiana",
+        "lat": 41.6764,
+        "lng": -86.252
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups South Bend",
+      "id": "7344336660707831771"
+    },
+    {
+      "title": "1 Million Cups South Bend",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/southbend",
+      "date": "2027-07-14T08:00:00",
+      "source": "1 Million Cups South Bend",
+      "location": {
+        "name": "South Bend",
+        "address": "South Bend, Indiana",
+        "lat": 41.6764,
+        "lng": -86.252
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups South Bend",
+      "id": "5428019165336706231"
+    },
+    {
+      "title": "1 Million Cups South Bend",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/southbend",
+      "date": "2027-08-11T08:00:00",
+      "source": "1 Million Cups South Bend",
+      "location": {
+        "name": "South Bend",
+        "address": "South Bend, Indiana",
+        "lat": 41.6764,
+        "lng": -86.252
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups South Bend",
+      "id": "1547574719455073232"
+    },
+    {
+      "title": "1 Million Cups South Bend",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/southbend",
+      "date": "2027-09-08T08:00:00",
+      "source": "1 Million Cups South Bend",
+      "location": {
+        "name": "South Bend",
+        "address": "South Bend, Indiana",
+        "lat": 41.6764,
+        "lng": -86.252
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups South Bend",
+      "id": "8097288475735439422"
+    },
+    {
+      "title": "1 Million Cups South Bend",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/southbend",
+      "date": "2027-10-13T08:00:00",
+      "source": "1 Million Cups South Bend",
+      "location": {
+        "name": "South Bend",
+        "address": "South Bend, Indiana",
+        "lat": 41.6764,
+        "lng": -86.252
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups South Bend",
+      "id": "3193026354385159541"
+    },
+    {
+      "title": "1 Million Cups South Bend",
+      "description": "Join entrepreneurs for coffee, conversation, and connections. Two startup presentations followed by community feedback and networking.",
+      "url": "https://www.1millioncups.com/southbend",
+      "date": "2027-11-10T08:00:00",
+      "source": "1 Million Cups South Bend",
+      "location": {
+        "name": "South Bend",
+        "address": "South Bend, Indiana",
+        "lat": 41.6764,
+        "lng": -86.252
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": true,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "1 Million Cups South Bend",
+      "id": "6944303920756021215"
     },
     {
       "title": "Boo Bash",
@@ -252,7 +965,7 @@
         "captainForged": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "7845047756000231483"
+      "id": "529671305971730851"
     },
     {
       "title": "Momentum: Fueling Entrepreneurs, Fast-Tracking Ideas",
@@ -275,7 +988,7 @@
         "captainForged": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "2138165958078403091"
+      "id": "5306863272942167502"
     },
     {
       "title": "Pitch a Single Friend",
@@ -298,53 +1011,7 @@
         "captainForged": false
       },
       "organizer": "16 Tech Innovation District",
-      "id": "974953848360010909"
-    },
-    {
-      "title": "Free Cowork Friday: October 2026",
-      "description": "Each month (usually on the final Friday), we open our doors to anyone interested in trying out coworking! Potential new members can come in and enjoy free coffee & coworking as they test drive what a Launch Fishers membership is all about. We provide a reliable place to work for all sorts of people: entrepreneurs, remote workers, consultants, and more! \nBenefits of Launch Fishers membership: a comfortable workspace, a great community of fellow coworkers, phone booths, meeting & conference rooms,",
-      "url": "https://launchfishers.com/event-calendar/free-cowork-friday-october-2026/",
-      "date": "2026-10-30T08:00:00",
-      "source": "Launch Fishers",
-      "location": {
-        "name": "Indianapolis",
-        "address": "Indianapolis, IN",
-        "lat": 39.7684,
-        "lng": -86.1581
-      },
-      "features": {
-        "free": true,
-        "food": false,
-        "appetizers": false,
-        "nonAlcoholDrinks": true,
-        "alcoholDrinks": false,
-        "captainForged": false
-      },
-      "organizer": "Launch Fishers",
-      "id": "4849776243963044222"
-    },
-    {
-      "title": "LEARN AT LAUNCH | The \"Soft\" Side of Hiring & Teambuilding",
-      "description": "Skills and technical experience might get a candidate through the door, but the real secret to building a powerhouse team lies in the \u201csoft side\u201d of hiring. \nFor growing businesses and established teams alike, a strong resume simply isn\u2019t enough. When resources are tight and pace is fast, you need team members who not only execute, but also adapt, communicate, and elevate the people around them. Workforce data consistently shows that reliability, coachability, and emotional intelligence are the ",
-      "url": "https://launchfishers.com/event-calendar/learn-at-launch-the-soft-side-of-hiring-teambuilding/",
-      "date": "2026-10-30T08:30:00",
-      "source": "Launch Fishers",
-      "location": {
-        "name": "Indianapolis",
-        "address": "Indianapolis, IN",
-        "lat": 39.7684,
-        "lng": -86.1581
-      },
-      "features": {
-        "free": false,
-        "food": false,
-        "appetizers": false,
-        "nonAlcoholDrinks": false,
-        "alcoholDrinks": false,
-        "captainForged": false
-      },
-      "organizer": "Launch Fishers",
-      "id": "5651482179718325705"
+      "id": "6323955485888565897"
     },
     {
       "title": "Coffee & Conversation: November 2026",
@@ -367,7 +1034,7 @@
         "captainForged": false
       },
       "organizer": "Launch Fishers",
-      "id": "1205095434694790381"
+      "id": "5420372072448694672"
     },
     {
       "title": "Annual Thanksgiving Community Pitch-In",
@@ -390,7 +1057,7 @@
         "captainForged": false
       },
       "organizer": "Launch Fishers",
-      "id": "7128285169574020868"
+      "id": "6273290085871288328"
     },
     {
       "title": "Free Cowork Friday: November 2026",
@@ -413,7 +1080,7 @@
         "captainForged": false
       },
       "organizer": "Launch Fishers",
-      "id": "1516284332288472990"
+      "id": "4684873235129636898"
     },
     {
       "title": "Coffee & Conversation: December 2026",
@@ -436,7 +1103,7 @@
         "captainForged": false
       },
       "organizer": "Launch Fishers",
-      "id": "8167108830368832808"
+      "id": "3971894132434929756"
     },
     {
       "title": "Annual Holiday Sweet Swap",
@@ -459,7 +1126,7 @@
         "captainForged": false
       },
       "organizer": "Launch Fishers",
-      "id": "4981339064643242286"
+      "id": "7675443567435632378"
     },
     {
       "title": "Free Cowork Friday: December 2026",
@@ -482,7 +1149,7 @@
         "captainForged": false
       },
       "organizer": "Launch Fishers",
-      "id": "8104339961667307857"
+      "id": "4179634109932119384"
     },
     {
       "title": "H7 Network, Carmel, IN",
@@ -505,7 +1172,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "6966837402634747384"
+      "id": "7015972052296375798"
     },
     {
       "title": "H7 Network, Westfield, IN",
@@ -528,7 +1195,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "1344662352508382360"
+      "id": "6322611027462265655"
     },
     {
       "title": "H7 Network, Indianapolis, IN Senior",
@@ -551,7 +1218,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "6616709489970180816"
+      "id": "2430636504072960053"
     },
     {
       "title": "H7 Network, Fishers, IN",
@@ -574,7 +1241,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "7505383929643919290"
+      "id": "7124810999045846369"
     },
     {
       "title": "H7 Network, Noblesville, IN",
@@ -597,7 +1264,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "8892231491865038589"
+      "id": "7676539598013230231"
     },
     {
       "title": "H7 Network, Carmel, IN",
@@ -620,7 +1287,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "9083487428376381826"
+      "id": "8335095417539002733"
     },
     {
       "title": "H7 Network, Westfield, IN",
@@ -643,7 +1310,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "6766868746029406093"
+      "id": "8880119404610109887"
     },
     {
       "title": "H7 Network, Indianapolis, IN Senior",
@@ -666,7 +1333,7 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "7220801279211804223"
+      "id": "897648094412070340"
     },
     {
       "title": "H7 Network, Fishers, IN",
@@ -689,7 +1356,30 @@
         "captainForged": false
       },
       "organizer": "H7 Network Indianapolis Meetup",
-      "id": "4306041634858675493"
+      "id": "2015874422749772687"
+    },
+    {
+      "title": "H7 Network, Noblesville, IN",
+      "description": "H7 Indianapolis IN Business Networking\n**Perkins**\n*250 Noble Creek Dr., Noblesville, IN 46060, USA*\n\n[Add to Calendar](https://www.addevent.com/event/Em26135662)\n\n**H7 Noblesville** is our weekly networking meeting open to local B2B and B2C professionals. Experience the distinct, structural, difference from other networking groups, associations, and chambers. Our community of meetings are led by Champion Leadership.\n\n***All meetings welcome visitors, we'd love to show you what we're all about!*",
+      "url": "https://www.meetup.com/h7-network-indianapolis/events/317102472/",
+      "date": "2026-11-12T08:00:00",
+      "source": "H7 Network Indianapolis Meetup",
+      "location": {
+        "name": "Noblesville",
+        "address": "Noblesville, Indiana",
+        "lat": 40.0456,
+        "lng": -86.0086
+      },
+      "features": {
+        "free": false,
+        "food": false,
+        "appetizers": true,
+        "nonAlcoholDrinks": false,
+        "alcoholDrinks": false,
+        "captainForged": false
+      },
+      "organizer": "H7 Network Indianapolis Meetup",
+      "id": "1102161806594291795"
     },
     {
       "title": "Upcoming events.",
@@ -712,7 +1402,7 @@
         "captainForged": false
       },
       "organizer": "Venture Club of Indiana",
-      "id": "1908293342157869267"
+      "id": "7266142523583562549"
     },
     {
       "title": "VCI Holiday Party",
@@ -735,7 +1425,7 @@
         "captainForged": false
       },
       "organizer": "Venture Club of Indiana",
-      "id": "1967138536384313081"
+      "id": "4530260403104618519"
     },
     {
       "title": "MatchBOX Free Coworking Day",
@@ -758,76 +1448,7 @@
         "captainForged": false
       },
       "organizer": "MatchBOX Coworking Studio",
-      "id": "1735269751849859067"
-    },
-    {
-      "title": "SIP STATION WITH PRETTY LITTLE CAFE",
-      "description": "A rotating lineup of local beverage businesses gives our community another reason to spend time at MadJax while discovering and supporting local entrepreneurs! Grab a drink, find a seat and meet up with new friends!",
-      "url": "https://www.madjax.org/events/sip-station-titis-7pzh6",
-      "date": "2026-10-30T00:00:00",
-      "source": "Madjax Maker Force",
-      "location": {
-        "name": "Madjax Maker Force",
-        "address": "515 E Main St, Muncie, IN 47305",
-        "lat": 40.1935076,
-        "lng": -85.381463
-      },
-      "features": {
-        "free": false,
-        "food": true,
-        "appetizers": false,
-        "nonAlcoholDrinks": false,
-        "alcoholDrinks": false,
-        "captainForged": false
-      },
-      "organizer": "Madjax Maker Force",
-      "id": "86952043723214005"
-    },
-    {
-      "title": "HALLOWEEN MOVIE NIGHT AT GUARDIAN!",
-      "description": "Come join the Halloween fun at Guardian Brewery!",
-      "url": "https://www.madjax.org/events/halloween-party-m6yfx",
-      "date": "2026-10-30T00:00:00",
-      "source": "Madjax Maker Force",
-      "location": {
-        "name": "Madjax Maker Force",
-        "address": "515 E Main St, Muncie, IN 47305",
-        "lat": 40.1935076,
-        "lng": -85.381463
-      },
-      "features": {
-        "free": false,
-        "food": false,
-        "appetizers": false,
-        "nonAlcoholDrinks": false,
-        "alcoholDrinks": true,
-        "captainForged": false
-      },
-      "organizer": "Madjax Maker Force",
-      "id": "875610891764858400"
-    },
-    {
-      "title": "Events",
-      "description": "For students and early-career builders: programs, events, workspace, and the people to help you build a career in Bloomington.Students",
-      "url": "https://amplifybloomington.org/event-type/entrepreneurship/",
-      "date": "2026-11-04T00:00:00",
-      "source": "Dimension Mill Bloomington",
-      "location": {
-        "name": "Indianapolis",
-        "address": "Indianapolis, IN",
-        "lat": 39.7684,
-        "lng": -86.1581
-      },
-      "features": {
-        "free": false,
-        "food": false,
-        "appetizers": false,
-        "nonAlcoholDrinks": false,
-        "alcoholDrinks": false,
-        "captainForged": false
-      },
-      "organizer": "Dimension Mill Bloomington",
-      "id": "3547685644803690334"
+      "id": "1770284021986212160"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -850,7 +1471,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "3373714896675586397"
+      "id": "2403560952230773478"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -873,7 +1494,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "8487172105851623985"
+      "id": "8663794375006870164"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -896,7 +1517,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "6097650545004926963"
+      "id": "7966694665040931542"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -919,7 +1540,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "6126512313631007847"
+      "id": "7730602037965252234"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -942,7 +1563,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "5680990487060383717"
+      "id": "8168416899553507461"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -965,7 +1586,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "2614367601706779415"
+      "id": "843908101207227281"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -988,7 +1609,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "6371269556075573647"
+      "id": "7631144134194742974"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1011,7 +1632,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "5579709979558842678"
+      "id": "409779899000391118"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1034,7 +1655,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "7495620484896948724"
+      "id": "6658124519073564033"
     },
     {
       "title": "Fishers Code & Coffee",
@@ -1057,7 +1678,7 @@
         "captainForged": false
       },
       "organizer": "Fishers Code and Coffee Meetup",
-      "id": "1212451760610669950"
+      "id": "6983365601084355230"
     },
     {
       "title": "Indy.rb - The Indianapolis Ruby Brigade Monthly Meetup",
@@ -1080,7 +1701,7 @@
         "captainForged": false
       },
       "organizer": "Indy.rb Ruby Brigade Meetup",
-      "id": "8386951861587484989"
+      "id": "8542549458420648680"
     },
     {
       "title": "Indy.rb - The Indianapolis Ruby Brigade Monthly Meetup",
@@ -1103,7 +1724,7 @@
         "captainForged": false
       },
       "organizer": "Indy.rb Ruby Brigade Meetup",
-      "id": "7385678165124758470"
+      "id": "2874898819885225406"
     },
     {
       "title": "Indy.rb - The Indianapolis Ruby Brigade Monthly Meetup",
@@ -1126,7 +1747,7 @@
         "captainForged": false
       },
       "organizer": "Indy.rb Ruby Brigade Meetup",
-      "id": "4407231599646639665"
+      "id": "2214296816586687448"
     },
     {
       "title": "November 2026 CINLUG Meeting \u2014 Reclaiming Embedded Linux Hardware",
@@ -1149,7 +1770,7 @@
         "captainForged": false
       },
       "organizer": "CINLUG Linux Users Group",
-      "id": "2504159628461115093"
+      "id": "8505336972927096072"
     },
     {
       "title": "RSVP to the next Indianapolis RHUG!",
@@ -1172,7 +1793,7 @@
         "captainForged": false
       },
       "organizer": "Indianapolis RHUG",
-      "id": "6868682121000049305"
+      "id": "2820025359312633844"
     }
   ]
 }
